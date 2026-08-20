@@ -29,7 +29,7 @@ do not do it.
 
 ## What is here, and why each file is here
 
-- **`architecture.html`** *(4 files)* — the three rendered pages + stylesheet — the site itself
+- **`architecture.html`** *(5 files)* — the three rendered pages + stylesheet — the site itself
 - **`evidence/LAUNCH-FACTS-FROZEN-2026-08-13.md`** — L1–L5, frozen; the source of every launch number
 - **`evidence/PAYLOAD-AUDIT-2026-08-13.md`** — the audit protocol and its limitations, including the seven payloads we destroyed
 - **`evidence/payload-audit/web3ctx/`** *(16 files)* — OUR OWN cached payloads — the only arm whose bytes are ours to publish
@@ -79,4 +79,4 @@ not merely old.
 
 `MANIFEST.sha256` carries a hash for every file in this set.
 
-Staged from 47 files.
+Staged from 48 files.
