@@ -2,7 +2,10 @@
 
 Human-validated, chain-run integration recipes for web3, served version-true over MCP.
 
-**The server:** `https://web3-context-mcp.papermind-ai.workers.dev/mcp` — free, no key, no signup.
+**The server:** `https://mcp.scarai.xyz/mcp` — free, no key, no signup.
+
+⚠ The original `*.workers.dev` hostname keeps answering and always will — an install someone
+already pasted into a config is a promise. It is simply no longer the published URL.
 
 **The pages:** [overview](index.html) · [evals & evidence](evals.html) · [architecture](architecture.html)
 
