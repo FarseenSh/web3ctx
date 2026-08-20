@@ -3,98 +3,175 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>web3ctx — evals &amp; evidence</title>
+<title>web3ctx — Evals &amp; evidence</title>
 <link rel="stylesheet" href="style.css">
 <script src="site.js" defer></script>
 <style>
-  .bars { margin-top: 14px; }
-  .bar-row { display: grid; grid-template-columns: 170px 1fr 90px; gap: 12px;
-    align-items: center; margin-bottom: 8px; font-family: var(--mono); font-size: 12.5px; }
-  .bar-row .name { color: var(--text); }
-  .bar-row .track { background: #161b26; border-radius: 5px; height: 16px; overflow: hidden; }
-  .bar-row .fill { height: 100%; background: var(--faint); border-radius: 5px; }
-  .bar-row.us .fill { background: var(--amber); }
-  .bar-row .val { color: var(--dim); text-align: right; }
+  /* compat: generator-emitted .bar-row rows render in the brand system */
+  .bars { margin-top: 4px; }
+  .bar-row { display: grid; grid-template-columns: 190px 1fr 120px; gap: 16px;
+    align-items: center; margin-bottom: 11px; font-size: 13.5px; }
+  @media (max-width: 760px) { .bar-row { grid-template-columns: 118px 1fr 104px; } }
+  .bar-row .name { color: var(--sub); }
+  .bar-row.us .name { color: var(--ink); font-weight: 600; }
+  .bar-row .track { background: #151a17; border-radius: 3px; height: 10px; overflow: hidden; }
+  .bar-row .fill { height: 100%; background: #39423c; border-radius: 3px; }
+  .bar-row.us .fill { background: var(--mint); }
+  .bar-row .val { font-family: var(--mono); font-size: 12.5px; color: var(--sub); text-align: right; }
+  .bar-row.us .val { color: var(--mint); }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header class="site">
-  <div class="brand">web3ctx</div>
-  <h1>Evals &amp; evidence</h1>
-  <p class="tag">Every number on this page is regenerated from data at build time — nothing
-  is typed. Every measurement links its protocol, its composition, and its limitations.
-  The experiments that failed are published beside the ones that shipped.</p>
+<header>
+  <div class="kick">web3ctx · evidence</div>
+  <h1>Measured,<br><em>not promised.</em></h1>
+  <p class="lede">Every number on this page is regenerated from data at build time — nothing
+  is typed by hand. Every measurement carries its protocol, its composition, and its
+  limitations. The experiments that failed are published beside the ones that shipped.</p>
   <nav class="site">
-    <a href="index.html">overview</a>
-    <a href="evals.html">evals</a>
-    <a href="architecture.html">architecture</a>
+    <a href="index.html">Overview</a>
+    <a class="on" href="evals.html">Evals</a>
+    <a href="architecture.html">Architecture</a>
   </nav>
 </header>
 
-<section class="band">
-  <div class="label">Immutable citations — <b>the payload audit</b></div>
-  <p class="tag" style="font-size:14px">Share of citation URLs in each tool's audited
-  payloads that are immutable (commit-pinned) and re-fetchable. Counted over cached bytes;
-  a property of the URL string.</p>
-  <div class="bars"><div class="bar-row us"><div class="name">web3ctx</div><div class="track"><div class="fill" style="width:98.6%"></div></div><div class="val">142/144</div></div>
+<section class="blk">
+  <div class="chip">Immutable citations</div>
+  <h2>Can the answer be <em>re-checked</em> after it's given?</h2>
+  <p class="sub">Share of citation URLs in each tool's audited payloads that are commit-pinned
+  and re-fetchable. Counted over cached bytes — a property of the URL string. Frozen audit,
+  2026-08-13.</p>
+  <div class="figure">
+    <div class="fighead">Figure 1 · immutable / total citation URLs · higher is better</div>
+    <div id="l1-bars"><div class="bar-row us"><div class="name">web3ctx</div><div class="track"><div class="fill" style="width:98.6%"></div></div><div class="val">142/144</div></div>
   <div class="bar-row"><div class="name">context7</div><div class="track"><div class="fill" style="width:0.0%"></div></div><div class="val">0/57</div></div>
   <div class="bar-row"><div class="name">exa (web search)</div><div class="track"><div class="fill" style="width:3.3%"></div></div><div class="val">7/213</div></div>
   <div class="bar-row"><div class="name">firecrawl</div><div class="track"><div class="fill" style="width:7.4%"></div></div><div class="val">25/338</div></div>
   <div class="bar-row"><div class="name">ethskills (skill)</div><div class="track"><div class="fill" style="width:0.0%"></div></div><div class="val">0/181</div></div></div>
-  <div id="l1-table"><table class="data">
-    <tr><th>arm</th><th>immutable / total citation URLs</th><th></th></tr>
-    <tr class="us"><td>web3ctx</td><td class="n"><b>142</b> / 144</td><td class="n">99%</td></tr>
-    <tr><td>context7</td><td class="n"><b>0</b> / 57</td><td class="n">0%</td></tr>
-    <tr><td>exa (web search)</td><td class="n"><b>7</b> / 213</td><td class="n">3%</td></tr>
-    <tr><td>firecrawl</td><td class="n"><b>25</b> / 338</td><td class="n">7%</td></tr>
-    <tr class="missing"><td>claude web search</td><td class="n">MISSING — never ran</td><td class="n">—</td></tr>
-    <tr><td>ethskills (skill)</td><td class="n"><b>0</b> / 181</td><td class="n">0%</td></tr>
-  </table></div>
-  <div class="caveat"><p><b>firecrawl publishes only with its sentence:</b> incomplete — our harness overwrote 7 valid payloads; Firecrawl answered every question on the first fetch.</p>
+    <div class="footnote"><p><b>firecrawl publishes only with its sentence:</b> incomplete — our harness overwrote 7 valid payloads; Firecrawl answered every question on the first fetch.</p>
   <p><b>claude web search is MISSING, not passed.</b> No key in that environment. A row silently absent reads as one that passed, so it stays in the table with no number.</p>
   <p><b>exa is labelled “web search”</b> — the only tool its public endpoint exposes. Its code-retrieval product is <b>unmeasured</b>.</p>
   <p><b>Our own two non-immutable URLs, named:</b> <code>https://github.com/sponsors/wevm</code> (a sponsor link inside wagmi's own docs, which we quoted) and <code>https://github.com/wevm/viem/issues/2484</code> (the name of a test case in viem's source).</p>
-  <p>Counted over cached bytes, on 16 questions, and it is <b>one count, not a verdict</b>. The audit issues none and none is computable from it.</p></div>
+  <p>Counted over cached bytes, on 16 questions, and it is <b>one count, not a verdict</b>. The audit issues none and none is computable from it.</p>
+    <!-- required: firecrawl incomplete sentence · claude web search MISSING-not-passed in
+         the frozen audit (runs in Figure 2) · exa labelled (web search) · our own two
+         non-immutable URLs, named --></div>
+  </div>
 </section>
 
-<section class="band">
-  <div class="label">Scope precision — <b>does the right project answer?</b></div>
-  <div id="precision"><table class="data">
+<section class="blk">
+  <div class="chip">Head-to-head · 2026-08-20</div>
+  <h2>Six real integration traps, eight arms, <em>raw bytes on disk.</em></h2>
+  <p class="sub">Publication-grade harness: raw HTTP response bytes written to disk before
+  parsing, one tokenizer over full payloads on every arm, refusals void. Six verified
+  integration footguns plus ten plain questions.</p>
+  <div class="figure">
+    <div class="fighead">Figure 2 · all arms · ⊘ no verdict — n=16 against the registered 393 floor · descriptive only</div>
+    <div class="scroll" id="bench-table"><table class="data">
+    <tr><th>arm</th><th class="r">ran</th><th class="r">void</th><th class="r">med tokens</th><th>immutable / total URLs</th><th class="r">names ver</th><th class="r">traps</th></tr>
+    <tr class="us"><td><span class="dot"></span>web3ctx<span class="ours">OURS</span></td><td class="r">16</td><td class="r"><span class="dim">0</span></td><td class="r">3,071</td><td><span class="mini"><i style="width:97.5%"></i></span>316 / 324</td><td class="r">10 / 16</td><td class="r">1 / 6 <span class="dim">(4p)</span></td></tr>
+    <tr class="us"><td><span class="dot"></span>web3ctx (intent=integrate)<span class="ours">OURS</span></td><td class="r">16</td><td class="r"><span class="dim">0</span></td><td class="r">7,454</td><td><span class="mini"><i style="width:82.2%"></i></span>424 / 516</td><td class="r">16 / 16</td><td class="r">6 / 6</td></tr>
+    <tr><td>context7</td><td class="r">16</td><td class="r"><span class="dim">0</span></td><td class="r">558</td><td><span class="mini"><i style="width:0.0%"></i></span>0 / 0</td><td class="r">6 / 16</td><td class="r">0 / 6 <span class="dim">(2p)</span></td></tr>
+    <tr><td>exa (code context)</td><td class="r">16</td><td class="r"><span class="dim">0</span></td><td class="r">1,033</td><td><span class="mini"><i style="width:0.6%"></i></span>1 / 171</td><td class="r">11 / 16</td><td class="r">2 / 6 <span class="dim">(3p)</span></td></tr>
+    <tr><td>exa (web search)</td><td class="r">16</td><td class="r"><span class="dim">0</span></td><td class="r">8,986</td><td><span class="mini"><i style="width:4.2%"></i></span>11 / 263</td><td class="r">13 / 16</td><td class="r">5 / 6 <span class="dim">(1p)</span></td></tr>
+    <tr><td>claude web search</td><td class="r">16</td><td class="r"><span class="dim">0</span></td><td class="r">17,163</td><td><span class="mini"><i style="width:1.5%"></i></span>6 / 404</td><td class="r">11 / 16</td><td class="r">6 / 6</td></tr>
+    <tr><td>firecrawl (developer search)</td><td class="r">11</td><td class="r"><b>5</b></td><td class="r">3,781</td><td><span class="mini"><i style="width:11.2%"></i></span>26 / 233</td><td class="r">9 / 11</td><td class="r">4 / 6 <span class="dim">(2p)</span></td></tr>
+    <tr><td>ethskills (static bundle)</td><td class="r">1</td><td class="r"><span class="dim">—</span></td><td class="r">85,068</td><td>0 / 275</td><td class="r">1 / 1</td><td class="r"><span class="dim">—</span></td></tr>
+  </table></div>
+    <div class="footnote"><p><b>The prediction we registered was wrong, and it goes first.</b> We wrote “we expect to be the most expensive arm.” Measured with one tokenizer over full payloads, our default row is <b>3,071</b> median tokens — under three of the arms here. The earlier adversarial run’s “most expensive of four” priced a different unit and read our content-only figure against everyone else’s full payload. <b>It licenses no cost claim in either direction.</b></p>
+  <p><b>The two web3ctx rows are ONE finding and are never shown apart.</b> Called the way a client that does not know our argument names calls us, we catch <b>1 of 6</b> traps. With <code>intent: "integrate"</code> — the value that reaches the human-validated recipe — <b>6 of 6</b>. The gap is the argument, and the weaker row is ours to publish.</p>
+  <p><b>context7’s 0/0 is its own sentence:</b> its payloads contain <b>no URLs at all</b>. That is a different fact from citations that fail to pin, and collapsing the two would misreport it.</p>
+  <p><b>T6 carries a permanent disclosure.</b> Our recipe gained the ERC-4626 rounding matrix on 2026-08-20 <i>after losing this trap in the earlier adversarial run</i>. A benchmark that quietly re-runs a question after fixing its answer is measuring its own patch — so this sentence travels with the row for as long as the row exists.</p>
+  <p><b>VOID — 5 row(s), listed:</b> firecrawl-dev/Q06, firecrawl-dev/Q07, firecrawl-dev/Q08, firecrawl-dev/Q09, firecrawl-dev/Q10. All 5 are a real provider quota reached during the run. Excluded from numerator <b>and</b> denominator; that arm publishes as <b>11 ran / 5 void</b>, never as a fraction of 16 and never as a zero.</p>
+  <p><b>claude web search caught 6 of 6</b> — matching our best row and beating our default one — at <b>17,163</b> median tokens against our <b>3,071</b>, with <b>6/404</b> immutable citations against our <b>316/324</b>. <b>Both compositions belong to that comparison</b>; either number alone tells a different story than the pair does.</p>
+  <p>⊘ <b>NO VERDICT.</b> n=16 against the registered floor of 393 (D17). Bootstrap CIs are in the result document; a confidence interval does not repair a small n, it states it.</p>
+    <!-- required: the reversed prediction FIRST · F76 (the two web3ctx rows are one finding,
+         never separated) · context7 0/0 own sentence · T6 permanent disclosure · VOID rows
+         listed · the claude-web-search comparison with both compositions --></div>
+  </div>
+  <div class="figure">
+    <div class="fighead">Figure 2b · median tokens per answer · log scale · cost licenses no claim</div>
+    <div id="token-bars"><div class="bar-row us"><div class="name">web3ctx</div><div class="track"><div class="fill" style="width:39.2%"></div></div><div class="val">3,071</div></div>
+  <div class="bar-row us"><div class="name">web3ctx (intent=integrate)</div><div class="track"><div class="fill" style="width:55.4%"></div></div><div class="val">7,454</div></div>
+  <div class="bar-row"><div class="name">context7</div><div class="track"><div class="fill" style="width:8.0%"></div></div><div class="val">558</div></div>
+  <div class="bar-row"><div class="name">exa (code context)</div><div class="track"><div class="fill" style="width:19.3%"></div></div><div class="val">1,033</div></div>
+  <div class="bar-row"><div class="name">exa (web search)</div><div class="track"><div class="fill" style="width:58.9%"></div></div><div class="val">8,986</div></div>
+  <div class="bar-row"><div class="name">claude web search</div><div class="track"><div class="fill" style="width:70.7%"></div></div><div class="val">17,163</div></div>
+  <div class="bar-row"><div class="name">firecrawl (developer search)</div><div class="track"><div class="fill" style="width:43.0%"></div></div><div class="val">3,781</div></div>
+  <div class="bar-row"><div class="name">ethskills (static bundle)</div><div class="track"><div class="fill" style="width:100.0%"></div></div><div class="val">85,068</div></div></div>
+    <div class="footnote"><b>Read with Figure 2, never alone.</b> Cost and correctness are one
+    trade, shown together.</div>
+  </div>
+  <div class="figure">
+    <div class="fighead">Figure 2c · trap-by-arm scorecard · mint = caught · half = partial · hollow = missed</div>
+    <div id="trap-matrix"><table class="data">
+    <tr><th>trap</th><th class="r">web3ctx*</th><th class="r">web3ctx*</th><th class="r">context7</th><th class="r">exa</th><th class="r">exa</th><th class="r">claude web search</th><th class="r">firecrawl</th></tr>
+    <tr><td><b>T1</b> deadline is NOT in the params struct on SwapRouter02</td><td class="r"><span class="dot" style="background:transparent;border:1px solid var(--line);box-shadow:none" title="missed"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" style="background:transparent;border:1px solid var(--line);box-shadow:none" title="missed"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td></tr>
+    <tr><td><b>T2</b> amountIn: 0 spends the contract's WHOLE balance</td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" style="background:transparent;border:1px solid var(--line);box-shadow:none" title="missed"></span></td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td></tr>
+    <tr><td><b>T3</b> outputAmount IS the fee — the difference is what the relayer keeps</td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" style="background:transparent;border:1px solid var(--line);box-shadow:none" title="missed"></span></td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td></tr>
+    <tr><td><b>T4</b> wagmi v3 uses useConnection, not useAccount</td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td></tr>
+    <tr><td><b>T5</b> RainbowKit 2.x declares wagmi ^2 as its peer range</td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td></tr>
+    <tr><td><b>T6</b> BOTH halves — down when issuing shares/paying assets, UP when charging</td><td class="r"><span class="dot" style="opacity:.42;box-shadow:none" title="partial — right artifact, fact not stated"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" style="background:transparent;border:1px solid var(--line);box-shadow:none" title="missed"></span></td><td class="r"><span class="dot" style="background:transparent;border:1px solid var(--line);box-shadow:none" title="missed"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td><td class="r"><span class="dot" title="caught"></span></td></tr>
+  </table></div>
+  </div>
+  <div class="notebox"><b>Earlier adversarial run, superseded.</b> The same-day
+  stranger-session benchmark (agent-transcribed payloads, asymmetric token counts) is
+  retained in the archive under its own banner — “directionally sound, not
+  publication-grade,” its own words. The harness above is the repair it asked for; its
+  pre-stated prediction is quoted in the archive, including the clause it got wrong.</div>
+</section>
+
+<section class="blk">
+  <div class="chip">Receipts</div>
+  <h2>Verify a recipe <em>yourself.</em></h2>
+  <p class="sub">Every recipe is validated by a person against live chains and served with its
+  transaction hashes. These are the flagship's — check them with any RPC, right now.</p>
+  <div class="figure">
+    <div class="fighead">Figure 3 · flagship recipe receipt chain · re-verified by eth_getTransactionReceipt</div>
+    <div class="scroll" id="receipts-table"><table class="data">
+    <tr><th>step</th><th>chain</th><th>transaction</th><th>what it proves</th></tr>
+    <tr><td>approve</td><td>base-sepolia</td><td><code>0xd4b4e6395f…a3d0f5</code></td><td>the router was allowed to move exactly this much USDC</td></tr>
+    <tr><td>approve</td><td>base-sepolia</td><td><code>0xb0db8b5854…2421e6</code></td><td>the router was allowed to move exactly this much USDC</td></tr>
+    <tr><td>burn (depositForBurn)</td><td>base-sepolia</td><td><code>0xdba9da61c7…1a0f74</code></td><td>the USDC left the source chain</td></tr>
+    <tr class="us"><td><span class="dot"></span>mint (receiveMessage)</td><td>arbitrum-sepolia</td><td><code>0xcd869bb6b1…bd2dab</code></td><td>it arrived — the destination leg, on a different chain</td></tr>
+    <tr><td>attestation probe</td><td>base-sepolia</td><td><code>0x1460054173…6c3080</code></td><td>the attestation was fetched, not assumed</td></tr>
+  </table></div>
+    <div class="footnote"><b>What the receipts do not prove</b> travels with them in the
+    payload — a claim never exceeds its evidence. Full hashes, blocks and event decodes are
+    served by the product and listed in the evidence repo.</div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="chip">Scope precision</div>
+  <h2>Does the right project answer?</h2>
+  <p class="sub">Share of delivered units whose project@version matches the query's gold
+  scope, over the locked 200-question set at the current corpus.</p>
+  <div class="figure">
+    <div class="fighead">Figure 4 · scope-precision@10, macro · wildcard-version · query-level bootstrap CIs</div>
+    <div class="scroll" id="precision"><table class="data">
     <tr><th>arm</th><th>scope-precision@10</th><th>n</th><th>abstained</th></tr>
     <tr><td>dictionary-word floor OFF</td><td class="n">81.0% <span class="dimn">[95% CI 74.3 – 87.2]</span></td><td class="n">127</td><td class="n">20 / 147</td></tr>
     <tr class="us"><td>floor ON — <b>as shipped</b></td><td class="n">80.4% <span class="dimn">[95% CI 73.5 – 86.7]</span></td><td class="n">127</td><td class="n">20 / 147</td></tr>
   </table></div>
-  <div class="caveat"><p><b>The abstention count rides with the number, always — 20 / 147 in both arms.</b> Precision computed only over answered questions would rise every time the server declined to answer, which would reward silence.</p>
+    <div class="footnote"><p><b>The abstention count rides with the number, always — 20 / 147 in both arms.</b> Precision computed only over answered questions would rise every time the server declined to answer, which would reward silence.</p>
   <p><b>Not comparable to a published code-retrieval precision.</b> CodeGrep and its kin retrieve <i>within one repository</i>: project selection never enters their metric, so under our definition their BM25 would read 1.000 — including the configuration measured at 0.375. The two numbers measure different stages, and ours was pre-registered as an <b>upper bound</b> where a pass is “suggestive, never proof”.</p>
-  <p><b>Composition:</b> measured live against the deployed surface, macro-averaged, wildcard-version, both arms on the same questions. The two rows differ by <b>one shipped mechanism</b> and by nothing else — the identical abstention counts are the evidence for that.</p></div>
+  <p><b>Composition:</b> measured live against the deployed surface, macro-averaged, wildcard-version, both arms on the same questions. The two rows differ by <b>one shipped mechanism</b> and by nothing else — the identical abstention counts are the evidence for that.</p>
+    <!-- required: abstention counts beside the number · the CodeGrep non-comparability
+         sentence · offline vs live composition --></div>
+  </div>
 </section>
 
-<section class="band">
-  <div class="label">The trap table — <b>stranger-run, adversarial</b></div>
-  <p class="tag" style="font-size:14px">Six real integration footguns, four retrieval
-  tools, graded by an adversarial reviewer who verified answers against GitHub and live
-  chain state.</p>
-  <div id="traps"><table class="data">
-    <tr><th>trap</th><th class="n">web3ctx</th><th class="n">exa</th><th class="n">firecrawl-dev</th><th class="n">WebSearch</th></tr>
-    <tr><td>T1 — deadline not in params</td><td class="n pass">PASS</td><td class="n part">partial</td><td class="n pass">PASS</td><td class="n fail">FAIL</td></tr>
-    <tr><td>T2 — amountIn:0 = whole balance</td><td class="n pass">PASS</td><td class="n fail">FAIL</td><td class="n fail">FAIL</td><td class="n fail">FAIL</td></tr>
-    <tr><td>T3 — outputAmount IS the fee</td><td class="n pass">PASS</td><td class="n fail">FAIL</td><td class="n pass">PASS</td><td class="n pass">PASS</td></tr>
-    <tr><td>T4 — wagmi v3 useConnection</td><td class="n pass">PASS</td><td class="n fail">FAIL</td><td class="n pass">PASS</td><td class="n pass">PASS</td></tr>
-    <tr><td>T5 — RainbowKit 2.x needs wagmi ^2</td><td class="n pass">PASS</td><td class="n fail">FAIL</td><td class="n pass">PASS</td><td class="n pass">PASS</td></tr>
-    <tr><td>T6 — rounding direction (both halves)</td><td class="n fail">FAIL</td><td class="n part">partial</td><td class="n pass">PASS</td><td class="n pass">PASS</td></tr>
-    <tr class="tot"><td><b>traps caught</b></td><td class="n" style="color:var(--amber)"><b>5/6</b></td><td class="n"><b>0/6</b></td><td class="n"><b>4/6</b></td><td class="n"><b>4/6</b></td></tr>
-  </table></div>
-  <div class="caveat"><p><b>The run's own banner, in its own words: directionally sound, NOT publication-grade.</b> MCP payloads could not be byte-copied out of the reviewer's context, so the cached files are faithful <i>transcriptions</i>, not captures; and the token columns are asymmetric — ours self-reported and content-only, theirs measured on full payloads. <b>Ours is the understated side.</b></p>
-  <p><b>The prediction was written before the run and stands either way</b>, including the clause it got wrong: <i>“you lose on breadth, you're competitive-to-better on tokens once truncation is fixed, and you win outright on version-correctness and on anything involving an address.”</i> <b>The token clause is false</b> — measured, we were the most expensive of the four arms. Breadth was never tested by a designed experiment, and the run says so.</p>
-  <p><b>We lost T6 outright</b> and both general-purpose tools caught it. The gap was content, not retrieval: the recipe did not state the rounding matrix. It does now.</p>
-  <p>n=5 questions, one reviewer, one afternoon. <b>A competitive claim measured once is a claim about one afternoon</b> — which is why the harness that makes this reproducible is the next piece of work, not a footnote.</p></div>
-</section>
-
-<section class="band">
-  <div class="label">What we measured and rejected — <b>the dead experiments</b></div>
-  <div id="rejected"><table class="data">
+<section class="blk">
+  <div class="chip">Dead experiments</div>
+  <h2>What we measured and <em>rejected.</em></h2>
+  <p class="sub">Every candidate below was pre-registered before it ran, failed its gate, and
+  was not shipped. A candidate that fails its gate publishes anyway — that is the point of
+  the gate.</p>
+  <div class="figure">
+    <div class="scroll" id="rejected"><table class="data">
     <tr><th>candidate</th><th>its pre-registered gate</th><th>measured</th><th>why it died</th></tr>
     <tr><td><b>Doc-side sparse expansion</b></td><td>prose recall +2.00pp</td><td class="n">+0.00pp against a +2.00pp bar</td><td>Failed on <b>inertness, not intrusion</b>. The model ran and moved nothing, at cost. The intrusion clause passed — descriptive only.</td></tr>
     <tr><td><b>Unit-class demotion</b></td><td>payload quality on affected queries</td><td class="n">7 of 7 evicted, on 2.6% of queries</td><td>The mechanism worked exactly as specified and <b>could never reach its own trigger</b> — the anchor it was written for holds zero inert units.</td></tr>
@@ -102,24 +179,20 @@
     <tr><td><b>Inline bodies in search results</b></td><td>completion rate and tokens per completed task</td><td class="n">completion 8/12 → 7/12</td><td>Completion fell and tokens per completed task rose. It improved the linear term and multiplied the quadratic one.</td></tr>
     <tr><td><b>Content-hash dedupe</b></td><td>≥15% cumulative token saving</td><td class="n">4.7% cumulative</td><td>Every structural clause held and the saving was a third of its bar — and it could not have fired on the deployed transport at any bar.</td></tr>
   </table></div>
-  <div class="caveat">Each rejection was pre-registered before it ran. A candidate that
-  fails its gate publishes anyway — that is the point of the gate.</div>
-</section>
-
-<section class="band">
-  <div class="label">Corpus &amp; receipts — <b>live</b></div>
-  <div class="grid g3" id="live-stats">
-    <div class="card"><h3>104 integration projects + 1,193 specification ids (609 ERC + 583 core EIP + 1 in both repos) = 1,297 total</h3><p>the pair, always</p></div>
-    <div class="card"><h3>585,017</h3><p>units, all version-labelled</p></div>
-    <div class="card"><h3>24</h3><p>recipes, human-stamped, receipts served</p></div>
   </div>
 </section>
 
-<footer class="site">
-  web3ctx · protocols, cached payloads, corrections and limitations:
-  <a href="#">the evidence set in this repository</a>
-  <div class="byline">web3ctx — a ScarAI product.</div>
-</footer>
+<section class="blk">
+  <div class="chip">Corpus &amp; receipts</div>
+  <div class="cards c3" id="live-stats">
+    <div class="card scard"><div class="n">Corpus</div><div class="v">104 integration projects + 1,193 specification ids (609 ERC + 583 core EIP + 1 in both repos) = 1,297 total</div><div class="w">the pair, always — a bare total does not publish</div></div>
+    <div class="card scard"><div class="n">Units</div><div class="v">585,017</div><div class="w">each labelled project@version with a pinned, re-fetchable source</div></div>
+    <div class="card scard"><div class="n">Recipes</div><div class="v">24</div><div class="w">validated on-chain by a person, served with checkable receipts</div></div>
+  </div>
+</section>
+
+<footer class="site">web3ctx — a ScarAI product · protocols, raw payload bytes, corrections
+and limitations: <span id="evidence-links">the evidence set in this repository</span></footer>
 
 </div>
 </body>

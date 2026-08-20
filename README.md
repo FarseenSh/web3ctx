@@ -36,6 +36,12 @@ do not do it.
 - **`evidence/LAUNCH-FACTS-FROZEN-2026-08-13.md`** — L1–L5, frozen; the source of every launch number
 - **`evidence/PAYLOAD-AUDIT-2026-08-13.md`** — the audit protocol and its limitations, including the seven payloads we destroyed
 - **`evidence/payload-audit/web3ctx/`** *(16 files)* — OUR OWN cached payloads — the only arm whose bytes are ours to publish
+- **`evidence/BENCH-PRE-REGISTRATION-2026-08-20.md`** — the benchmark pre-registration, frozen before the first arm ran — a result without its pre-registration is an anecdote
+- **`evidence/BENCH-RESULT-2026-08-20.md`** — the benchmark result, including the prediction we registered and did not meet
+- **`evidence/spec/artifacts/bench-2026-08-20/manifest.json`** — every payload collected: HTTP status, byte count, sha256 and the scrubbed request — hashes and counts for every arm, per the standing ruling
+- **`evidence/spec/artifacts/bench-2026-08-20/scored.json`** — the grading records the site renders from — one computation, published
+- **`evidence/spec/artifacts/bench-2026-08-20/web3ctx/`** *(16 files)* — OUR OWN raw payloads, both rows — the only arm whose bytes are ours to publish
+- **`evidence/spec/artifacts/bench-2026-08-20/web3ctx-integrate/`** *(16 files)* — the same, for the labelled second row
 - **`evidence/VERIFICATION-PROTOCOL.md`** — the rules the measurements were run under, including rule 14
 - **`evidence/ROADMAP-POST-LAUNCH-2026-08-20.md`** — what is adopted, what is leashed, what is refused
 - **`evidence/EXTERNAL-EVIDENCE-2026-08-20.md`** — the literature sweep, verbatim, under its citation banner
@@ -66,6 +72,7 @@ reviewed.** Each exclusion names its reason — several are excluded because the
 not merely old.
 
 - `generated/` — build output and 26 stage-a corpora — scratch, gigabytes, no evidentiary value
+- `artifacts/bench-2026-08-20/{context7,exa-*,firecrawl-dev,claude-web-search} (raw bytes)` — 🔴 RULED 2026-08-20 — competitor payload BYTES do not publish. `manifest.json` carries their sha256, byte counts and the exact request that produced each, and the protocol is re-runnable by anyone against the live tools. The bytes are retained privately so every published count stays re-checkable against the material it was computed from.
 - `artifacts/payload-audit/{context7,exa,firecrawl,ethskills}` — 🚩 FLAGGED FOR THE OWNER, NOT DECIDED — see the flag below
 - `~/web3ctx-recipes (the curator repo)` — a separate repo on a separate cadence; its publication is the curator's decision, not this set's
 - `measurements/*CYCLE*.md, *DEFECTS*.md, session logs` — internal working records — the findings that matter are already in the protocol and the corrections index
@@ -82,4 +89,4 @@ not merely old.
 
 `MANIFEST.sha256` carries a hash for every file in this set.
 
-Staged from 48 files.
+Staged from 84 files.

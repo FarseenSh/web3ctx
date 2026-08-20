@@ -10,23 +10,25 @@
 <body>
 <div class="wrap">
 
-<header class="site">
-  <div class="brand">web3ctx</div>
-  <h1>The last mile before your agent signs a transaction</h1>
-  <p class="tag">Human-validated, chain-run integration recipes for web3 — served
+<header>
+  <div class="kick">ScarAI · web3ctx</div>
+  <h1>The last mile before<br>your agent <em>signs.</em></h1>
+  <p class="lede">Human-validated, chain-run integration recipes for web3 — served
   version-true, with citations you can re-fetch and receipts you can check on-chain.
   The corpus exists to make the recipes reachable and version-scoped.</p>
   <nav class="site">
-    <a href="index.html">overview</a>
-    <a href="evals.html">evals</a>
-    <a href="architecture.html">architecture</a>
+    <a class="on" href="index.html">Overview</a>
+    <a href="evals.html">Evals</a>
+    <a href="architecture.html">Architecture</a>
   </nav>
 </header>
 
-<section class="band">
-  <div class="label">Install — <b>it's a URL, not a package</b></div>
-  <div class="grid g3">
-    <div class="card hi">
+<section class="blk">
+  <div class="chip">Install</div>
+  <h2>It's a URL, <em>not a package.</em></h2>
+  <p class="sub">No local process, nothing to update, no key, no signup. Add the endpoint and go.</p>
+  <div class="cards c3">
+    <div class="card">
       <h3>Claude Code</h3>
       <pre class="install">claude mcp add --transport http web3ctx \
   https://mcp.scarai.xyz/mcp</pre>
@@ -39,23 +41,24 @@
     <div class="card">
       <h3>Claude Desktop / claude.ai</h3>
       <p>Settings → Connectors → Add custom connector → paste the URL.</p>
-      <p style="margin-top:8px">stdio-only clients:</p>
+      <p style="margin-top:10px">stdio-only clients:</p>
       <pre class="install">npx mcp-remote \
   https://mcp.scarai.xyz/mcp</pre>
     </div>
   </div>
-  <div class="note">Free, no key, no signup. Higher limits: connect to
-  <b>/mcp/oauth</b> instead and sign in with GitHub — free, 10× the daily budget.</div>
+  <div class="notebox">Free, forever, on the open route. Higher limits: connect to
+  <span class="k">/mcp/oauth</span> instead and sign in with GitHub — free, 10× the daily budget.</div>
 </section>
 
-<section class="band">
-  <div class="label">Why this exists</div>
-  <div class="grid g3">
+<section class="blk">
+  <div class="chip">Why this exists</div>
+  <h2>Every claim from a real document — <em>about the wrong version.</em></h2>
+  <div class="cards c3">
     <div class="card">
       <h3>The failure, named</h3>
       <p>Retrieval layers serve superseded APIs beside current ones, unlabelled. The
-      literature calls it <b>deceptive grounding</b>: every claim sourced from a real
-      document — about the wrong version. Every citation check passes; the user loses.</p>
+      literature calls it <b>deceptive grounding</b>: every citation check passes;
+      the user loses.</p>
     </div>
     <div class="card">
       <h3>The fix, structural</h3>
@@ -72,30 +75,37 @@
   </div>
 </section>
 
-<section class="band">
-  <div class="label">The five tools</div>
-  <table class="data">
-    <tr><th>tool</th><th>what it does</th></tr>
-    <tr><td>web3_search</td><td>ranked, version-scoped units — plus the human-validated recipe when the question earns one</td></tr>
-    <tr><td>web3_grep</td><td>exact identifier lookup across the corpus</td></tr>
-    <tr><td>web3_fetch</td><td>full bodies by stable selector, cursor paging for long content</td></tr>
-    <tr><td>web3_deps</td><td>dependency closure, stepped by depth</td></tr>
-    <tr><td>web3_lookup</td><td>typed records — deployment addresses, ABIs, EIPs — or an honest NOT_FOUND</td></tr>
-  </table>
-</section>
-
-<section class="band">
-  <div class="label">What's inside — <b>numbers injected at build time, never typed</b></div>
-  <div class="grid g3" id="corpus-stats">
-    <div class="card"><h3>104 integration projects + 1,193 specification ids (609 ERC + 583 core EIP + 1 in both repos) = 1,297 total</h3><p>the pair, always — a bare total does not publish</p></div>
-    <div class="card"><h3>585,017</h3><p>every unit labelled project@version with a pinned source</p></div>
-    <div class="card"><h3>24</h3><p>each validated on-chain by a person, served with receipts</p></div>
+<section class="blk">
+  <div class="chip">The surface</div>
+  <h2>Five tools, deliberately terse</h2>
+  <div class="figure">
+    <div class="scroll"><table class="data">
+      <tr><th>tool</th><th>what it does</th></tr>
+      <tr><td>web3_search</td><td>ranked, version-scoped units — plus the human-validated recipe when the question earns one</td></tr>
+      <tr><td>web3_grep</td><td>exact identifier lookup across the corpus</td></tr>
+      <tr><td>web3_fetch</td><td>full bodies by stable selector, cursor paging for long content</td></tr>
+      <tr><td>web3_deps</td><td>dependency closure, stepped by depth</td></tr>
+      <tr><td>web3_lookup</td><td>typed records — deployment addresses, ABIs, EIPs — or an honest NOT_FOUND</td></tr>
+    </table></div>
   </div>
 </section>
 
-<section class="band">
-  <div class="label">One number — <b>immutable citations, from the published payload audit</b></div>
-  <div id="l1-table"><table class="data">
+<section class="blk">
+  <div class="chip">What's inside</div>
+  <h2>Numbers injected at build time, <em>never typed.</em></h2>
+  <div class="cards c3" id="corpus-stats">
+    <div class="card scard"><div class="n">Corpus</div><div class="v">104 integration projects + 1,193 specification ids (609 ERC + 583 core EIP + 1 in both repos) = 1,297 total</div><div class="w">the pair, always — a bare total does not publish</div></div>
+    <div class="card scard"><div class="n">Units</div><div class="v">585,017</div><div class="w">each labelled project@version with a pinned, re-fetchable source</div></div>
+    <div class="card scard"><div class="n">Recipes</div><div class="v">24</div><div class="w">validated on-chain by a person, served with checkable receipts</div></div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="chip">One number</div>
+  <h2>Immutable citations, from the published payload audit</h2>
+  <div class="figure">
+    <div class="fighead">immutable / total citation URLs · higher is better · frozen audit 2026-08-13</div>
+    <div id="l1-table"><table class="data">
     <tr><th>arm</th><th>immutable / total citation URLs</th><th></th></tr>
     <tr class="us"><td>web3ctx</td><td class="n"><b>142</b> / 144</td><td class="n">99%</td></tr>
     <tr><td>context7</td><td class="n"><b>0</b> / 57</td><td class="n">0%</td></tr>
@@ -104,16 +114,16 @@
     <tr class="missing"><td>claude web search</td><td class="n">MISSING — never ran</td><td class="n">—</td></tr>
     <tr><td>ethskills (skill)</td><td class="n"><b>0</b> / 181</td><td class="n">0%</td></tr>
   </table></div>
-  <div class="caveat">Full protocol, cached payloads and limitations are in the
-  <a href="evals.html">evidence set</a>. We publish our own failing rows beside everyone
-  else's.</div>
+  </div>
+  <div class="notebox">Full protocol, raw payload bytes and limitations are in the
+  <a href="evals.html" style="color:var(--mint)">evidence set</a>. We publish our own failing
+  rows beside everyone else's.</div>
 </section>
 
 <footer class="site">
-  web3ctx · <a href="architecture.html">architecture</a> ·
+  web3ctx — a ScarAI product · <a href="architecture.html">architecture</a> ·
   <a href="evals.html">evals &amp; evidence</a> · built in public, corrections and dead
   experiments included.
-  <div class="byline">web3ctx — a ScarAI product.</div>
 </footer>
 
 </div>

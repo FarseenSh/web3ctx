@@ -1,0 +1,223 @@
+{
+ "_meta": {
+  "run": "2026-08-20",
+  "pre_registration": "measurements/BENCH-PRE-REGISTRATION-2026-08-20.md",
+  "verdict": "NO VERDICT — n=16 against the registered 393 floor (D17). Descriptive only.",
+  "tokenizer": "one estimator, FULL payload including envelope, identical on every arm",
+  "partial_rule": "partial = right artifact surfaced, fact not stated. Counts as NOT caught (J2)."
+ },
+ "arms": [
+  {
+   "id": "web3ctx",
+   "label": "web3ctx",
+   "calledHow": "POST /mcp, tools/call web3_search, query only. 🔴 NO `intent` argument — F76 says a real client may not send it, and measuring ourselves under our best argument is what M1 was criticised for. The `intent: \"integrate\"` row is separate and labelled.",
+   "ran": 16,
+   "voided": 0,
+   "medianTokens": 3071,
+   "immutable": 316,
+   "totalUrls": 324,
+   "namesVersion": 10,
+   "trapsCaught": 1,
+   "trapsPartial": 4,
+   "trapsScored": 6
+  },
+  {
+   "id": "web3ctx-integrate",
+   "label": "web3ctx (intent=integrate)",
+   "calledHow": "Identical, plus `intent: \"integrate\"` — the argument that activates the recipe arm. Labelled, never merged with the primary row.",
+   "ran": 16,
+   "voided": 0,
+   "medianTokens": 7454,
+   "immutable": 424,
+   "totalUrls": 516,
+   "namesVersion": 16,
+   "trapsCaught": 6,
+   "trapsPartial": 0,
+   "trapsScored": 6
+  },
+  {
+   "id": "context7",
+   "label": "context7",
+   "calledHow": "Public HTTPS endpoint `mcp.context7.com/mcp`, its documented two-step: resolve-library-id then get-library-docs. 🔴 Its earlier VOID was an installation gap in one session, NOT a verdict — reached here over HTTP with no installation at all.",
+   "ran": 16,
+   "voided": 0,
+   "medianTokens": 558,
+   "immutable": 0,
+   "totalUrls": 0,
+   "namesVersion": 6,
+   "trapsCaught": 0,
+   "trapsPartial": 2,
+   "trapsScored": 6
+  },
+  {
+   "id": "exa-code",
+   "label": "exa (code context)",
+   "calledHow": "get_code_context_exa — \"Best for: Any programming question\", per its own docs. ⚠ In the 2026-08-13 audit only web search was measured and this product was UNMEASURED.",
+   "ran": 16,
+   "voided": 0,
+   "medianTokens": 1033,
+   "immutable": 1,
+   "totalUrls": 171,
+   "namesVersion": 11,
+   "trapsCaught": 2,
+   "trapsPartial": 3,
+   "trapsScored": 6
+  },
+  {
+   "id": "exa-web",
+   "label": "exa (web search)",
+   "calledHow": "web_search_exa — the arm the 2026-08-13 audit measured, kept so the two are comparable.",
+   "ran": 16,
+   "voided": 0,
+   "medianTokens": 8986,
+   "immutable": 11,
+   "totalUrls": 263,
+   "namesVersion": 13,
+   "trapsCaught": 5,
+   "trapsPartial": 1,
+   "trapsScored": 6
+  },
+  {
+   "id": "claude-web-search",
+   "label": "claude web search",
+   "calledHow": "Anthropic Messages API with the `web_search` server tool, raw HTTP. 🔴 The key is read from a 0600 file at call time, never stored in the harness, never logged, and asserted to reach no host but api.anthropic.com.",
+   "ran": 16,
+   "voided": 0,
+   "medianTokens": 17163,
+   "immutable": 6,
+   "totalUrls": 404,
+   "namesVersion": 11,
+   "trapsCaught": 6,
+   "trapsPartial": 0,
+   "trapsScored": 6
+  },
+  {
+   "id": "firecrawl-dev",
+   "label": "firecrawl (developer search)",
+   "calledHow": "Documented search API with `categories: [\"developer\"]` — the DEDICATED developer surface, which its own docs name for \"a developer question — code behaviour, a library or framework, an API contract\". ⚠ The 2026-08-13 audit called the generic surface. `categories` is a MODE SELECTOR, not an answer hint.",
+   "ran": 11,
+   "voided": 5,
+   "medianTokens": 3781,
+   "immutable": 26,
+   "totalUrls": 233,
+   "namesVersion": 9,
+   "trapsCaught": 4,
+   "trapsPartial": 2,
+   "trapsScored": 6
+  }
+ ],
+ "traps": [
+  {
+   "id": "T1",
+   "label": "deadline is NOT in the params struct on SwapRouter02",
+   "cells": {
+    "web3ctx": "FAIL",
+    "web3ctx-integrate": "PASS",
+    "context7": "FAIL",
+    "exa-code": "PASS",
+    "exa-web": "PASS",
+    "claude-web-search": "PASS",
+    "firecrawl-dev": "partial"
+   }
+  },
+  {
+   "id": "T2",
+   "label": "amountIn: 0 spends the contract's WHOLE balance",
+   "cells": {
+    "web3ctx": "PASS",
+    "web3ctx-integrate": "PASS",
+    "context7": "FAIL",
+    "exa-code": "partial",
+    "exa-web": "partial",
+    "claude-web-search": "PASS",
+    "firecrawl-dev": "partial"
+   }
+  },
+  {
+   "id": "T3",
+   "label": "outputAmount IS the fee — the difference is what the relayer keeps",
+   "cells": {
+    "web3ctx": "partial",
+    "web3ctx-integrate": "PASS",
+    "context7": "FAIL",
+    "exa-code": "partial",
+    "exa-web": "PASS",
+    "claude-web-search": "PASS",
+    "firecrawl-dev": "PASS"
+   }
+  },
+  {
+   "id": "T4",
+   "label": "wagmi v3 uses useConnection, not useAccount",
+   "cells": {
+    "web3ctx": "partial",
+    "web3ctx-integrate": "PASS",
+    "context7": "partial",
+    "exa-code": "PASS",
+    "exa-web": "PASS",
+    "claude-web-search": "PASS",
+    "firecrawl-dev": "PASS"
+   }
+  },
+  {
+   "id": "T5",
+   "label": "RainbowKit 2.x declares wagmi ^2 as its peer range",
+   "cells": {
+    "web3ctx": "partial",
+    "web3ctx-integrate": "PASS",
+    "context7": "partial",
+    "exa-code": "partial",
+    "exa-web": "PASS",
+    "claude-web-search": "PASS",
+    "firecrawl-dev": "PASS"
+   }
+  },
+  {
+   "id": "T6",
+   "label": "BOTH halves — down when issuing shares/paying assets, UP when charging",
+   "cells": {
+    "web3ctx": "partial",
+    "web3ctx-integrate": "PASS",
+    "context7": "FAIL",
+    "exa-code": "FAIL",
+    "exa-web": "PASS",
+    "claude-web-search": "PASS",
+    "firecrawl-dev": "PASS"
+   }
+  }
+ ],
+ "ethskills": {
+  "label": "ethskills (static bundle)",
+  "medianTokens": 85068,
+  "immutable": 0,
+  "total": 275,
+  "provenance": "carried from the frozen 2026-08-13 cache — different unit, different provenance"
+ },
+ "voids": [
+  {
+   "arm": "firecrawl-dev",
+   "qid": "Q06",
+   "reason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "Q07",
+   "reason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "Q08",
+   "reason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "Q09",
+   "reason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "Q10",
+   "reason": "quota message in body"
+  }
+ ]
+}

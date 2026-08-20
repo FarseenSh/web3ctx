@@ -1,0 +1,2583 @@
+[
+ {
+  "arm": "web3ctx",
+  "qid": "T1",
+  "question": "How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/T1.raw",
+  "sha256": "80d905a84742f4f04b3f86f4a9ee997438074e59103703353db14ed1072af1f1",
+  "bytes": 10255,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "T2",
+  "question": "In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/T2.raw",
+  "sha256": "d50c5969843920bb0d8f76bef05cc3690ddc0d24a8523cb9c13d51175ed1b174",
+  "bytes": 11240,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "T3",
+  "question": "When bridging with Across, how do I set outputAmount on a deposit?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"When bridging with Across, how do I set outputAmount on a deposit?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/T3.raw",
+  "sha256": "28a9a19417ebf3fd962d2130f3fca6bbcc85c5f5e9f789e4deee7739169580d3",
+  "bytes": 12037,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "T4",
+  "question": "How do I connect a wallet with wagmi v3 and read the connection state?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I connect a wallet with wagmi v3 and read the connection state?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/T4.raw",
+  "sha256": "38ea6a172d9d7daa57a6f5ac2ae3a3d5ba4898d7e363cdc98f4466ebfceb2a01",
+  "bytes": 10294,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "T5",
+  "question": "Which wagmi version does RainbowKit 2.x require?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which wagmi version does RainbowKit 2.x require?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/T5.raw",
+  "sha256": "d0a4bb59c11bae6189ec83ccafaac6b0a8154dc712920d2d34133ebc6f0bc20f",
+  "bytes": 11920,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "T6",
+  "question": "When implementing an ERC-4626 vault, which direction should each conversion round?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"When implementing an ERC-4626 vault, which direction should each conversion round?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/T6.raw",
+  "sha256": "e5c9c5fbce5179e0a9925b2438044039434cd633418103c7b45390e910f9e039",
+  "bytes": 12974,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q01",
+  "question": "connect a wallet with wagmi",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"connect a wallet with wagmi\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q01.raw",
+  "sha256": "f415ae442526b9a7cc5922cc7aea211989d4fe75c739367f6b732df0f8bc8634",
+  "bytes": 11054,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q02",
+  "question": "how do I bridge USDC with CCTP",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"how do I bridge USDC with CCTP\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q02.raw",
+  "sha256": "b14fd4413c5052fefd48547bacc56468b23a535c4be67f33a3c78b3073419823",
+  "bytes": 9305,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q03",
+  "question": "how do I use Permit2 for gasless token approvals",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"how do I use Permit2 for gasless token approvals\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q03.raw",
+  "sha256": "fcdd5e21edd17d4c1cdb90561e427e3661287e6686b047620c176fda84e38056",
+  "bytes": 10766,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q04",
+  "question": "how do I implement an ERC-4626 tokenized vault",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"how do I implement an ERC-4626 tokenized vault\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q04.raw",
+  "sha256": "75049335b487756fe742d26354353a5c934c65f766e2b21e75a1a6822ec523e2",
+  "bytes": 12932,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q05",
+  "question": "supply collateral to Aave and borrow against it",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"supply collateral to Aave and borrow against it\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q05.raw",
+  "sha256": "cb2bd79ab9e1048904b8e67a0663c1a15270de8ba68b7e1d007e93e1a7c0e969",
+  "bytes": 9595,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q06",
+  "question": "create a type-safe contract instance with viem getContract",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"create a type-safe contract instance with viem getContract\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q06.raw",
+  "sha256": "722fc703a315c22794e55de8ade152ec56664da8d71b4e72efbf0e8379988826",
+  "bytes": 10546,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q07",
+  "question": "initialize the Safe protocol kit and send a transaction from a Safe account",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"initialize the Safe protocol kit and send a transaction from a Safe account\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q07.raw",
+  "sha256": "13eadb4114de6a8966da2df28ef290d37f6593f248e32c48261c8c3ec0e0cf9c",
+  "bytes": 9814,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q08",
+  "question": "how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q08.raw",
+  "sha256": "eeddcac63b5645b25de00c7ae7b00a71efa52ae6d4345c32c4d8c2d51020a10d",
+  "bytes": 10614,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q09",
+  "question": "custom logic on every token transfer in an OpenZeppelin ERC20",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"custom logic on every token transfer in an OpenZeppelin ERC20\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q09.raw",
+  "sha256": "5f9d641686617f04feff9b9f6430232c7aa00250c4c589f0eea8756abe8284a6",
+  "bytes": 11726,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "Q10",
+  "question": "write a Uniswap v4 hook that runs before a swap",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"write a Uniswap v4 hook that runs before a swap\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/Q10.raw",
+  "sha256": "0969e4a9acb5fdb9d55eda8e7a1fba8e1ac48157030b1ec5d9f6c47b346e9953",
+  "bytes": 9509,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "T1",
+  "question": "How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/T1.raw",
+  "sha256": "12891ea3a4af93f6f26c7f626e99fc1fe89ae2c95167c7d25251c27b7fc3ce17",
+  "bytes": 26881,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "T2",
+  "question": "In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/T2.raw",
+  "sha256": "9fd47e23c43a84275233ba935e9f0cc64a8311fa5dc501268090984fe74d4e1b",
+  "bytes": 11927,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "T3",
+  "question": "When bridging with Across, how do I set outputAmount on a deposit?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"When bridging with Across, how do I set outputAmount on a deposit?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/T3.raw",
+  "sha256": "94cf2d4e0d69a5a1b5d2b2034e2dbead2fd07a3935f777c6a268bcf81c100f9e",
+  "bytes": 28679,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "T4",
+  "question": "How do I connect a wallet with wagmi v3 and read the connection state?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I connect a wallet with wagmi v3 and read the connection state?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/T4.raw",
+  "sha256": "941d7610746cf0a7959b37c34b18740f84b30fc5704a5b9e7e523088067d5dbb",
+  "bytes": 27112,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "T5",
+  "question": "Which wagmi version does RainbowKit 2.x require?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which wagmi version does RainbowKit 2.x require?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/T5.raw",
+  "sha256": "fa8e61948ed45ce0f5c1e79008c8a7fac989e12a73ddd9c967735bb6b16aefa6",
+  "bytes": 27739,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "T6",
+  "question": "When implementing an ERC-4626 vault, which direction should each conversion round?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"When implementing an ERC-4626 vault, which direction should each conversion round?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/T6.raw",
+  "sha256": "22f4c8ac27b6bff19dc35680b769fa131f5ff821474e3675810a2f825fb64bb2",
+  "bytes": 29205,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q01",
+  "question": "connect a wallet with wagmi",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"connect a wallet with wagmi\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q01.raw",
+  "sha256": "3477b6920cd2c23c1f0445987d42b742263819e9f47458555c63e35078f6d1b2",
+  "bytes": 27872,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q02",
+  "question": "how do I bridge USDC with CCTP",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"how do I bridge USDC with CCTP\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q02.raw",
+  "sha256": "1974bc37034ed80a18e7f1821c8cb0a38c92cc1a1c5e5c599280374fb829cfd3",
+  "bytes": 25485,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q03",
+  "question": "how do I use Permit2 for gasless token approvals",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"how do I use Permit2 for gasless token approvals\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q03.raw",
+  "sha256": "f8a7d4c010e538448413a862d0b0701773a4cf73810600a4efa2e7a16f764335",
+  "bytes": 26530,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q04",
+  "question": "how do I implement an ERC-4626 tokenized vault",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"how do I implement an ERC-4626 tokenized vault\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q04.raw",
+  "sha256": "12d3df73656a23efcccc05231405bf56e60c1e031a39ff7bc4fa35c200f99dd7",
+  "bytes": 29163,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q05",
+  "question": "supply collateral to Aave and borrow against it",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"supply collateral to Aave and borrow against it\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q05.raw",
+  "sha256": "bd6e8292a79783b9d2381f75b5caae28ed1615e2c0779346f172ffa782fc6ba9",
+  "bytes": 10086,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q06",
+  "question": "create a type-safe contract instance with viem getContract",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"create a type-safe contract instance with viem getContract\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q06.raw",
+  "sha256": "56a38d2a67e371a3753f0f81aa61640703e8ed2bb9ea557150e8725d87c71507",
+  "bytes": 27624,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q07",
+  "question": "initialize the Safe protocol kit and send a transaction from a Safe account",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"initialize the Safe protocol kit and send a transaction from a Safe account\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q07.raw",
+  "sha256": "8cf7840e1c0ac4fa25456705233756a1ccb40821a28ab3fc3ca36e3554062ad3",
+  "bytes": 10173,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q08",
+  "question": "how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q08.raw",
+  "sha256": "5f0c625f7c4ee0018b813353a111ad2b6154e0b74039fbfbfe346b90e4fc915d",
+  "bytes": 26509,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q09",
+  "question": "custom logic on every token transfer in an OpenZeppelin ERC20",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"custom logic on every token transfer in an OpenZeppelin ERC20\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q09.raw",
+  "sha256": "ff2dd2a1c8fd256b6523eeb2f9d1b0137b2c7ecf666efd5b5c5cbe00d87b77c7",
+  "bytes": 28033,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "Q10",
+  "question": "write a Uniswap v4 hook that runs before a swap",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"write a Uniswap v4 hook that runs before a swap\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/Q10.raw",
+  "sha256": "8e197a3c970b25a1b11e95a223495c3eb636eb56120a0864992d63f7cbb54d5b",
+  "bytes": 26222,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T1",
+  "question": "How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"uniswap-v3\",\"query\":\"How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T1.1.raw",
+  "sha256": "7b674a6eea3fe7b8b6cef078f62ae8b5c860429c5a4b3ac3cf2df92460e6f103",
+  "bytes": 1739,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T1",
+  "question": "How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/uniswap/v3-periphery\\\\n-\",\"query\":\"How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T1.2.raw",
+  "sha256": "8b6c9ccc6f8cae36c29ad0fe8b50bc3fa878e5c3a81a2c0c2504801da1eeb549",
+  "bytes": 200,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T2",
+  "question": "In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"uniswap-v3\",\"query\":\"In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T2.1.raw",
+  "sha256": "7b674a6eea3fe7b8b6cef078f62ae8b5c860429c5a4b3ac3cf2df92460e6f103",
+  "bytes": 1739,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T2",
+  "question": "In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/uniswap/v3-periphery\\\\n-\",\"query\":\"In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T2.2.raw",
+  "sha256": "8b6c9ccc6f8cae36c29ad0fe8b50bc3fa878e5c3a81a2c0c2504801da1eeb549",
+  "bytes": 200,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T3",
+  "question": "When bridging with Across, how do I set outputAmount on a deposit?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"across\",\"query\":\"When bridging with Across, how do I set outputAmount on a deposit?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T3.1.raw",
+  "sha256": "5484334641858863170dac9173e7356a1df411b1192fd6d60beea6555a782865",
+  "bytes": 1229,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T3",
+  "question": "When bridging with Across, how do I set outputAmount on a deposit?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/websites/across_to\\\\n-\",\"query\":\"When bridging with Across, how do I set outputAmount on a deposit?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T3.2.raw",
+  "sha256": "f7a668a1a15ae7c19c6f546baa0ba08ab5a6185f450bb43468863474ebd25cfa",
+  "bytes": 198,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T4",
+  "question": "How do I connect a wallet with wagmi v3 and read the connection state?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"wagmi\",\"query\":\"How do I connect a wallet with wagmi v3 and read the connection state?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T4.1.raw",
+  "sha256": "505adce570bce75fe4f333480f48962f249d3236d757fb55c85119df6e53fd53",
+  "bytes": 1755,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T4",
+  "question": "How do I connect a wallet with wagmi v3 and read the connection state?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/websites/wagmi_sh\\\\n-\",\"query\":\"How do I connect a wallet with wagmi v3 and read the connection state?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T4.2.raw",
+  "sha256": "c6988da82291928b7673b9c707605f037661a43e992cd07532630666e202331b",
+  "bytes": 197,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T5",
+  "question": "Which wagmi version does RainbowKit 2.x require?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"rainbowkit\",\"query\":\"Which wagmi version does RainbowKit 2.x require?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T5.1.raw",
+  "sha256": "b86ac7744d1134a5ce1ac7b04d66b87bc9db88fbc913a780931c9ea04afc4531",
+  "bytes": 1178,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T5",
+  "question": "Which wagmi version does RainbowKit 2.x require?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/rainbow-me/rainbowkit\\\\n-\",\"query\":\"Which wagmi version does RainbowKit 2.x require?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T5.2.raw",
+  "sha256": "d8be9324fbe7ebce2e8e9785c4391f51179b067730c1cd427e1a6a5be91071e1",
+  "bytes": 201,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T6",
+  "question": "When implementing an ERC-4626 vault, which direction should each conversion round?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"erc-4626\",\"query\":\"When implementing an ERC-4626 vault, which direction should each conversion round?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T6.1.raw",
+  "sha256": "bc64cb10e5dbc6984c3343ea3332217e9170bc4696227bdd1abc8eaee3d180a4",
+  "bytes": 1900,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "T6",
+  "question": "When implementing an ERC-4626 vault, which direction should each conversion round?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/euler-xyz/euler-vault-kit\\\\n-\",\"query\":\"When implementing an ERC-4626 vault, which direction should each conversion round?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/T6.2.raw",
+  "sha256": "e9a49e494f01fc06c5da5fc1c55b1d3b4cdab3b8ed1ea7617df221596a46be11",
+  "bytes": 205,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q01",
+  "question": "connect a wallet with wagmi",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"wagmi\",\"query\":\"connect a wallet with wagmi\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q01.1.raw",
+  "sha256": "505adce570bce75fe4f333480f48962f249d3236d757fb55c85119df6e53fd53",
+  "bytes": 1755,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q01",
+  "question": "connect a wallet with wagmi",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/websites/wagmi_sh\\\\n-\",\"query\":\"connect a wallet with wagmi\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q01.2.raw",
+  "sha256": "c6988da82291928b7673b9c707605f037661a43e992cd07532630666e202331b",
+  "bytes": 197,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q02",
+  "question": "how do I bridge USDC with CCTP",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"cctp\",\"query\":\"how do I bridge USDC with CCTP\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q02.1.raw",
+  "sha256": "e26dab100df46f18a00389c13b1b6797e25536f3bd6efef057c48cc32beaa3a4",
+  "bytes": 1249,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q02",
+  "question": "how do I bridge USDC with CCTP",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/circlefin/circle-cctp-crosschain-transfer\\\\n-\",\"query\":\"how do I bridge USDC with CCTP\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q02.2.raw",
+  "sha256": "c7ee57150e9d40516a89b08eba9e956aadf9cf4621e0a24c6d2102fb77ad143f",
+  "bytes": 221,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q03",
+  "question": "how do I use Permit2 for gasless token approvals",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"permit2\",\"query\":\"how do I use Permit2 for gasless token approvals\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q03.1.raw",
+  "sha256": "69fc9e3fa21d828761babf5323ff740df91b52edf39e2e6cd636a5e6bc776aa6",
+  "bytes": 468,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q03",
+  "question": "how do I use Permit2 for gasless token approvals",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/miljan9602/docs\\\\n-\",\"query\":\"how do I use Permit2 for gasless token approvals\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q03.2.raw",
+  "sha256": "92648f43c9a1ec9b5e6baf3c5dda8715aa6774bbe587b934e2efa4b017e9d7e7",
+  "bytes": 195,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q04",
+  "question": "how do I implement an ERC-4626 tokenized vault",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"erc-4626\",\"query\":\"how do I implement an ERC-4626 tokenized vault\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q04.1.raw",
+  "sha256": "bc64cb10e5dbc6984c3343ea3332217e9170bc4696227bdd1abc8eaee3d180a4",
+  "bytes": 1900,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q04",
+  "question": "how do I implement an ERC-4626 tokenized vault",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/euler-xyz/euler-vault-kit\\\\n-\",\"query\":\"how do I implement an ERC-4626 tokenized vault\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q04.2.raw",
+  "sha256": "e9a49e494f01fc06c5da5fc1c55b1d3b4cdab3b8ed1ea7617df221596a46be11",
+  "bytes": 205,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q05",
+  "question": "supply collateral to Aave and borrow against it",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"aave-v3\",\"query\":\"supply collateral to Aave and borrow against it\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q05.1.raw",
+  "sha256": "6c8808af66b1ff313037199cbdf8d112a0222ae1c62f921f5662de20f9807b01",
+  "bytes": 1779,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q05",
+  "question": "supply collateral to Aave and borrow against it",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/aave/aave-sdk\\\\n-\",\"query\":\"supply collateral to Aave and borrow against it\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q05.2.raw",
+  "sha256": "25b077a469cda2530a7d7262c2a707f8cffb0c7c7449bb157d58d7f8f28c377f",
+  "bytes": 193,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q06",
+  "question": "create a type-safe contract instance with viem getContract",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"viem\",\"query\":\"create a type-safe contract instance with viem getContract\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q06.1.raw",
+  "sha256": "cbcca1262f7a0a4d99e488e5e60e9c9305732a1d23f294aee7e7e25745c41704",
+  "bytes": 1908,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q06",
+  "question": "create a type-safe contract instance with viem getContract",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/wevm/viem\\\\n-\",\"query\":\"create a type-safe contract instance with viem getContract\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q06.2.raw",
+  "sha256": "6dd6e27a70b0ccaa01176b880cd08ad8aed288f3c35991b2dae265976d475ea4",
+  "bytes": 189,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q07",
+  "question": "initialize the Safe protocol kit and send a transaction from a Safe account",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"safe\",\"query\":\"initialize the Safe protocol kit and send a transaction from a Safe account\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q07.1.raw",
+  "sha256": "65016ff9a0e6250efd394902bf1364e4dace933ad8d7b90669bdb770ea449b5f",
+  "bytes": 1747,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q07",
+  "question": "initialize the Safe protocol kit and send a transaction from a Safe account",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/safe-global/safe-core-sdk\\\\n-\",\"query\":\"initialize the Safe protocol kit and send a transaction from a Safe account\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q07.2.raw",
+  "sha256": "de92979f46d2aae1b10cbfdeb17ae03a2538982d32b2cb4241b7df25a2301ba0",
+  "bytes": 205,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q08",
+  "question": "how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"erc-7702\",\"query\":\"how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q08.1.raw",
+  "sha256": "6353a505a1baba430aaa669614fefda0af543414127a9db62db9e3c3e4a9a059",
+  "bytes": 890,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q08",
+  "question": "how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/websites/eip7702_io\\\\n-\",\"query\":\"how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q08.2.raw",
+  "sha256": "c1c50c023fb266dd42a65f18633c8771b6dafaea9f18fe6a677d8bad461a4731",
+  "bytes": 199,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q09",
+  "question": "custom logic on every token transfer in an OpenZeppelin ERC20",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"openzeppelin-contracts\",\"query\":\"custom logic on every token transfer in an OpenZeppelin ERC20\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q09.1.raw",
+  "sha256": "e941a34fa696a5f48489b5ac506bcce49a2d5678d8526b5df86b1a8f7b226413",
+  "bytes": 1798,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q09",
+  "question": "custom logic on every token transfer in an OpenZeppelin ERC20",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/websites/openzeppelin_contracts_5_x\\\\n-\",\"query\":\"custom logic on every token transfer in an OpenZeppelin ERC20\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q09.2.raw",
+  "sha256": "9644c62c224f7e81390b926cb17e82dd995b6fc4b397da3f41b6da6be90048ae",
+  "bytes": 215,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q10",
+  "question": "write a Uniswap v4 hook that runs before a swap",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"uniswap-v4\",\"query\":\"write a Uniswap v4 hook that runs before a swap\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q10.1.raw",
+  "sha256": "82c92124340a000f635f83c40824fc7acb017216fa2ce52a2afc147779228a55",
+  "bytes": 1704,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "Q10",
+  "question": "write a Uniswap v4 hook that runs before a swap",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/uniswap/v4-periphery\\\\n-\",\"query\":\"write a Uniswap v4 hook that runs before a swap\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/Q10.2.raw",
+  "sha256": "a7c15b6f433996ad064b94471439c8d0e0f664d237d84b4507a39d760ac61ed2",
+  "bytes": 200,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "T1",
+  "question": "How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/T1.raw",
+  "sha256": "cee2fbb51689317790da3b8e6722b975dd56975e382baebbec6b906e9b7d16c8",
+  "bytes": 3927,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "T2",
+  "question": "In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/T2.raw",
+  "sha256": "f2a5147f24f290e0d2721cc2f326f8678f2321bdf8c3bb79ff63d6f02a245c52",
+  "bytes": 3529,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "T3",
+  "question": "When bridging with Across, how do I set outputAmount on a deposit?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"When bridging with Across, how do I set outputAmount on a deposit?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/T3.raw",
+  "sha256": "6380e4f1cae8621f2253ec2509e1909e57b792fa483d3b2efd55046fd5b330e4",
+  "bytes": 3095,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "T4",
+  "question": "How do I connect a wallet with wagmi v3 and read the connection state?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I connect a wallet with wagmi v3 and read the connection state?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/T4.raw",
+  "sha256": "c0d7629410ae32075229ec15c0e4455bda9544431fdc9b46777be1b6dba82201",
+  "bytes": 3635,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "T5",
+  "question": "Which wagmi version does RainbowKit 2.x require?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"Which wagmi version does RainbowKit 2.x require?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/T5.raw",
+  "sha256": "75d773c0a19a258304320382b4d51e102ee3f67aef6918be07be328f07d52139",
+  "bytes": 4005,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "T6",
+  "question": "When implementing an ERC-4626 vault, which direction should each conversion round?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"When implementing an ERC-4626 vault, which direction should each conversion round?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/T6.raw",
+  "sha256": "cce8ab720e305cffff8087e4da0c3f66489ea4f7c854a7e9ec639446c42b2032",
+  "bytes": 3147,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q01",
+  "question": "connect a wallet with wagmi",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"connect a wallet with wagmi\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q01.raw",
+  "sha256": "8568ce5bfd660a91ccf20a95e87d2ae279cb8ae18e1e91c74468ccc26ebba24a",
+  "bytes": 3911,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q02",
+  "question": "how do I bridge USDC with CCTP",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"how do I bridge USDC with CCTP\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q02.raw",
+  "sha256": "4635db47e2e2548c078bb5bfd6dcd0f1a195767876a26e8ca831f49db88f8716",
+  "bytes": 2835,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q03",
+  "question": "how do I use Permit2 for gasless token approvals",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"how do I use Permit2 for gasless token approvals\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q03.raw",
+  "sha256": "261ec6c1b43e2c72c3e6823e458b8c6a69713d314e1f415dfd21bb11b21938bb",
+  "bytes": 3455,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q04",
+  "question": "how do I implement an ERC-4626 tokenized vault",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"how do I implement an ERC-4626 tokenized vault\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q04.raw",
+  "sha256": "26126b92335adedd59c95e3e2e4fdcfb31c8130e8e16599e2da3e0f6203bfb67",
+  "bytes": 3815,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q05",
+  "question": "supply collateral to Aave and borrow against it",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"supply collateral to Aave and borrow against it\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q05.raw",
+  "sha256": "d18977b5abd0a9e76e5fecaa19f323c67ce51feb5be5fbcbceaa1793c30d88b2",
+  "bytes": 3397,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q06",
+  "question": "create a type-safe contract instance with viem getContract",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"create a type-safe contract instance with viem getContract\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q06.raw",
+  "sha256": "6f40e30cebcf81bbbfd5338719097a16e7e1cd0a07c67134613adda1795bbb87",
+  "bytes": 3944,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q07",
+  "question": "initialize the Safe protocol kit and send a transaction from a Safe account",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"initialize the Safe protocol kit and send a transaction from a Safe account\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q07.raw",
+  "sha256": "ca0505be9807416025903f653560d523f531e2d6b4c8b060305d6ef8bef48bfc",
+  "bytes": 3725,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q08",
+  "question": "how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q08.raw",
+  "sha256": "ac72d937b65f800f34713acaac00bf0dadd923cf76d3d79eae7b4943ffb088d8",
+  "bytes": 3946,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q09",
+  "question": "custom logic on every token transfer in an OpenZeppelin ERC20",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"custom logic on every token transfer in an OpenZeppelin ERC20\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q09.raw",
+  "sha256": "1e34291a3e7f11064e81fa354eb3f898f11339c60cc5d2406e4dfb7d271ca1d2",
+  "bytes": 3432,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "Q10",
+  "question": "write a Uniswap v4 hook that runs before a swap",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"write a Uniswap v4 hook that runs before a swap\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/Q10.raw",
+  "sha256": "963de7421ec6604c720fa8d3456931024af6ee95468c2b748132736479b80143",
+  "bytes": 3613,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "T1",
+  "question": "How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/T1.raw",
+  "sha256": "78ebe9a46977ef9a00a3596b2e62d5851034ec0f3bc31378e8d1147dbdfa7b4b",
+  "bytes": 22400,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "T2",
+  "question": "In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/T2.raw",
+  "sha256": "8cbcfa091d972185914eebd8523c19055397c6938ea9a7221a0662f8f2d8b94d",
+  "bytes": 20369,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "T3",
+  "question": "When bridging with Across, how do I set outputAmount on a deposit?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"When bridging with Across, how do I set outputAmount on a deposit?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/T3.raw",
+  "sha256": "bb500e60c96bb33904927f36aa80fb061d1d9dacfccc2ec2a4f76d17359b0202",
+  "bytes": 17964,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "T4",
+  "question": "How do I connect a wallet with wagmi v3 and read the connection state?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I connect a wallet with wagmi v3 and read the connection state?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/T4.raw",
+  "sha256": "876c6aae95617a354d9269c7e465ff50cb991d6f6812b54a6af424d8e809d85e",
+  "bytes": 30822,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "T5",
+  "question": "Which wagmi version does RainbowKit 2.x require?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"Which wagmi version does RainbowKit 2.x require?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/T5.raw",
+  "sha256": "003b69687da979fe723d165bf6e0f3b6d8e0d14e9048ae828f1ddf2785176ea3",
+  "bytes": 20504,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "T6",
+  "question": "When implementing an ERC-4626 vault, which direction should each conversion round?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"When implementing an ERC-4626 vault, which direction should each conversion round?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/T6.raw",
+  "sha256": "19dd8c37676148bbaf34557cd62529d6db2a99ff06e8e43c189cd1c623fdf72b",
+  "bytes": 12765,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q01",
+  "question": "connect a wallet with wagmi",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"connect a wallet with wagmi\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q01.raw",
+  "sha256": "507331aae9fa00236069f33f5130e932efc35cf290c6c3dddb9276bf3c771451",
+  "bytes": 44464,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q02",
+  "question": "how do I bridge USDC with CCTP",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"how do I bridge USDC with CCTP\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q02.raw",
+  "sha256": "8e2802d1734efbcfaffb79cbda344bf1b6da1078346158e936cff6677cc0a605",
+  "bytes": 60488,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q03",
+  "question": "how do I use Permit2 for gasless token approvals",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"how do I use Permit2 for gasless token approvals\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q03.raw",
+  "sha256": "978e8537ca768ed5efd0f12c8041afb6e3893127224bd519052a0a3948f7bd47",
+  "bytes": 47244,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q04",
+  "question": "how do I implement an ERC-4626 tokenized vault",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"how do I implement an ERC-4626 tokenized vault\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q04.raw",
+  "sha256": "6b223b9ea386ce0497eab60aa0e226a7c6db1351282a4b6f1cfe75d99b0ac531",
+  "bytes": 76269,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q05",
+  "question": "supply collateral to Aave and borrow against it",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"supply collateral to Aave and borrow against it\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q05.raw",
+  "sha256": "8ce25a510aad835d0cc213ac89fee6661e2af47cfa9aaef3e9445aeeab46e0be",
+  "bytes": 22040,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q06",
+  "question": "create a type-safe contract instance with viem getContract",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"create a type-safe contract instance with viem getContract\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q06.raw",
+  "sha256": "41c3fe1d80727052e31eca626d1b59431daba31ede7c5a1fc66f929a4303ba13",
+  "bytes": 36352,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q07",
+  "question": "initialize the Safe protocol kit and send a transaction from a Safe account",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"initialize the Safe protocol kit and send a transaction from a Safe account\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q07.raw",
+  "sha256": "2ab25aee39ed8eb94678af70a3fb6e40e1c785a50e80aab5378986b12849b975",
+  "bytes": 30277,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q08",
+  "question": "how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q08.raw",
+  "sha256": "7875d243273b27e2dc6f52980a3706d4e8843b29b3cebd50a14a4c93114cd475",
+  "bytes": 31546,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q09",
+  "question": "custom logic on every token transfer in an OpenZeppelin ERC20",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"custom logic on every token transfer in an OpenZeppelin ERC20\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q09.raw",
+  "sha256": "5836fde02e07f9bee7281f5192281e1ec1c0444a4c438a3c41f068b579786030",
+  "bytes": 40348,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "Q10",
+  "question": "write a Uniswap v4 hook that runs before a swap",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"write a Uniswap v4 hook that runs before a swap\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/Q10.raw",
+  "sha256": "911d4481a2f2028404b08d55de8649c6986b415c3bac9e8191901954dee680a5",
+  "bytes": 40627,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "T1",
+  "question": "How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/T1.raw",
+  "sha256": "7234a28db1cbb79db99a79be799a06feb16bea2c8d94321a959db0fcbb7413b1",
+  "bytes": 55683,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "T2",
+  "question": "In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/T2.raw",
+  "sha256": "005348c204088fa0bd1e9757d25e5d8729cfcfa377c8454ee83429555fc64c85",
+  "bytes": 20545,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "T3",
+  "question": "When bridging with Across, how do I set outputAmount on a deposit?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"When bridging with Across, how do I set outputAmount on a deposit?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/T3.raw",
+  "sha256": "eb8074472c63155f583acf6af32932b4f1d3fc3abbefd9809d35661be283a92a",
+  "bytes": 58615,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "T4",
+  "question": "How do I connect a wallet with wagmi v3 and read the connection state?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I connect a wallet with wagmi v3 and read the connection state?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/T4.raw",
+  "sha256": "e57575b187f4c9022b1687843fb2ead7bee85a3b3e0b686edcbae5d836cc3fb8",
+  "bytes": 67104,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "T5",
+  "question": "Which wagmi version does RainbowKit 2.x require?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"Which wagmi version does RainbowKit 2.x require?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/T5.raw",
+  "sha256": "d2f562a6bc7aeb7bca961901c34e36fc4e673dff15966b840ef13f2e166dbbf7",
+  "bytes": 25670,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "T6",
+  "question": "When implementing an ERC-4626 vault, which direction should each conversion round?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"When implementing an ERC-4626 vault, which direction should each conversion round?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/T6.raw",
+  "sha256": "294777a919b8f6dd79f2d87721b50a204ee81647b0f47c2481a2078fcf77295d",
+  "bytes": 4267,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q01",
+  "question": "connect a wallet with wagmi",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"connect a wallet with wagmi\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q01.raw",
+  "sha256": "57acae806d9e7245a9735662cf53865c5d69e60638525687ddf6203ee187e794",
+  "bytes": 77297,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q02",
+  "question": "how do I bridge USDC with CCTP",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"how do I bridge USDC with CCTP\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q02.raw",
+  "sha256": "11a9e88ddd8f4ad9705ae942bb82572701b5a60815de4bdac6b8d0f780ba2100",
+  "bytes": 57968,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q03",
+  "question": "how do I use Permit2 for gasless token approvals",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"how do I use Permit2 for gasless token approvals\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q03.raw",
+  "sha256": "f77165a2e0ca7c932ffc65535ad974e2b992de57b8244eb50ef8eaa2a231e1bc",
+  "bytes": 60148,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q04",
+  "question": "how do I implement an ERC-4626 tokenized vault",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"how do I implement an ERC-4626 tokenized vault\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q04.raw",
+  "sha256": "6816723ec0287ad38165552b58ade9885093141b054fbad29dafc1eac5ddfded",
+  "bytes": 62772,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q05",
+  "question": "supply collateral to Aave and borrow against it",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"supply collateral to Aave and borrow against it\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q05.raw",
+  "sha256": "494c0a6bdf6260848c7523875025accf16dd256e481e0d98b892d510c4f8135d",
+  "bytes": 68064,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q06",
+  "question": "create a type-safe contract instance with viem getContract",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"create a type-safe contract instance with viem getContract\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q06.raw",
+  "sha256": "b00da632d3a7ce799ba6ff01ad81d9e6767259bbbc62e468ed32aee9742ce042",
+  "bytes": 52340,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q07",
+  "question": "initialize the Safe protocol kit and send a transaction from a Safe account",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"initialize the Safe protocol kit and send a transaction from a Safe account\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q07.raw",
+  "sha256": "3c48e64780fd95d5e78b95aa3f69979d1bd1aaa7e7526df652fb0d81fc2e055b",
+  "bytes": 60711,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q08",
+  "question": "how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q08.raw",
+  "sha256": "bfcf4bb8bb3752b3456bee80b8ae644068882239633698adda840e5e670322a0",
+  "bytes": 67589,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q09",
+  "question": "custom logic on every token transfer in an OpenZeppelin ERC20",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"custom logic on every token transfer in an OpenZeppelin ERC20\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q09.raw",
+  "sha256": "c63753977e8d75fb21782b949f4c38fcf20c7b8faf66517970c3673d2d3e3d95",
+  "bytes": 33484,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "Q10",
+  "question": "write a Uniswap v4 hook that runs before a swap",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"write a Uniswap v4 hook that runs before a swap\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/Q10.raw",
+  "sha256": "85b62d803e3c7167cd1f6a8a5d82259cc21a433fde00ccccad9bad09ec99b5f6",
+  "bytes": 64957,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "T1",
+  "question": "How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I do an exact-input swap with the Uniswap v3 SwapRouter02? What fields does exactInputSingle take?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/T1.raw",
+  "sha256": "500aa855d38f62f5131966a802a410fac6ec8ed8df93f38ae8a810847f57cd05",
+  "bytes": 22695,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "T2",
+  "question": "In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"In Uniswap SwapRouter02 exactInputSingle, what does passing amountIn of 0 do?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/T2.raw",
+  "sha256": "1a26c1f2800392789b58bd1e3b8ce216db020f4f84022be725f75b303c319651",
+  "bytes": 17700,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "T3",
+  "question": "When bridging with Across, how do I set outputAmount on a deposit?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"When bridging with Across, how do I set outputAmount on a deposit?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/T3.raw",
+  "sha256": "7c103b17b6212cd0d4f3d36a1eda8fa0ef66806b203da6cb569ebda9aa975724",
+  "bytes": 10977,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "T4",
+  "question": "How do I connect a wallet with wagmi v3 and read the connection state?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I connect a wallet with wagmi v3 and read the connection state?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/T4.raw",
+  "sha256": "f5499d569bc9b1faba33a5e47a130b6e30ae42e1e205245f059bbf8ebb9f060d",
+  "bytes": 13653,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "T5",
+  "question": "Which wagmi version does RainbowKit 2.x require?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"Which wagmi version does RainbowKit 2.x require?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/T5.raw",
+  "sha256": "afbd1f415b6a803720b1368ad7f6ceae217a8e88b5aaf209b1a5227cd2151985",
+  "bytes": 5403,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "T6",
+  "question": "When implementing an ERC-4626 vault, which direction should each conversion round?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"When implementing an ERC-4626 vault, which direction should each conversion round?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/T6.raw",
+  "sha256": "8aee551299121082a2f0877d27b91b034707fc5592c3314a9037df2850079cac",
+  "bytes": 10351,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q01",
+  "question": "connect a wallet with wagmi",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"connect a wallet with wagmi\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q01.raw",
+  "sha256": "8f3301cd2427c1581333339f418690df916b1486dd88f12b894e07dc323873f0",
+  "bytes": 18058,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q02",
+  "question": "how do I bridge USDC with CCTP",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"how do I bridge USDC with CCTP\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q02.raw",
+  "sha256": "35524d414fb61d25be7c542389d7697d09c7d550f94a0284233fac5841c03a52",
+  "bytes": 12593,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q03",
+  "question": "how do I use Permit2 for gasless token approvals",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"how do I use Permit2 for gasless token approvals\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q03.raw",
+  "sha256": "85d06217d1fd4aeb19efe31b412346c5a7f282e127e65c7ca4e379057558d2f3",
+  "bytes": 18312,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q04",
+  "question": "how do I implement an ERC-4626 tokenized vault",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"how do I implement an ERC-4626 tokenized vault\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q04.raw",
+  "sha256": "33a28068c8466229526b1d48169cbe7fd79e6e51dff84fbf491fcfd19f70b1b4",
+  "bytes": 13243,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q05",
+  "question": "supply collateral to Aave and borrow against it",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"supply collateral to Aave and borrow against it\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q05.raw",
+  "sha256": "1807f16eb1f71aae415c86153738d3826aaff44d74e8222ba06897449be44238",
+  "bytes": 4853,
+  "attempts": 0,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q06",
+  "question": "create a type-safe contract instance with viem getContract",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"create a type-safe contract instance with viem getContract\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q06.raw",
+  "sha256": "54a62825d0669b5e5ededea823d46c29048110767495556448b672b196fd4c97",
+  "bytes": 273,
+  "attempts": 0,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q07",
+  "question": "initialize the Safe protocol kit and send a transaction from a Safe account",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"initialize the Safe protocol kit and send a transaction from a Safe account\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q07.raw",
+  "sha256": "1cc3e71bd53e5958f473fba483481b35a0864ddc101a676d32d732a338c45595",
+  "bytes": 273,
+  "attempts": 0,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q08",
+  "question": "how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"how does an EOA delegate to a contract with EIP-7702 and what does EXTCODESIZE return\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q08.raw",
+  "sha256": "7d245f6c561c357c053f3ea5612213ede7a975829c5eab795bbcebf2be81a000",
+  "bytes": 273,
+  "attempts": 0,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q09",
+  "question": "custom logic on every token transfer in an OpenZeppelin ERC20",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"custom logic on every token transfer in an OpenZeppelin ERC20\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q09.raw",
+  "sha256": "8dcfdf73b4c0673a2646cb1b8975049cf19f77e5392cc559ec6c47550af6e5b5",
+  "bytes": 273,
+  "attempts": 0,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "Q10",
+  "question": "write a Uniswap v4 hook that runs before a swap",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"write a Uniswap v4 hook that runs before a swap\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/Q10.raw",
+  "sha256": "e8c53538d4770b1cc793a89a5445c34f31e7d528f965dd0f292171dc21b4d4ac",
+  "bytes": 273,
+  "attempts": 0,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ }
+]
