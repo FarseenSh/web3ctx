@@ -3,6 +3,21 @@
 Pre-registration: `BENCH-PRE-REGISTRATION-2026-08-20.md`, frozen before the first arm ran (`2eaafb0`).
 Raw bytes: `artifacts/bench-2026-08-20/` — 128 payloads, hashed, re-verified before scoring.
 
+> 🔴 **CORRECTION, 2026-08-20 — THE `context7` ROW BELOW IS WRONG AND IS KEPT ON PURPOSE.**
+>
+> Its documented second step never ran. Our follow-up extracted the library id with `\S+` from a
+> **JSON** payload, where a newline is the two characters `\` and `n` — both of which `\S` matches.
+> The captured id was `/metamask/metamask-docs\n-`, context7 answered **`Library not found` 16 times
+> out of 16**, and we scored the error as its payload.
+>
+> **Corrected on re-running:** median tokens **558 → 1,683** · immutable/total URLs **0/0 → 0/83** ·
+> names a version **6/16 → 8/16** · traps caught **0/6 → 3/6**. The corrected row is in
+> `BENCH-EXT-RESULT-2026-08-20.md` §1 and on the published page.
+>
+> ⚠ **The wrong numbers stay here, labelled.** History is not rewritten: a reader who saw the
+> original must be able to find it and see what moved. Deleting it would leave the correction
+> describing something no longer in the record.
+
 ```
 ══════════ BENCHMARK 2026-08-20 — publication-grade ══════════
 ⊘ NO VERDICT — n=16 against the 393 floor (D17). Every figure below is DESCRIPTIVE.
@@ -59,7 +74,7 @@ partial (graded NOT caught, J2)                            4           0        
 **Registered, §6:** *"We expect to be the most expensive arm, and by MORE than the stranger run showed."*
 
 **Measured:** our default row is **3,071 median tokens** — **cheaper than exa web search (8,986), claude
-web search (17,163) and the ethskills bundle (85,068)**, and dearer than context7 (558) and exa code
+web search (17,163) and the ethskills bundle (85,068)**, and dearer than context7 (**558 — WRONG, see the correction above; it is 1,683**) and exa code
 context (1,033). With `intent: "integrate"` we are **7,454**, still under two arms.
 
 ⭐ **The stranger run's "most expensive of four" does not survive a harness that counts every arm the
@@ -88,9 +103,9 @@ rather than buried.
 ## 3 · Immutable citations — the one axis that separates cleanly
 
 **web3ctx 316/324 (97.5%)** · integrate row 424/516 · firecrawl 26/233 · exa web 11/263 ·
-**claude web search 6/404** · **exa code context 1/171** · **context7 0/0** · ethskills 0/275.
+**claude web search 6/404** · **exa code context 1/171** · **context7 0/0 — WRONG, corrected to 0/83** · ethskills 0/275.
 
-⚠ **Context7's `0/0` means its payload contains NO URLs at all** — not that its URLs fail. That is a
+🔴 **SUPERSEDED — `0/0` was our broken chain, not context7.** The corrected figure is **0 / 83**: it returns 83 URLs and none is commit-pinned. The sentence below is kept as it was published. ⚠ **Context7's `0/0` means its payload contains NO URLs at all** — not that its URLs fail. That is a
 different fact from everyone else's low ratio and must never be collapsed into one.
 
 ## 4 · What we lost, plainly

@@ -206,6 +206,22 @@ therefore not cited here** — it is described, which is exactly the discipline 
 
 ---
 
+### g. LATENCY — collapse sequential round trips. **ADDED by amendment 2026-08-20.**
+
+**The 2026-08-20 nine-vantage run measured warm p50 `1,487 ms` against the sub-500 ms warm SLO.**
+W4's diagnosis stands and is unchanged by the new numbers: **hop count × RTT, not compute** — D1's
+own time was ~3 ms of it.
+
+**Candidate mechanisms:** fewer sequential hops · Smart Placement.
+
+🔴 **NEEDS AN OWNER RULING FIRST: is the SLO re-scoped, or is the work scheduled?** Those are
+different decisions and only one of them is engineering. Nothing starts until that ruling exists.
+
+🔴 **Never quote the single-vantage figures without the multi-vantage numbers beside them** —
+cold p50 **1,487** / p95 **3,023** · warm p50 **1,457** / p95 **3,526**, n = 1 per vantage per
+phase. ⚠ And **latency is an SLO, never a headline**: sub-second tool calls are ~1% of task
+wall-clock, so a faster tool call does not make an agent meaningfully faster.
+
 ## 🔒 LEASHED — held behind a hard constraint, not scheduled
 
 **10 tokens of surface headroom.** The registered surface is **590 of 600** (golden rule 9), and
