@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>web3ctx — architecture (as built)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <div class="brand">web3ctx</div>
+  <h1>Architecture — as built, as served</h1>
+  <p class="tag">Every box on this page runs in production. Components that were designed,
+  measured, and rejected are listed at the bottom — absent from the product, so absent from
+  the diagram.</p>
+  <nav class="site">
+    <a href="index.html">overview</a>
+    <a href="evals.html">evals</a>
+    <a href="architecture.html">architecture</a>
+  </nav>
+</header>
+
+<section class="band">
+  <div class="label">Clients — <b>Claude Code · Cursor · Claude Desktop · any MCP client</b></div>
+  <div class="grid g3">
+    <div class="card hi">
+      <h3>Remote MCP over HTTPS</h3>
+      <p>No package, no local process, nothing to update. Add a URL; the server is always
+      current. <span class="k">/mcp</span> — free, no key, ever.</p>
+    </div>
+    <div class="card">
+      <h3>Elevated tier</h3>
+      <p><span class="k">/mcp/oauth</span> — GitHub sign-in, free, 10× daily budget.
+      Two routes, one surface; a token on the free route is refused, never silently honored.</p>
+    </div>
+    <div class="card">
+      <h3>Rate limiting in-band</h3>
+      <p>Durable Object limiter. A refusal is a typed answer naming which window blocked and
+      what raises it — never a transport 429 that kills the whole exchange.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="label">The surface — <b>five primitives, deliberately terse</b></div>
+  <div class="grid g4" style="grid-template-columns: repeat(5, 1fr);">
+    <div class="card"><h3>search</h3><p>ranked units + the validated recipe in one payload, when a recipe is earned</p></div>
+    <div class="card"><h3>grep</h3><p>exact identifier lookup — the caller's token <b>is</b> the evidence</p></div>
+    <div class="card"><h3>fetch</h3><p>full bodies by stable selector · cursor paging for long content</p></div>
+    <div class="card"><h3>deps</h3><p>dependency closure, stepped by depth</p></div>
+    <div class="card"><h3>lookup</h3><p>typed records: addresses · ABIs · EIPs — or a stated NOT_FOUND</p></div>
+  </div>
+  <div class="note">The registered schema is an eval subject and stays small by rule.
+  No meta-tools, no dynamic tool discovery.</div>
+</section>
+
+<section class="band">
+  <div class="label">Query path — <b>deterministic · no model invoked · SQL predicate before any search</b></div>
+  <div class="flow">
+    <div class="card hib">
+      <h3>1 · Resolve</h3>
+      <p>entity → version → scope. Declared aliases and family aliases, never inferred.
+      Dictionary-word names require a second signal before a recipe is served —
+      <b>a coincidence is not a name</b>.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="card hib">
+      <h3>2 · Bind or abstain</h3>
+      <p>Version binds from evidence: exact match, else a single agreeing major, else
+      <b>nothing</b> — ambiguity never picks. No scoping evidence → <b>abstention</b>, with
+      what would resolve it, never a ranked guess over the whole corpus.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="card">
+      <h3>3 · Retrieve</h3>
+      <p>dependency closure defines the candidate set (<b>a filter, never a fused score</b>);
+      BM25 ranks within it. Scope is carried inside the index and matched as phrases at
+      weight&nbsp;0 — a filter expressed in the index, never a ranking signal.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="card">
+      <h3>4 · Shape</h3>
+      <p>token budget honored per call · citations, provenance and receipts are
+      <b>never truncated</b> · long bodies degrade behind a self-describing cursor,
+      never disappear.</p>
+    </div>
+  </div>
+  <div class="note"><b>Why no model on the path:</b> the wrong-version twin must be excluded
+  <b>before</b> ranking. Ranking it high and filtering after is the incumbent failure mode
+  with an extra step.</div>
+</section>
+
+<section class="band">
+  <div class="label">Trust layer — <b>what the payload carries</b></div>
+  <div class="grid g3">
+    <div class="card hi">
+      <h3>Version-true units</h3>
+      <p>every unit labelled <span class="k">project@version</span> with
+      <span class="k">as_of</span>. Superseded APIs may appear — <b>only with their version
+      label beside them</b>. Disagreements are stated, never reconciled silently.</p>
+    </div>
+    <div class="card hi">
+      <h3>Pinned citations</h3>
+      <p>sources cite immutable refs — commit SHAs, version-locked registry artifacts.
+      A citation that cannot be re-fetched is treated as a defect, not a style choice.</p>
+    </div>
+    <div class="card hi">
+      <h3>Human-run recipes + receipts</h3>
+      <p>integration recipes validated by a person against live chains, served with their
+      receipts — transaction hashes anyone can check by RPC. The stamp attests
+      <b>the integration ran</b>; the receipts are how you check it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="label">Stores — <b>Cloudflare-native, serverless</b></div>
+  <div class="grid g3">
+    <div class="card">
+      <h3>Core D1</h3>
+      <p>dependency graph (<span class="k">WITH RECURSIVE</span>, depth-capped) · identifier
+      index · version predicates · typed tables (addresses / ABIs / EIPs) · recipes.
+      <b>No virtual tables — stays exportable.</b> Read replication on from day one.</p>
+    </div>
+    <div class="card">
+      <h3>Lexical D1 — disposable</h3>
+      <p>FTS5, weighted columns incl. verbatim compounds + camelCase/snake subtokens
+      (the identifier gap closes at ingest, not at query time).
+      <b>Rebuild-from-source is the recovery path.</b></p>
+    </div>
+    <div class="card">
+      <h3>R2 + KV</h3>
+      <p>content-addressed bodies · response cache keyed on the deployed code version —
+      a deploy invalidates by construction, because a cache key that omits the code
+      is a wrong answer with good latency.</p>
+    </div>
+  </div>
+  <div class="note"><b>Ingest is deterministic:</b> same commit in → same index out,
+  hash-verified. No LLM, no learned model anywhere in the parse loop.</div>
+</section>
+
+<section class="band">
+  <div class="label">Deliberately absent — <b>designed, measured, rejected</b></div>
+  <div class="grid g4">
+    <div class="card absent"><h3>Dense / neural arm</h3><p>gated behind an ablation it has not won</p></div>
+    <div class="card absent"><h3>Reranker</h3><p>precision measured above the threshold that would justify one</p></div>
+    <div class="card absent"><h3>Compression models</h3><p>measured to hurt code; never on the hot path</p></div>
+    <div class="card absent"><h3>Semantic cache</h3><p>waits for real traffic to tune against</p></div>
+  </div>
+  <div class="note">Each rejection is a pre-registered measurement in the public evidence
+  set — the experiments that died are published beside the ones that shipped.</div>
+</section>
+
+<footer class="site">
+  web3ctx · <a href="evals.html">measurements</a> · every claim on this page is checkable
+  against the served endpoint.
+</footer>
+
+</div>
+</body>
+</html>

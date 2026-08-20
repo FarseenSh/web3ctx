@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>web3ctx — version-true context for web3 coding agents</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <div class="brand">web3ctx</div>
+  <h1>The last mile before your agent signs a transaction</h1>
+  <p class="tag">Human-validated, chain-run integration recipes for web3 — served
+  version-true, with citations you can re-fetch and receipts you can check on-chain.
+  The corpus exists to make the recipes reachable and version-scoped.</p>
+  <nav class="site">
+    <a href="index.html">overview</a>
+    <a href="evals.html">evals</a>
+    <a href="architecture.html">architecture</a>
+  </nav>
+</header>
+
+<section class="band">
+  <div class="label">Install — <b>it's a URL, not a package</b></div>
+  <div class="grid g3">
+    <div class="card hi">
+      <h3>Claude Code</h3>
+      <pre class="install">claude mcp add --transport http web3ctx \
+  https://web3-context-mcp.papermind-ai.workers.dev/mcp</pre>
+    </div>
+    <div class="card">
+      <h3>Cursor / any mcp.json client</h3>
+      <pre class="install">{ "mcpServers": { "web3ctx": { "url":
+  "https://web3-context-mcp.papermind-ai.workers.dev/mcp" } } }</pre>
+    </div>
+    <div class="card">
+      <h3>Claude Desktop / claude.ai</h3>
+      <p>Settings → Connectors → Add custom connector → paste the URL.</p>
+      <p style="margin-top:8px">stdio-only clients:</p>
+      <pre class="install">npx mcp-remote \
+  https://web3-context-mcp.papermind-ai.workers.dev/mcp</pre>
+    </div>
+  </div>
+  <div class="note">Free, no key, no signup. Higher limits: connect to
+  <b>/mcp/oauth</b> instead and sign in with GitHub — free, 10× the daily budget.</div>
+</section>
+
+<section class="band">
+  <div class="label">Why this exists</div>
+  <div class="grid g3">
+    <div class="card">
+      <h3>The failure, named</h3>
+      <p>Retrieval layers serve superseded APIs beside current ones, unlabelled. The
+      literature calls it <b>deceptive grounding</b>: every claim sourced from a real
+      document — about the wrong version. Every citation check passes; the user loses.</p>
+    </div>
+    <div class="card">
+      <h3>The fix, structural</h3>
+      <p>Version identity resolves to a SQL predicate <b>before</b> any search runs, so
+      off-version content cannot enter the payload. When evidence is missing, the server
+      abstains and says what would resolve it — it never guesses.</p>
+    </div>
+    <div class="card">
+      <h3>The moat, human</h3>
+      <p>Integration recipes run by a person against live chains, stamped with who ran
+      them and when, served with on-chain receipts. The footguns that live in NatSpec,
+      revert strings and peer ranges — not in any docs site.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="label">The five tools</div>
+  <table class="data">
+    <tr><th>tool</th><th>what it does</th></tr>
+    <tr><td>web3_search</td><td>ranked, version-scoped units — plus the human-validated recipe when the question earns one</td></tr>
+    <tr><td>web3_grep</td><td>exact identifier lookup across the corpus</td></tr>
+    <tr><td>web3_fetch</td><td>full bodies by stable selector, cursor paging for long content</td></tr>
+    <tr><td>web3_deps</td><td>dependency closure, stepped by depth</td></tr>
+    <tr><td>web3_lookup</td><td>typed records — deployment addresses, ABIs, EIPs — or an honest NOT_FOUND</td></tr>
+  </table>
+</section>
+
+<section class="band">
+  <div class="label">What's inside — <b>numbers injected at build time, never typed</b></div>
+  <div class="grid g3" id="corpus-stats">
+    <div class="card"><h3>104 integration projects + 1,193 specification ids (609 ERC + 583 core EIP + 1 in both repos) = 1,297 total</h3><p>the pair, always — a bare total does not publish</p></div>
+    <div class="card"><h3>585,017</h3><p>every unit labelled project@version with a pinned source</p></div>
+    <div class="card"><h3>24</h3><p>each validated on-chain by a person, served with receipts</p></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="label">One number — <b>immutable citations, from the published payload audit</b></div>
+  <div id="l1-table"><table class="data">
+    <tr><th>arm</th><th>immutable / total citation URLs</th><th></th></tr>
+    <tr class="us"><td>web3ctx</td><td class="n"><b>142</b> / 144</td><td class="n">99%</td></tr>
+    <tr><td>context7</td><td class="n"><b>0</b> / 57</td><td class="n">0%</td></tr>
+    <tr><td>exa (web search)</td><td class="n"><b>7</b> / 213</td><td class="n">3%</td></tr>
+    <tr><td>firecrawl</td><td class="n"><b>25</b> / 338</td><td class="n">7%</td></tr>
+    <tr class="missing"><td>claude web search</td><td class="n">MISSING — never ran</td><td class="n">—</td></tr>
+    <tr><td>ethskills (skill)</td><td class="n"><b>0</b> / 181</td><td class="n">0%</td></tr>
+  </table></div>
+  <div class="caveat">Full protocol, cached payloads and limitations are in the
+  <a href="evals.html">evidence set</a>. We publish our own failing rows beside everyone
+  else's.</div>
+</section>
+
+<footer class="site">
+  web3ctx · <a href="architecture.html">architecture</a> ·
+  <a href="evals.html">evals &amp; evidence</a> · built in public, corrections and dead
+  experiments included.
+</footer>
+
+</div>
+</body>
+</html>

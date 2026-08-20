@@ -1,0 +1,11 @@
+{
+  "arm": "web3ctx",
+  "qid": "q15",
+  "question": "how do I get a cross-chain swap quote with the LI.FI SDK",
+  "request": {
+    "query": "how do I get a cross-chain swap quote with the LI.FI SDK",
+    "intent": "integrate"
+  },
+  "response": "`lifi` is in the coverage universe and is **not indexed** (as of 2026-08-04).\n\nReturning units from other projects would answer a question you did not ask. Nothing here is a substitute for it.\n\n\"lifi\" is in the coverage universe and is NOT indexed (as of 2026-08-04) — matched on the query token \"lifi\"",
+  "fetched_at": "2026-08-13T13:21:57.242Z"
+}
