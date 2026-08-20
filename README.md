@@ -38,10 +38,10 @@ do not do it.
 - **`evidence/payload-audit/web3ctx/`** *(16 files)* — OUR OWN cached payloads — the only arm whose bytes are ours to publish
 - **`evidence/BENCH-PRE-REGISTRATION-2026-08-20.md`** — the benchmark pre-registration, frozen before the first arm ran — a result without its pre-registration is an anecdote
 - **`evidence/BENCH-RESULT-2026-08-20.md`** — the benchmark result, including the prediction we registered and did not meet
-- **`evidence/spec/artifacts/bench-2026-08-20/manifest.json`** — every payload collected: HTTP status, byte count, sha256 and the scrubbed request — hashes and counts for every arm, per the standing ruling
-- **`evidence/spec/artifacts/bench-2026-08-20/scored.json`** — the grading records the site renders from — one computation, published
-- **`evidence/spec/artifacts/bench-2026-08-20/web3ctx/`** *(16 files)* — OUR OWN raw payloads, both rows — the only arm whose bytes are ours to publish
-- **`evidence/spec/artifacts/bench-2026-08-20/web3ctx-integrate/`** *(16 files)* — the same, for the labelled second row
+- **`evidence/bench-2026-08-20/manifest.json`** — every payload collected: HTTP status, byte count, sha256 and the scrubbed request — hashes and counts for every arm, per the standing ruling
+- **`evidence/bench-2026-08-20/scored.json`** — the grading records the site renders from — one computation, published
+- **`evidence/bench-2026-08-20/web3ctx/`** *(16 files)* — OUR OWN raw payloads, both rows — the only arm whose bytes are ours to publish
+- **`evidence/bench-2026-08-20/web3ctx-integrate/`** *(16 files)* — the same, for the labelled second row
 - **`evidence/VERIFICATION-PROTOCOL.md`** — the rules the measurements were run under, including rule 14
 - **`evidence/ROADMAP-POST-LAUNCH-2026-08-20.md`** — what is adopted, what is leashed, what is refused
 - **`evidence/EXTERNAL-EVIDENCE-2026-08-20.md`** — the literature sweep, verbatim, under its citation banner
