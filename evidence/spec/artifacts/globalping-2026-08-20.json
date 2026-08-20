@@ -1,0 +1,119 @@
+{
+ "target": "mcp.scarai.xyz",
+ "path": "/health",
+ "cold": [
+  {
+   "location": "Buffalo, US (NA)",
+   "total": 2065,
+   "tls": 36,
+   "ttfb": 1948
+  },
+  {
+   "location": "Buffalo, US (NA)",
+   "total": 3023,
+   "tls": 21,
+   "ttfb": 2919
+  },
+  {
+   "location": "Falkenstein, DE (EU)",
+   "total": 1487,
+   "tls": 11,
+   "ttfb": 1455
+  },
+  {
+   "location": "Falkenstein, DE (EU)",
+   "total": 1477,
+   "tls": 22,
+   "ttfb": 1405
+  },
+  {
+   "location": "Tokyo, JP (AS)",
+   "total": 858,
+   "tls": 18,
+   "ttfb": 823
+  },
+  {
+   "location": "Tokyo, JP (AS)",
+   "total": 864,
+   "tls": 18,
+   "ttfb": 828
+  },
+  {
+   "location": "Sao Paulo, BR (SA)",
+   "total": 2935,
+   "tls": 132,
+   "ttfb": 2676
+  },
+  {
+   "location": "Sydney, AU (OC)",
+   "total": 1405,
+   "tls": 191,
+   "ttfb": 1067
+  },
+  {
+   "location": "Lagos, NG (AF)",
+   "total": 1743,
+   "tls": 118,
+   "ttfb": 1151
+  }
+ ],
+ "warm": [
+  {
+   "location": "Buffalo, US (NA)",
+   "total": 2141,
+   "tls": 19,
+   "ttfb": 2041
+  },
+  {
+   "location": "Buffalo, US (NA)",
+   "total": 2180,
+   "tls": 21,
+   "ttfb": 2077
+  },
+  {
+   "location": "Falkenstein, DE (EU)",
+   "total": 1445,
+   "tls": 22,
+   "ttfb": 1403
+  },
+  {
+   "location": "Falkenstein, DE (EU)",
+   "total": 1457,
+   "tls": 27,
+   "ttfb": 1422
+  },
+  {
+   "location": "Tokyo, JP (AS)",
+   "total": 709,
+   "tls": 43,
+   "ttfb": 641
+  },
+  {
+   "location": "Tokyo, JP (AS)",
+   "total": 776,
+   "tls": 18,
+   "ttfb": 743
+  },
+  {
+   "location": "Sao Paulo, BR (SA)",
+   "total": 2080,
+   "tls": 127,
+   "ttfb": 1826
+  },
+  {
+   "location": "Sydney, AU (OC)",
+   "total": 875,
+   "tls": 11,
+   "ttfb": 862
+  },
+  {
+   "location": "Lagos, NG (AF)",
+   "total": 3526,
+   "tls": 121,
+   "ttfb": 1113
+  }
+ ],
+ "lock": "Latency is an SLO, never a headline.",
+ "composition": "DNS + TCP + TLS + one D1 read + transfer. /health reads D1 (its response carries d1_duration_ms) but runs NO retrieval: no FTS5, no ranking, no R2. Not a tool call.",
+ "n": "1 request per vantage per phase \u2014 a p95 over nine samples is a spread, not a tail."
+}

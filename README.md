@@ -42,6 +42,14 @@ do not do it.
 - **`evidence/bench-2026-08-20/scored.json`** — the grading records the site renders from — one computation, published
 - **`evidence/bench-2026-08-20/web3ctx/`** *(16 files)* — OUR OWN raw payloads, both rows — the only arm whose bytes are ours to publish
 - **`evidence/bench-2026-08-20/web3ctx-integrate/`** *(16 files)* — the same, for the labelled second row
+- **`evidence/BENCH-EXT-PRE-REGISTRATION-2026-08-20.md`** — the extension pre-registration — ground truth verified on-chain and at pins BEFORE any question was registered
+- **`evidence/BENCH-EXT-RESULT-2026-08-20.md`** — the extension result, opening with our correction to numbers we had already published
+- **`evidence/spec/artifacts/bench-ext-2026-08-20/manifest.json`** — every extension payload: status, bytes, sha256, wall-clock and the scrubbed request
+- **`evidence/spec/artifacts/bench-ext-2026-08-20/scored.json`** — the extension grading records
+- **`evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/`** *(18 files)* — OUR OWN raw payloads
+- **`evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx-integrate/`** *(18 files)* — the same, labelled second row
+- **`evidence/spec/artifacts/globalping-2026-08-20.json`** — the multi-vantage latency measurement, with its composition and the SLO lock inside the artifact
+- **`evidence/COST-EXPOSURE-2026-08-20.md`** — the cost audit: every meter with its mechanism, the breaker, and the no-self-perpetuating-compute invariant
 - **`evidence/VERIFICATION-PROTOCOL.md`** — the rules the measurements were run under, including rule 14
 - **`evidence/ROADMAP-POST-LAUNCH-2026-08-20.md`** — what is adopted, what is leashed, what is refused
 - **`evidence/EXTERNAL-EVIDENCE-2026-08-20.md`** — the literature sweep, verbatim, under its citation banner
@@ -72,7 +80,7 @@ reviewed.** Each exclusion names its reason — several are excluded because the
 not merely old.
 
 - `generated/` — build output and 26 stage-a corpora — scratch, gigabytes, no evidentiary value
-- `artifacts/bench-2026-08-20/{context7,exa-*,firecrawl-dev,claude-web-search} (raw bytes)` — 🔴 RULED 2026-08-20 — competitor payload BYTES do not publish. `manifest.json` carries their sha256, byte counts and the exact request that produced each, and the protocol is re-runnable by anyone against the live tools. The bytes are retained privately so every published count stays re-checkable against the material it was computed from.
+- `artifacts/bench-{2026-08-20,ext-2026-08-20}/{context7,exa-*,firecrawl-dev,claude-web-search} (raw bytes)` — 🔴 RULED 2026-08-20 — competitor payload BYTES do not publish. `manifest.json` carries their sha256, byte counts and the exact request that produced each, and the protocol is re-runnable by anyone against the live tools. The bytes are retained privately so every published count stays re-checkable against the material it was computed from.
 - `artifacts/payload-audit/{context7,exa,firecrawl,ethskills}` — 🚩 FLAGGED FOR THE OWNER, NOT DECIDED — see the flag below
 - `~/web3ctx-recipes (the curator repo)` — a separate repo on a separate cadence; its publication is the curator's decision, not this set's
 - `measurements/*CYCLE*.md, *DEFECTS*.md, session logs` — internal working records — the findings that matter are already in the protocol and the corrections index
@@ -89,4 +97,4 @@ not merely old.
 
 `MANIFEST.sha256` carries a hash for every file in this set.
 
-Staged from 84 files.
+Staged from 126 files.

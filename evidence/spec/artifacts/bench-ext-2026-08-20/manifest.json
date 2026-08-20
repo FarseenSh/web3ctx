@@ -1,0 +1,3031 @@
+[
+ {
+  "arm": "web3ctx",
+  "qid": "D1",
+  "question": "What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D1.raw",
+  "sha256": "eb0aa304a2fca014fe9958c15b6375cf845cc2c1c7d82d848426337752334112",
+  "bytes": 11833,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "D2",
+  "question": "Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D2.raw",
+  "sha256": "b63cc8510095120fe0c44dac63fdc13f934b4ec00230a180d26c6bac8cc2b0b2",
+  "bytes": 12659,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "D3",
+  "question": "How do I install the Safe Core SDK and create a Safe transaction in TypeScript?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I install the Safe Core SDK and create a Safe transaction in TypeScript?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D3.raw",
+  "sha256": "ac961875bbdcd6e8491a52486e7ec04f6d64abc0e9ae1e2b1d7f0890dd0ae6ca",
+  "bytes": 9676,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "D4",
+  "question": "What is the current API for initialising a Safe client — Safe.create or Safe.init?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"What is the current API for initialising a Safe client — Safe.create or Safe.init?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D4.raw",
+  "sha256": "4d610c8f656d3e123400930d10fce595d9db13573228b7f5feea1943578729cd",
+  "bytes": 11110,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "D5",
+  "question": "Which npm package do I install to add MetaMask as a wallet connector in a new dapp?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which npm package do I install to add MetaMask as a wallet connector in a new dapp?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D5.raw",
+  "sha256": "9fd2540020ddd6135565cb9ade288a8f57a3289df7d77fc60f968f7dfc718acf",
+  "bytes": 959,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "D6",
+  "question": "Which repository holds the current Aave v3 core protocol contracts?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which repository holds the current Aave v3 core protocol contracts?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D6.raw",
+  "sha256": "3522592c0340c824e704e99831e70b3320301b72b2bcda36ffdbb68d39ecfb87",
+  "bytes": 11192,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "D7",
+  "question": "What is the current major version of viem that I should install today?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"What is the current major version of viem that I should install today?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D7.raw",
+  "sha256": "b0a40eb78a47e552125f4e4504a7542602a4d236b7b5322ce18a25d0dd3dadd6",
+  "bytes": 11766,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "D8",
+  "question": "Show me how to use viem 3 getContract in production code.",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Show me how to use viem 3 getContract in production code.\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D8.raw",
+  "sha256": "721ad29a379153d039e08e88094e77de709d2ed73cd775be8ceb92ec30df207b",
+  "bytes": 10790,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "D9",
+  "question": "I am on wagmi 3. Which RainbowKit version pairs with it?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"I am on wagmi 3. Which RainbowKit version pairs with it?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D9.raw",
+  "sha256": "d0a4bb59c11bae6189ec83ccafaac6b0a8154dc712920d2d34133ebc6f0bc20f",
+  "bytes": 11920,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "D10",
+  "question": "Which Uniswap repository contains the SwapRouter02 source?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which Uniswap repository contains the SwapRouter02 source?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/D10.raw",
+  "sha256": "9e59c53165a252de3348910f4856dfc73ff57cd88e2093533892adae15b44eef",
+  "bytes": 10178,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "A1",
+  "question": "How do I supply collateral to Compound v3 and borrow against it?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I supply collateral to Compound v3 and borrow against it?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/A1.raw",
+  "sha256": "7e0b64fa1cb76d8ad4c2073386e0c25abfe6e93675c7f4048ffb7fc9f2dc228d",
+  "bytes": 865,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "A2",
+  "question": "How do I integrate Pendle to buy a PT token?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I integrate Pendle to buy a PT token?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/A2.raw",
+  "sha256": "4c94a785c3217334005ee2c7041b6ce73e70efb07dae80ef4d344b130365a50b",
+  "bytes": 837,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "A3",
+  "question": "How do I send a Hyperlane interchain message between two chains?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I send a Hyperlane interchain message between two chains?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/A3.raw",
+  "sha256": "55a05d970feffc5c8e4dc2c41a9424ae3bc7a1ecd8ca28071c236c6e87b7c0a6",
+  "bytes": 855,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "A4",
+  "question": "How do I bridge USDC with Stargate from Ethereum to Arbitrum?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I bridge USDC with Stargate from Ethereum to Arbitrum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/A4.raw",
+  "sha256": "a5cbc737b1c8cde09fc7d106dab40fb2d8f4b9650fab60d16f9006021eeaa9a8",
+  "bytes": 10711,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "A5",
+  "question": "How do I mint an NFT with the thirdweb SDK?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I mint an NFT with the thirdweb SDK?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/A5.raw",
+  "sha256": "6930d2d562cb898352691ad2381162327b7fd7d14833e98eac1ba821e8d0042f",
+  "bytes": 849,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "A6",
+  "question": "How do I set up a Biconomy paymaster for gasless transactions?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I set up a Biconomy paymaster for gasless transactions?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/A6.raw",
+  "sha256": "a89d92e8ad1cad1bdb671f29d18efd9e3543dc0098c3777dc76d582aeba84fe9",
+  "bytes": 849,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "A7",
+  "question": "How do I get a swap quote from the 0x API v2?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I get a swap quote from the 0x API v2?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/A7.raw",
+  "sha256": "6c7854de2959b5883bb2e124df6029222ce57834448f3fd9ba867ddab768583d",
+  "bytes": 813,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx",
+  "qid": "A8",
+  "question": "How do I read a Pyth price feed on chain and check its staleness?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I read a Pyth price feed on chain and check its staleness?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx/A8.raw",
+  "sha256": "562c084a281e1c5e59da3dab1e5134ba66318702a82148f7c8d470b468bea651",
+  "bytes": 825,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D1",
+  "question": "What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D1.raw",
+  "sha256": "6ac74f3a7fc29fb67b4f42a71fd0d4ea603a1e74e6bd27bc3a02a845cb039660",
+  "bytes": 28013,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D2",
+  "question": "Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D2.raw",
+  "sha256": "7610139ad9a4a4275ee2aaf51a68ae76a61d2d470146ab15a1660abd28b71f48",
+  "bytes": 28839,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D3",
+  "question": "How do I install the Safe Core SDK and create a Safe transaction in TypeScript?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I install the Safe Core SDK and create a Safe transaction in TypeScript?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D3.raw",
+  "sha256": "966296fb2c3e73b7596d405fa3cdec79e115618cfafa5a1a5f24ebec8d81fc0a",
+  "bytes": 10035,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D4",
+  "question": "What is the current API for initialising a Safe client — Safe.create or Safe.init?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"What is the current API for initialising a Safe client — Safe.create or Safe.init?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D4.raw",
+  "sha256": "cb9997f31e9cca5024ae82f793180b6150d429280b75f451f4418b6ddab78d4f",
+  "bytes": 11469,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D5",
+  "question": "Which npm package do I install to add MetaMask as a wallet connector in a new dapp?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which npm package do I install to add MetaMask as a wallet connector in a new dapp?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D5.raw",
+  "sha256": "9fd2540020ddd6135565cb9ade288a8f57a3289df7d77fc60f968f7dfc718acf",
+  "bytes": 959,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D6",
+  "question": "Which repository holds the current Aave v3 core protocol contracts?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which repository holds the current Aave v3 core protocol contracts?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D6.raw",
+  "sha256": "f444b58e26b76b7cf5e8b85f73a3be89134f9ee62bb95fa0713c023b8e3eb58d",
+  "bytes": 27958,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D7",
+  "question": "What is the current major version of viem that I should install today?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"What is the current major version of viem that I should install today?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D7.raw",
+  "sha256": "fd0d17087a87eba530df6be88876577d4ec68bdeac2d76987e29acdf8066126b",
+  "bytes": 28844,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D8",
+  "question": "Show me how to use viem 3 getContract in production code.",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Show me how to use viem 3 getContract in production code.\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D8.raw",
+  "sha256": "55efbc0b658e1234d5ce41d065d9faeebd5da8964ff02ab56efe6dc80d4e3cb2",
+  "bytes": 27868,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D9",
+  "question": "I am on wagmi 3. Which RainbowKit version pairs with it?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"I am on wagmi 3. Which RainbowKit version pairs with it?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D9.raw",
+  "sha256": "fa8e61948ed45ce0f5c1e79008c8a7fac989e12a73ddd9c967735bb6b16aefa6",
+  "bytes": 27739,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "D10",
+  "question": "Which Uniswap repository contains the SwapRouter02 source?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"Which Uniswap repository contains the SwapRouter02 source?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/D10.raw",
+  "sha256": "7f0154af4e76d48fedfed5b9f8a7c2f2848aec2d7a6b8da79ac8f61b2216e378",
+  "bytes": 10865,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "A1",
+  "question": "How do I supply collateral to Compound v3 and borrow against it?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I supply collateral to Compound v3 and borrow against it?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/A1.raw",
+  "sha256": "7e0b64fa1cb76d8ad4c2073386e0c25abfe6e93675c7f4048ffb7fc9f2dc228d",
+  "bytes": 865,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "A2",
+  "question": "How do I integrate Pendle to buy a PT token?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I integrate Pendle to buy a PT token?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/A2.raw",
+  "sha256": "4c94a785c3217334005ee2c7041b6ce73e70efb07dae80ef4d344b130365a50b",
+  "bytes": 837,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "A3",
+  "question": "How do I send a Hyperlane interchain message between two chains?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I send a Hyperlane interchain message between two chains?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/A3.raw",
+  "sha256": "55a05d970feffc5c8e4dc2c41a9424ae3bc7a1ecd8ca28071c236c6e87b7c0a6",
+  "bytes": 855,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "A4",
+  "question": "How do I bridge USDC with Stargate from Ethereum to Arbitrum?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I bridge USDC with Stargate from Ethereum to Arbitrum?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/A4.raw",
+  "sha256": "901684faf60553c61939daa70fbab68b0716b33102cfa37c79e610e20a387d3b",
+  "bytes": 10714,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "A5",
+  "question": "How do I mint an NFT with the thirdweb SDK?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I mint an NFT with the thirdweb SDK?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/A5.raw",
+  "sha256": "6930d2d562cb898352691ad2381162327b7fd7d14833e98eac1ba821e8d0042f",
+  "bytes": 849,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "A6",
+  "question": "How do I set up a Biconomy paymaster for gasless transactions?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I set up a Biconomy paymaster for gasless transactions?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/A6.raw",
+  "sha256": "a89d92e8ad1cad1bdb671f29d18efd9e3543dc0098c3777dc76d582aeba84fe9",
+  "bytes": 849,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "A7",
+  "question": "How do I get a swap quote from the 0x API v2?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I get a swap quote from the 0x API v2?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/A7.raw",
+  "sha256": "6c7854de2959b5883bb2e124df6029222ce57834448f3fd9ba867ddab768583d",
+  "bytes": 813,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "web3ctx-integrate",
+  "qid": "A8",
+  "question": "How do I read a Pyth price feed on chain and check its staleness?",
+  "request": {
+   "url": "https://mcp.scarai.xyz/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web3_search\",\"arguments\":{\"query\":\"How do I read a Pyth price feed on chain and check its staleness?\",\"intent\":\"integrate\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "web3ctx-integrate/A8.raw",
+  "sha256": "562c084a281e1c5e59da3dab1e5134ba66318702a82148f7c8d470b468bea651",
+  "bytes": 825,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "context7",
+  "qid": "D1",
+  "question": "What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"cctp\",\"query\":\"What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D1.1.raw",
+  "sha256": "e26dab100df46f18a00389c13b1b6797e25536f3bd6efef057c48cc32beaa3a4",
+  "bytes": 1249,
+  "attempts": 1,
+  "wall_ms": 2073,
+  "fetched_at": "2026-08-20T14:52:20.920Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D1",
+  "question": "What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/circlefin/circle-cctp-crosschain-transfer\",\"query\":\"What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D1.2.raw",
+  "sha256": "b7ac8268a23e7801878b748a19fc7268940136a5e16da24a43f71d51e8110292",
+  "bytes": 2558,
+  "attempts": 1,
+  "wall_ms": 2457,
+  "fetched_at": "2026-08-20T14:52:23.381Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D2",
+  "question": "Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"cctp\",\"query\":\"Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D2.1.raw",
+  "sha256": "e26dab100df46f18a00389c13b1b6797e25536f3bd6efef057c48cc32beaa3a4",
+  "bytes": 1249,
+  "attempts": 1,
+  "wall_ms": 1320,
+  "fetched_at": "2026-08-20T14:52:24.702Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D2",
+  "question": "Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/circlefin/circle-cctp-crosschain-transfer\",\"query\":\"Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D2.2.raw",
+  "sha256": "e3f71b19da9051c8acf6174f1c75ea38ac26a04fed28e7c9975eefb6c171beaf",
+  "bytes": 2467,
+  "attempts": 1,
+  "wall_ms": 1742,
+  "fetched_at": "2026-08-20T14:52:26.448Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D3",
+  "question": "How do I install the Safe Core SDK and create a Safe transaction in TypeScript?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"safe\",\"query\":\"How do I install the Safe Core SDK and create a Safe transaction in TypeScript?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D3.1.raw",
+  "sha256": "2b04cd01de3ec8dc800cb0bffa45bef06b317bee45f0ecfa26c720ac65808624",
+  "bytes": 1168,
+  "attempts": 1,
+  "wall_ms": 1276,
+  "fetched_at": "2026-08-20T14:52:27.724Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D3",
+  "question": "How do I install the Safe Core SDK and create a Safe transaction in TypeScript?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/safe-global/safe-core-sdk\",\"query\":\"How do I install the Safe Core SDK and create a Safe transaction in TypeScript?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D3.2.raw",
+  "sha256": "f8307b2242f9825d13410833a44c3427eea53551e72f97d14423fae10b7c9eca",
+  "bytes": 3108,
+  "attempts": 1,
+  "wall_ms": 1819,
+  "fetched_at": "2026-08-20T14:52:29.545Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D4",
+  "question": "What is the current API for initialising a Safe client — Safe.create or Safe.init?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"safe\",\"query\":\"What is the current API for initialising a Safe client — Safe.create or Safe.init?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D4.1.raw",
+  "sha256": "6d7635eebf71b20414681bcaf982eeaa44b2a89df9c68c4c79e111eed1eef61b",
+  "bytes": 1857,
+  "attempts": 1,
+  "wall_ms": 1318,
+  "fetched_at": "2026-08-20T14:52:30.866Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D4",
+  "question": "What is the current API for initialising a Safe client — Safe.create or Safe.init?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/safe-global/safe-core-sdk\",\"query\":\"What is the current API for initialising a Safe client — Safe.create or Safe.init?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D4.2.raw",
+  "sha256": "c4ca56931b8ca82439d410412f2c66559cf3ac404f4d388304e3658ca70fa4c6",
+  "bytes": 2610,
+  "attempts": 1,
+  "wall_ms": 3434,
+  "fetched_at": "2026-08-20T14:52:34.301Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D5",
+  "question": "Which npm package do I install to add MetaMask as a wallet connector in a new dapp?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"metamask\",\"query\":\"Which npm package do I install to add MetaMask as a wallet connector in a new dapp?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D5.1.raw",
+  "sha256": "68c06e084afbc070c6eaa4215b76f1ab141f53d4c210d7ffbf52d8125f959833",
+  "bytes": 1314,
+  "attempts": 1,
+  "wall_ms": 1328,
+  "fetched_at": "2026-08-20T14:52:35.630Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D5",
+  "question": "Which npm package do I install to add MetaMask as a wallet connector in a new dapp?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/metamask/metamask-docs\",\"query\":\"Which npm package do I install to add MetaMask as a wallet connector in a new dapp?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D5.2.raw",
+  "sha256": "60316af2c26b9ee69c1428aae292e133a32c1c943f82d006a5054f8c17c1ebf3",
+  "bytes": 2311,
+  "attempts": 1,
+  "wall_ms": 1629,
+  "fetched_at": "2026-08-20T14:52:37.260Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D6",
+  "question": "Which repository holds the current Aave v3 core protocol contracts?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"aave-v3\",\"query\":\"Which repository holds the current Aave v3 core protocol contracts?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D6.1.raw",
+  "sha256": "22adcf0a1a5ec6bf386b1d51697f789851f3744b670401f42ce76b1458cc0b5d",
+  "bytes": 1752,
+  "attempts": 1,
+  "wall_ms": 1581,
+  "fetched_at": "2026-08-20T14:52:38.841Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D6",
+  "question": "Which repository holds the current Aave v3 core protocol contracts?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/aave-dao/aave-v3-origin\",\"query\":\"Which repository holds the current Aave v3 core protocol contracts?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D6.2.raw",
+  "sha256": "aca0cdc1aa26dd0288f86b718d1a4c66c7c6780ea4b3ffc9fd8805af9bd5c4ff",
+  "bytes": 7094,
+  "attempts": 1,
+  "wall_ms": 2209,
+  "fetched_at": "2026-08-20T14:52:41.050Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D7",
+  "question": "What is the current major version of viem that I should install today?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"viem\",\"query\":\"What is the current major version of viem that I should install today?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D7.1.raw",
+  "sha256": "0f5dbddf4b5ed5f7e7e940170b7e8ad5cb08dbf74c252f25d54139601b0eadda",
+  "bytes": 1968,
+  "attempts": 1,
+  "wall_ms": 1257,
+  "fetched_at": "2026-08-20T14:52:42.309Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D7",
+  "question": "What is the current major version of viem that I should install today?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/wevm/viem\",\"query\":\"What is the current major version of viem that I should install today?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D7.2.raw",
+  "sha256": "ad23441ce1e34b3ef1fffe62089eda8755ef89ab22518e68d83548918097b3c1",
+  "bytes": 1856,
+  "attempts": 1,
+  "wall_ms": 1952,
+  "fetched_at": "2026-08-20T14:52:44.262Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D8",
+  "question": "Show me how to use viem 3 getContract in production code.",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"viem\",\"query\":\"Show me how to use viem 3 getContract in production code.\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D8.1.raw",
+  "sha256": "0f5dbddf4b5ed5f7e7e940170b7e8ad5cb08dbf74c252f25d54139601b0eadda",
+  "bytes": 1968,
+  "attempts": 1,
+  "wall_ms": 1522,
+  "fetched_at": "2026-08-20T14:52:45.784Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D8",
+  "question": "Show me how to use viem 3 getContract in production code.",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/wevm/viem\",\"query\":\"Show me how to use viem 3 getContract in production code.\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D8.2.raw",
+  "sha256": "274a5a0b9aea3e17748c6221bb0f2578d2c9b36c8eef2cb5742ac65860fc0ee6",
+  "bytes": 3520,
+  "attempts": 1,
+  "wall_ms": 1753,
+  "fetched_at": "2026-08-20T14:52:47.539Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D9",
+  "question": "I am on wagmi 3. Which RainbowKit version pairs with it?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"rainbowkit\",\"query\":\"I am on wagmi 3. Which RainbowKit version pairs with it?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D9.1.raw",
+  "sha256": "b86ac7744d1134a5ce1ac7b04d66b87bc9db88fbc913a780931c9ea04afc4531",
+  "bytes": 1178,
+  "attempts": 1,
+  "wall_ms": 1125,
+  "fetched_at": "2026-08-20T14:52:48.666Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D9",
+  "question": "I am on wagmi 3. Which RainbowKit version pairs with it?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/rainbow-me/rainbowkit\",\"query\":\"I am on wagmi 3. Which RainbowKit version pairs with it?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D9.2.raw",
+  "sha256": "8f759a36d4ff6c33fe2c1768645f8edeae20a31c575eb1daafff1450bb7446eb",
+  "bytes": 2780,
+  "attempts": 1,
+  "wall_ms": 1506,
+  "fetched_at": "2026-08-20T14:52:50.172Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D10",
+  "question": "Which Uniswap repository contains the SwapRouter02 source?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"uniswap-v3\",\"query\":\"Which Uniswap repository contains the SwapRouter02 source?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D10.1.raw",
+  "sha256": "608d35c9de5daebc85f612086748b9d5f9f92b741518f9f9bacaee0c76a122a5",
+  "bytes": 803,
+  "attempts": 1,
+  "wall_ms": 1155,
+  "fetched_at": "2026-08-20T14:52:51.328Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "D10",
+  "question": "Which Uniswap repository contains the SwapRouter02 source?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/uniswap/v3-core\",\"query\":\"Which Uniswap repository contains the SwapRouter02 source?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/D10.2.raw",
+  "sha256": "0516ee11112d427573f4e37a854f441c2df9a622e9ec02888f22bc46941eba92",
+  "bytes": 1179,
+  "attempts": 1,
+  "wall_ms": 1841,
+  "fetched_at": "2026-08-20T14:52:53.170Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A1",
+  "question": "How do I supply collateral to Compound v3 and borrow against it?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"compoundv3\",\"query\":\"How do I supply collateral to Compound v3 and borrow against it?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A1.1.raw",
+  "sha256": "4bce40e0dafed389fb19584d093ae8d787c992171ec1abd74ca6d7bee30409ff",
+  "bytes": 163,
+  "attempts": 1,
+  "wall_ms": 439,
+  "fetched_at": "2026-08-20T14:52:53.612Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A2",
+  "question": "How do I integrate Pendle to buy a PT token?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"pendle\",\"query\":\"How do I integrate Pendle to buy a PT token?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A2.1.raw",
+  "sha256": "7e50d141875bdf50a6901003600ec2bd7f4cab0732ca22509bb1b6c53f8c5800",
+  "bytes": 837,
+  "attempts": 1,
+  "wall_ms": 1217,
+  "fetched_at": "2026-08-20T14:52:54.829Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A2",
+  "question": "How do I integrate Pendle to buy a PT token?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/websites/pendle_finance\",\"query\":\"How do I integrate Pendle to buy a PT token?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A2.2.raw",
+  "sha256": "a6ee21367d068dcc39af9ba7b798c873457de9ba3dffe840cf03f7510bb00eaa",
+  "bytes": 2116,
+  "attempts": 1,
+  "wall_ms": 1961,
+  "fetched_at": "2026-08-20T14:52:56.790Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A3",
+  "question": "How do I send a Hyperlane interchain message between two chains?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"hyperlane\",\"query\":\"How do I send a Hyperlane interchain message between two chains?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A3.1.raw",
+  "sha256": "84cd0788f771ab7391eaf0595c113720a027528607ca6ef518098860075bf6fc",
+  "bytes": 1437,
+  "attempts": 1,
+  "wall_ms": 1500,
+  "fetched_at": "2026-08-20T14:52:58.293Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A3",
+  "question": "How do I send a Hyperlane interchain message between two chains?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/hyperlane-xyz/v4-docs\",\"query\":\"How do I send a Hyperlane interchain message between two chains?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A3.2.raw",
+  "sha256": "e38f57bf8fd64a0028c0a5c2106d2186f9ce3ba18827610160af437b61c74fb1",
+  "bytes": 7600,
+  "attempts": 1,
+  "wall_ms": 1759,
+  "fetched_at": "2026-08-20T14:53:00.052Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A4",
+  "question": "How do I bridge USDC with Stargate from Ethereum to Arbitrum?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"stargate\",\"query\":\"How do I bridge USDC with Stargate from Ethereum to Arbitrum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A4.1.raw",
+  "sha256": "e08fe4cce5d11421b665f29c15a70f55efdfa01dfdbf90e3345ed5f82257c1ca",
+  "bytes": 435,
+  "attempts": 1,
+  "wall_ms": 1165,
+  "fetched_at": "2026-08-20T14:53:01.220Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A4",
+  "question": "How do I bridge USDC with Stargate from Ethereum to Arbitrum?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/websites/stargate_finance\",\"query\":\"How do I bridge USDC with Stargate from Ethereum to Arbitrum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A4.2.raw",
+  "sha256": "85a6ce5b0ae8d6086a2ad70027b6946152ac775bf3a00b14ec8b4d03e0409c8b",
+  "bytes": 9241,
+  "attempts": 1,
+  "wall_ms": 1852,
+  "fetched_at": "2026-08-20T14:53:03.073Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A5",
+  "question": "How do I mint an NFT with the thirdweb SDK?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"thirdweb\",\"query\":\"How do I mint an NFT with the thirdweb SDK?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A5.1.raw",
+  "sha256": "84ad9df65eae054e673add993bb42c6db30c6eb2e449a7ac63b68b5d0c7af19a",
+  "bytes": 2025,
+  "attempts": 1,
+  "wall_ms": 1191,
+  "fetched_at": "2026-08-20T14:53:04.264Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A5",
+  "question": "How do I mint an NFT with the thirdweb SDK?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/thirdweb-dev/js\",\"query\":\"How do I mint an NFT with the thirdweb SDK?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A5.2.raw",
+  "sha256": "f67de221189cdfb0d20531715a4007d0548562d6dd4c050c2b380c12c5092786",
+  "bytes": 5701,
+  "attempts": 1,
+  "wall_ms": 1651,
+  "fetched_at": "2026-08-20T14:53:05.915Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A6",
+  "question": "How do I set up a Biconomy paymaster for gasless transactions?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"biconomy\",\"query\":\"How do I set up a Biconomy paymaster for gasless transactions?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A6.1.raw",
+  "sha256": "8156e420d5ef4ab3dfc9186fec6268ced4c45dcc40ad3ec36ac1f9ef9d8831e2",
+  "bytes": 1950,
+  "attempts": 1,
+  "wall_ms": 1593,
+  "fetched_at": "2026-08-20T14:53:07.509Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A6",
+  "question": "How do I set up a Biconomy paymaster for gasless transactions?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/bcnmy/biconomy-client-sdk\",\"query\":\"How do I set up a Biconomy paymaster for gasless transactions?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A6.2.raw",
+  "sha256": "e1d8023c040fe5647faa772bc562d341957bc0f2faaba4519687b42051087299",
+  "bytes": 4082,
+  "attempts": 1,
+  "wall_ms": 1573,
+  "fetched_at": "2026-08-20T14:53:09.083Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A7",
+  "question": "How do I get a swap quote from the 0x API v2?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"0x\",\"query\":\"How do I get a swap quote from the 0x API v2?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A7.1.raw",
+  "sha256": "a5742a77ed8aa19533d7f117b736ef725b56bcd9965cd062865df5f19271cfd8",
+  "bytes": 1404,
+  "attempts": 1,
+  "wall_ms": 1533,
+  "fetched_at": "2026-08-20T14:53:10.617Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A7",
+  "question": "How do I get a swap quote from the 0x API v2?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/websites/0x\",\"query\":\"How do I get a swap quote from the 0x API v2?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A7.2.raw",
+  "sha256": "dffe4935d2180cb8cd2374a404d5ad7301a2e624cb1cc67174c6fb650a73e9a0",
+  "bytes": 8938,
+  "attempts": 1,
+  "wall_ms": 2427,
+  "fetched_at": "2026-08-20T14:53:13.044Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A8",
+  "question": "How do I read a Pyth price feed on chain and check its staleness?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"resolve-library-id\",\"arguments\":{\"libraryName\":\"pyth\",\"query\":\"How do I read a Pyth price feed on chain and check its staleness?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A8.1.raw",
+  "sha256": "96cebf2b66184a80769b7a139dfd58ad4c84d6edfb386b1d9248ec5a52a5f194",
+  "bytes": 1824,
+  "attempts": 1,
+  "wall_ms": 1570,
+  "fetched_at": "2026-08-20T14:53:14.617Z"
+ },
+ {
+  "arm": "context7",
+  "qid": "A8",
+  "question": "How do I read a Pyth price feed on chain and check its staleness?",
+  "request": {
+   "url": "https://mcp.context7.com/mcp",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"query-docs\",\"arguments\":{\"libraryId\":\"/websites/pyth_network\",\"query\":\"How do I read a Pyth price feed on chain and check its staleness?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "context7/A8.2.raw",
+  "sha256": "344a779e441a205225e7115459a30c2cb19e79e0cad218b4618b955f246cee02",
+  "bytes": 5618,
+  "attempts": 1,
+  "wall_ms": 2617,
+  "fetched_at": "2026-08-20T14:53:17.235Z"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D1",
+  "question": "What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D1.raw",
+  "sha256": "67e3bb0f06d21da12835263fb19ef89d4b2b19e8c7701f2116175c822fe380de",
+  "bytes": 3268,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D2",
+  "question": "Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D2.raw",
+  "sha256": "efb1df522a8f9053237bd9863dbb33d2138ba74912a90f8f525aa2e0323afd3a",
+  "bytes": 3001,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D3",
+  "question": "How do I install the Safe Core SDK and create a Safe transaction in TypeScript?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I install the Safe Core SDK and create a Safe transaction in TypeScript?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D3.raw",
+  "sha256": "f1c8ff0ad39b170e6691054ab37d390e3927d59f8efb9326e40afc6c6b03e387",
+  "bytes": 3796,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D4",
+  "question": "What is the current API for initialising a Safe client — Safe.create or Safe.init?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"What is the current API for initialising a Safe client — Safe.create or Safe.init?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D4.raw",
+  "sha256": "791703851fca1e26bdf4b3071a988dc8ad7137f7443356515799770a1f3af89a",
+  "bytes": 4141,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D5",
+  "question": "Which npm package do I install to add MetaMask as a wallet connector in a new dapp?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"Which npm package do I install to add MetaMask as a wallet connector in a new dapp?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D5.raw",
+  "sha256": "159333d6384ad4d83060cdc8f6ee9c40b901818aa62551365591d898ac8f35e5",
+  "bytes": 3442,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D6",
+  "question": "Which repository holds the current Aave v3 core protocol contracts?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"Which repository holds the current Aave v3 core protocol contracts?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D6.raw",
+  "sha256": "06d65647b8e031e2be62535f9ec291a31193fcb904c063595ab56e8064f375f6",
+  "bytes": 3462,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D7",
+  "question": "What is the current major version of viem that I should install today?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"What is the current major version of viem that I should install today?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D7.raw",
+  "sha256": "cdbfe2e3af53d2b236e2d1606d04b8b5c1c244334ab829a91663c691a476923f",
+  "bytes": 2974,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D8",
+  "question": "Show me how to use viem 3 getContract in production code.",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"Show me how to use viem 3 getContract in production code.\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D8.raw",
+  "sha256": "90fb9da67e7eb7846a8c736ff3255ee6576cabffd62ce208c75b3830564a0dc9",
+  "bytes": 3533,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D9",
+  "question": "I am on wagmi 3. Which RainbowKit version pairs with it?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"I am on wagmi 3. Which RainbowKit version pairs with it?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D9.raw",
+  "sha256": "e56c457a116b332fdc7b931c6426b2790340c8f28a3f26ca42e9a4529d8b8850",
+  "bytes": 3954,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "D10",
+  "question": "Which Uniswap repository contains the SwapRouter02 source?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"Which Uniswap repository contains the SwapRouter02 source?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/D10.raw",
+  "sha256": "282fd6f6be7ad3c6fddb4b5426b7c182406f25b81a782ab44dd63fdb983cfef1",
+  "bytes": 3389,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "A1",
+  "question": "How do I supply collateral to Compound v3 and borrow against it?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I supply collateral to Compound v3 and borrow against it?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/A1.raw",
+  "sha256": "08182555c64b917880e63a22262be43fcd24d8f6674d3b57fa90ab0cc6813022",
+  "bytes": 3452,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "A2",
+  "question": "How do I integrate Pendle to buy a PT token?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I integrate Pendle to buy a PT token?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/A2.raw",
+  "sha256": "2377ea7d6c26ee34df626321fa6360fdd0e4ed98dde183c53035f7566c760349",
+  "bytes": 4108,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "A3",
+  "question": "How do I send a Hyperlane interchain message between two chains?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I send a Hyperlane interchain message between two chains?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/A3.raw",
+  "sha256": "e2fb8131a0b1f7e78ec5afc13de48801046669454bc4c409e6aaa8a2ca965438",
+  "bytes": 2546,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "A4",
+  "question": "How do I bridge USDC with Stargate from Ethereum to Arbitrum?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I bridge USDC with Stargate from Ethereum to Arbitrum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/A4.raw",
+  "sha256": "91c28f7312e281b4da2d455e1cad47b8711491dbf0c89e64b7dedcc8066fa3d9",
+  "bytes": 3791,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "A5",
+  "question": "How do I mint an NFT with the thirdweb SDK?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I mint an NFT with the thirdweb SDK?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/A5.raw",
+  "sha256": "e5b49241c37fe62e620b18a8f1b0146472dec6a12718101e63c995f8443f1fea",
+  "bytes": 4056,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "A6",
+  "question": "How do I set up a Biconomy paymaster for gasless transactions?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I set up a Biconomy paymaster for gasless transactions?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/A6.raw",
+  "sha256": "39b8503f9113bec9a807e3f35dc5c9faa36583cd8bcb93ecf829304d767241d7",
+  "bytes": 3770,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "A7",
+  "question": "How do I get a swap quote from the 0x API v2?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I get a swap quote from the 0x API v2?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/A7.raw",
+  "sha256": "097ba22a21c7da90ca72c9c22b5059923d6ba16444a91d9e6aef9ee8bfd52436",
+  "bytes": 4128,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-code",
+  "qid": "A8",
+  "question": "How do I read a Pyth price feed on chain and check its staleness?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"get_code_context_exa\",\"arguments\":{\"query\":\"How do I read a Pyth price feed on chain and check its staleness?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-code/A8.raw",
+  "sha256": "14f59ffb6d600aecc6e74c122c718365cce4f756c36fd9e626a281d5deb0cddb",
+  "bytes": 4063,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D1",
+  "question": "What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D1.raw",
+  "sha256": "24064b64a3f4f0d6d8b4c6831bc26c3abca1fc646860686c1cb07b683081beb5",
+  "bytes": 7587,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D2",
+  "question": "Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D2.raw",
+  "sha256": "b811426c927422b18fc0375cbc5d50edb5e05d454b4d18c1395e076711b79f5c",
+  "bytes": 12381,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D3",
+  "question": "How do I install the Safe Core SDK and create a Safe transaction in TypeScript?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I install the Safe Core SDK and create a Safe transaction in TypeScript?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D3.raw",
+  "sha256": "0df06a8e43270e9e94e3c93f57a416a10bc63f8b15d90a10a17c9841b1a70756",
+  "bytes": 27446,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D4",
+  "question": "What is the current API for initialising a Safe client — Safe.create or Safe.init?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"What is the current API for initialising a Safe client — Safe.create or Safe.init?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D4.raw",
+  "sha256": "68d6b4a772f9576a30b592147d33cea8a56d424ae3e6e2a756b2fa507a979faf",
+  "bytes": 18186,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D5",
+  "question": "Which npm package do I install to add MetaMask as a wallet connector in a new dapp?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"Which npm package do I install to add MetaMask as a wallet connector in a new dapp?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D5.raw",
+  "sha256": "648fde9fe7795126b2ba53e217e57eda23db91887455430321b6ee02ad47a690",
+  "bytes": 10522,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D6",
+  "question": "Which repository holds the current Aave v3 core protocol contracts?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"Which repository holds the current Aave v3 core protocol contracts?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D6.raw",
+  "sha256": "9393dc9e6ecb36c12559894525d7d4b90b249d8e6b625f8a73b54ac87f96ad36",
+  "bytes": 7477,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D7",
+  "question": "What is the current major version of viem that I should install today?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"What is the current major version of viem that I should install today?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D7.raw",
+  "sha256": "234fa6abe04ca69d4762acbdb293423c2df757343cd46cfe010f7fc0df577b76",
+  "bytes": 5678,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D8",
+  "question": "Show me how to use viem 3 getContract in production code.",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"Show me how to use viem 3 getContract in production code.\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D8.raw",
+  "sha256": "2df4fdf22dcafc8b5c6c354deefbd002068c61717ae782099fbd07a128976e21",
+  "bytes": 34309,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D9",
+  "question": "I am on wagmi 3. Which RainbowKit version pairs with it?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"I am on wagmi 3. Which RainbowKit version pairs with it?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D9.raw",
+  "sha256": "92d0fa213f88ebda4fff24f777c09c1126c9c11426cc7806e60734bfcdc2f32a",
+  "bytes": 16835,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "D10",
+  "question": "Which Uniswap repository contains the SwapRouter02 source?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"Which Uniswap repository contains the SwapRouter02 source?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/D10.raw",
+  "sha256": "ad8d20ac0d8ecaa6469dd84b7ec43d6282126d2f20e47af7f6bef321b598718e",
+  "bytes": 8991,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "A1",
+  "question": "How do I supply collateral to Compound v3 and borrow against it?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I supply collateral to Compound v3 and borrow against it?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/A1.raw",
+  "sha256": "3b528a00726076ef43aa00e425b67eb2745d15407c5b7ceeb84d62d6952c7875",
+  "bytes": 25694,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "A2",
+  "question": "How do I integrate Pendle to buy a PT token?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I integrate Pendle to buy a PT token?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/A2.raw",
+  "sha256": "dbd6f3d69717485e33b349d9828d8041b55c26de52cac4ed5d80a6c2cb3b22de",
+  "bytes": 31471,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "A3",
+  "question": "How do I send a Hyperlane interchain message between two chains?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I send a Hyperlane interchain message between two chains?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/A3.raw",
+  "sha256": "09b5dd0be6dc84e2f81b40bef47c50adf0c0673e25c65914e8108faa7e03520c",
+  "bytes": 24462,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "A4",
+  "question": "How do I bridge USDC with Stargate from Ethereum to Arbitrum?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I bridge USDC with Stargate from Ethereum to Arbitrum?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/A4.raw",
+  "sha256": "74992f1b92ee64be93ce171670ccbe116ec95e9e63cc9f7f818ccf9fa981f6a9",
+  "bytes": 32801,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "A5",
+  "question": "How do I mint an NFT with the thirdweb SDK?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I mint an NFT with the thirdweb SDK?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/A5.raw",
+  "sha256": "60f08a7746710718684492f056a7f8f86bf445b3461399a48d049c98daee7a92",
+  "bytes": 20333,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "A6",
+  "question": "How do I set up a Biconomy paymaster for gasless transactions?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I set up a Biconomy paymaster for gasless transactions?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/A6.raw",
+  "sha256": "48bf77f9302d22201923a781b226c2ec4f58cf067a680004f629bf753af3a9d6",
+  "bytes": 44769,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "A7",
+  "question": "How do I get a swap quote from the 0x API v2?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I get a swap quote from the 0x API v2?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/A7.raw",
+  "sha256": "b3e6e7f232e091d27ce65a85a5abbe513f23a9fdce17c390ffb9e0a0ab218005",
+  "bytes": 21289,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "exa-web",
+  "qid": "A8",
+  "question": "How do I read a Pyth price feed on chain and check its staleness?",
+  "request": {
+   "url": "https://mcp.exa.ai/mcp?exaApiKey=‹REDACTED›&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,deep_search_exa",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "accept": "application/json, text/event-stream"
+   },
+   "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"web_search_exa\",\"arguments\":{\"query\":\"How do I read a Pyth price feed on chain and check its staleness?\"}}}"
+  },
+  "http_status": 200,
+  "raw_path": "exa-web/A8.raw",
+  "sha256": "6d8eb2bb71bea7219dcd92522ec285f5db82f56b9a80f6a07e02e3693c330336",
+  "bytes": 18604,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D1",
+  "question": "What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D1.raw",
+  "sha256": "e651b7926cb748dbb08762b53b9c13c8acb333dac8398a72bc2c8f4e27315729",
+  "bytes": 21344,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D2",
+  "question": "Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D2.raw",
+  "sha256": "52a26488f0a3d019fc5c55f1f8348242978cbd37bf062a4326331e4c4e745a30",
+  "bytes": 47893,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D3",
+  "question": "How do I install the Safe Core SDK and create a Safe transaction in TypeScript?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I install the Safe Core SDK and create a Safe transaction in TypeScript?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D3.raw",
+  "sha256": "280da77d1434ea371dd4a5ea0773833f9a563d04c0a92c334c66ade8dbda0fee",
+  "bytes": 60787,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D4",
+  "question": "What is the current API for initialising a Safe client — Safe.create or Safe.init?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"What is the current API for initialising a Safe client — Safe.create or Safe.init?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D4.raw",
+  "sha256": "cbf67b4ef6cb7522e611985c83781163f396eda096546de6d706196e0f4bcd58",
+  "bytes": 49663,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D5",
+  "question": "Which npm package do I install to add MetaMask as a wallet connector in a new dapp?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"Which npm package do I install to add MetaMask as a wallet connector in a new dapp?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D5.raw",
+  "sha256": "f872a86339443a918185458a6d770a09ead5e13c51953bec761276f8bb38eb4c",
+  "bytes": 31874,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D6",
+  "question": "Which repository holds the current Aave v3 core protocol contracts?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"Which repository holds the current Aave v3 core protocol contracts?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D6.raw",
+  "sha256": "6afdf61935dd61f6ba5e453cbe575e35a523867f3f277bc78d43198be4cddee9",
+  "bytes": 43854,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D7",
+  "question": "What is the current major version of viem that I should install today?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"What is the current major version of viem that I should install today?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D7.raw",
+  "sha256": "b99d0c12706d083c82092c2b6dc54101132176059fb47375f98bfbaf52fbce36",
+  "bytes": 24432,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D8",
+  "question": "Show me how to use viem 3 getContract in production code.",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"Show me how to use viem 3 getContract in production code.\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D8.raw",
+  "sha256": "3f1ac88fd9ebdf86c3df7fe76fe2ef19864fba8bb01edda18734923f20a99034",
+  "bytes": 68449,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D9",
+  "question": "I am on wagmi 3. Which RainbowKit version pairs with it?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"I am on wagmi 3. Which RainbowKit version pairs with it?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D9.raw",
+  "sha256": "3a355c5996a2b873e196c75ef4befdbc7cefb22041e7fedddcb5a44597a4d508",
+  "bytes": 29140,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "D10",
+  "question": "Which Uniswap repository contains the SwapRouter02 source?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"Which Uniswap repository contains the SwapRouter02 source?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/D10.raw",
+  "sha256": "7d65098a5b48deb8a86cc69bc6b923ec82681588fad54a49e5ec4b56138bee12",
+  "bytes": 28487,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "A1",
+  "question": "How do I supply collateral to Compound v3 and borrow against it?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I supply collateral to Compound v3 and borrow against it?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/A1.raw",
+  "sha256": "d57e7683d8ad4b657c4e91e09ca4262f1aedfb41e5d3062c6d955dde26cabac2",
+  "bytes": 63872,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "A2",
+  "question": "How do I integrate Pendle to buy a PT token?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I integrate Pendle to buy a PT token?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/A2.raw",
+  "sha256": "e5b746e589b0da794bde00bf2134b90cead9f95622a40c045b190cb26a8c8ab2",
+  "bytes": 55539,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "A3",
+  "question": "How do I send a Hyperlane interchain message between two chains?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I send a Hyperlane interchain message between two chains?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/A3.raw",
+  "sha256": "628b563d835c401f051cd17d51a2427d4569001abb4edb21e798c845f03d5110",
+  "bytes": 62000,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "A4",
+  "question": "How do I bridge USDC with Stargate from Ethereum to Arbitrum?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I bridge USDC with Stargate from Ethereum to Arbitrum?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/A4.raw",
+  "sha256": "1fc583e16ef001cf9679e35c6b2e162f269723602ee40fff5ac67990622638d4",
+  "bytes": 52800,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "A5",
+  "question": "How do I mint an NFT with the thirdweb SDK?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I mint an NFT with the thirdweb SDK?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/A5.raw",
+  "sha256": "cc7fa9605d54bc780ab807609706aef3b61dce1e9a92d07fad6ab4ef51dfce51",
+  "bytes": 72677,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "A6",
+  "question": "How do I set up a Biconomy paymaster for gasless transactions?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I set up a Biconomy paymaster for gasless transactions?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/A6.raw",
+  "sha256": "34193e6214444f776a22761f0f49e0b88ebbc0cf37103fce31563c6092d840ad",
+  "bytes": 57343,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "A7",
+  "question": "How do I get a swap quote from the 0x API v2?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I get a swap quote from the 0x API v2?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/A7.raw",
+  "sha256": "5660103edacd6c7842adf4f551f816e7c2fa3b73d3d9cf42c25d130b7ca4c18e",
+  "bytes": 29281,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "claude-web-search",
+  "qid": "A8",
+  "question": "How do I read a Pyth price feed on chain and check its staleness?",
+  "request": {
+   "url": "https://api.anthropic.com/v1/messages",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "anthropic-version": "2023-06-01",
+    "x-api-key": "‹REDACTED›"
+   },
+   "body": "{\"model\":\"claude-sonnet-5\",\"max_tokens\":2048,\"tools\":[{\"type\":\"web_search_20250305\",\"name\":\"web_search\",\"max_uses\":5}],\"messages\":[{\"role\":\"user\",\"content\":\"How do I read a Pyth price feed on chain and check its staleness?\"}]}"
+  },
+  "http_status": 200,
+  "raw_path": "claude-web-search/A8.raw",
+  "sha256": "75cc13941eb67110ad26f15e2ad85b244a4d2fbfe73a5d542a2b38de644dfcf8",
+  "bytes": 61230,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D1",
+  "question": "What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"What is the address of the CCTP TokenMessengerV2 contract on Ethereum mainnet?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D1.raw",
+  "sha256": "515385992829e26a69a5911faa43835978cae58b25ee9f20f39727df71759afe",
+  "bytes": 7030,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D2",
+  "question": "Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"Which CCTP contract address do I use for TokenMessenger on Base, and is it the same address as on Ethereum?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D2.raw",
+  "sha256": "5feee3afde4c22863dccbcabec297dae867ad59cc53d2a2064529f169addd853",
+  "bytes": 13534,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D3",
+  "question": "How do I install the Safe Core SDK and create a Safe transaction in TypeScript?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I install the Safe Core SDK and create a Safe transaction in TypeScript?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D3.raw",
+  "sha256": "96168b31a0f41d0893ec23ffd9d0466bae220de42cba7f1214bba29e3513c481",
+  "bytes": 9598,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D4",
+  "question": "What is the current API for initialising a Safe client — Safe.create or Safe.init?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"What is the current API for initialising a Safe client — Safe.create or Safe.init?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D4.raw",
+  "sha256": "8abf9c192de0e72b78c20a6445fa57b6a8c396432114771d4f4c93cc6e69114d",
+  "bytes": 8972,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D5",
+  "question": "Which npm package do I install to add MetaMask as a wallet connector in a new dapp?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"Which npm package do I install to add MetaMask as a wallet connector in a new dapp?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D5.raw",
+  "sha256": "49211ba8bc3e27274426aee45954492896808405753826ceeda7a0d71ff50a7c",
+  "bytes": 6197,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D6",
+  "question": "Which repository holds the current Aave v3 core protocol contracts?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"Which repository holds the current Aave v3 core protocol contracts?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D6.raw",
+  "sha256": "ab9b0e2d643e6815f11a6a0b958144a4e548635760023c30df3967ce3eb6506d",
+  "bytes": 3731,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D7",
+  "question": "What is the current major version of viem that I should install today?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"What is the current major version of viem that I should install today?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D7.raw",
+  "sha256": "ff23d18e895e2b5b2dfe6e798f26783c48c45f0fe7431b4ab1f6b5572e5df0ae",
+  "bytes": 3116,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D8",
+  "question": "Show me how to use viem 3 getContract in production code.",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"Show me how to use viem 3 getContract in production code.\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D8.raw",
+  "sha256": "48ffc6d6c16ab149dfc27e6beabab312bae577c8032cc275c4f7115e5ad8e191",
+  "bytes": 17553,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D9",
+  "question": "I am on wagmi 3. Which RainbowKit version pairs with it?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"I am on wagmi 3. Which RainbowKit version pairs with it?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D9.raw",
+  "sha256": "68462bbbdd1e084daf4c04e5ad073eea75273ef2ce323c2b6383e5d60a546490",
+  "bytes": 8273,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "D10",
+  "question": "Which Uniswap repository contains the SwapRouter02 source?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"Which Uniswap repository contains the SwapRouter02 source?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/D10.raw",
+  "sha256": "bb4d87c628197a5bbcd96475aae05c9034373ceedcc3c83d64101678e14565df",
+  "bytes": 5695,
+  "attempts": 0,
+  "wall_ms": null,
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "A1",
+  "question": "How do I supply collateral to Compound v3 and borrow against it?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I supply collateral to Compound v3 and borrow against it?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/A1.raw",
+  "sha256": "3692b23031d73deacb282cafc01538bf875ccbe19990f2f0991043d241b45e1c",
+  "bytes": 273,
+  "attempts": 0,
+  "wall_ms": null,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "A2",
+  "question": "How do I integrate Pendle to buy a PT token?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I integrate Pendle to buy a PT token?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/A2.raw",
+  "sha256": "9a6522ed6fc61a4dc732d047b34d57408bee1a4947d672c1104737e4ecbc5776",
+  "bytes": 273,
+  "attempts": 0,
+  "wall_ms": null,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "A3",
+  "question": "How do I send a Hyperlane interchain message between two chains?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I send a Hyperlane interchain message between two chains?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/A3.raw",
+  "sha256": "a2cb26568ee3bb166eb5cf039508632ccdab2f23a730da1686c58f47257bff0e",
+  "bytes": 273,
+  "attempts": 0,
+  "wall_ms": null,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "A4",
+  "question": "How do I bridge USDC with Stargate from Ethereum to Arbitrum?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I bridge USDC with Stargate from Ethereum to Arbitrum?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/A4.raw",
+  "sha256": "4d26bf5548b72db4647f195ae3d036cf35637568a39621f451780bfec246459f",
+  "bytes": 273,
+  "attempts": 0,
+  "wall_ms": null,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "A5",
+  "question": "How do I mint an NFT with the thirdweb SDK?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I mint an NFT with the thirdweb SDK?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/A5.raw",
+  "sha256": "1b86f2d6a471f9e7319fac6e02da509ef1be6677551a1db8f66c50aa0c5c2d00",
+  "bytes": 273,
+  "attempts": 0,
+  "wall_ms": null,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "A6",
+  "question": "How do I set up a Biconomy paymaster for gasless transactions?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I set up a Biconomy paymaster for gasless transactions?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/A6.raw",
+  "sha256": "0a5c79393e9c4b9b29fbc507038dd4dc57aa3bb156f0a5df403e31cdae6c2b71",
+  "bytes": 273,
+  "attempts": 0,
+  "wall_ms": null,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "A7",
+  "question": "How do I get a swap quote from the 0x API v2?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I get a swap quote from the 0x API v2?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/A7.raw",
+  "sha256": "e134d37e1488fcd1a58352988a7586f1fe7fb9925b2beffa6e7320ab22128164",
+  "bytes": 273,
+  "attempts": 0,
+  "wall_ms": null,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ },
+ {
+  "arm": "firecrawl-dev",
+  "qid": "A8",
+  "question": "How do I read a Pyth price feed on chain and check its staleness?",
+  "request": {
+   "url": "https://api.firecrawl.dev/v2/search",
+   "method": "POST",
+   "headers": {
+    "content-type": "application/json",
+    "authorization": "‹REDACTED›"
+   },
+   "body": "{\"query\":\"How do I read a Pyth price feed on chain and check its staleness?\",\"limit\":5,\"categories\":[\"developer\"]}"
+  },
+  "http_status": 200,
+  "raw_path": "firecrawl-dev/A8.raw",
+  "sha256": "84655634256a7c7465dd7c120c3e27c0dd6f1eed4db32574c23783fb4521b6e5",
+  "bytes": 273,
+  "attempts": 0,
+  "wall_ms": null,
+  "void_reason": "quota message in body",
+  "fetched_at": "carried — collected earlier in this cycle, not re-fetched"
+ }
+]

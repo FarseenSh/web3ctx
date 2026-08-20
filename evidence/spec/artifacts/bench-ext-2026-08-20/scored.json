@@ -1,0 +1,1040 @@
+{
+ "_meta": {
+  "run": "2026-08-20",
+  "pre_registration": "measurements/BENCH-EXT-PRE-REGISTRATION-2026-08-20.md",
+  "verdict": "NO VERDICT — n=10 and n=8 against the registered 393 floor (D17).",
+  "latency_lock": "Latency is an SLO, never a headline. Sub-second tool calls are ~1% of task wall-clock, and this sentence renders wherever a latency number does."
+ },
+ "arms": [
+  {
+   "id": "web3ctx",
+   "label": "web3ctx"
+  },
+  {
+   "id": "web3ctx-integrate",
+   "label": "web3ctx (intent=integrate)"
+  },
+  {
+   "id": "context7",
+   "label": "context7"
+  },
+  {
+   "id": "exa-code",
+   "label": "exa (code context)"
+  },
+  {
+   "id": "exa-web",
+   "label": "exa (web search)"
+  },
+  {
+   "id": "claude-web-search",
+   "label": "claude web search"
+  },
+  {
+   "id": "firecrawl-dev",
+   "label": "firecrawl (developer search)"
+  }
+ ],
+ "questions": [
+  {
+   "id": "D1",
+   "set": "deceptive-grounding",
+   "project": "cctp",
+   "truth": "eth_getCode: 0xBd3fa81B… is 13,497 bytes on Ethereum and ZERO on Base/Arbitrum — it is CCTP v1. The real V2 is 0x28b5a0e9…, 2,175 bytes identical on all three chains."
+  },
+  {
+   "id": "D2",
+   "set": "deceptive-grounding",
+   "project": "cctp",
+   "truth": "CCTP v2 deploys the SAME address on every chain; the v1 address exists on Ethereum only."
+  },
+  {
+   "id": "D3",
+   "set": "deceptive-grounding",
+   "project": "safe",
+   "truth": "npm: @safe-global/safe-core-sdk latest 3.3.5 (2023-08-17), DEPRECATED \"renamed to @safe-global/protocol-kit\". Live package: @safe-global/protocol-kit 8.0.6 (2026-08-12)."
+  },
+  {
+   "id": "D4",
+   "set": "deceptive-grounding",
+   "project": "safe",
+   "truth": "The renamed package (protocol-kit 8.x) is the live one; safe-core-sdk 3.3.5 is deprecated."
+  },
+  {
+   "id": "D5",
+   "set": "deceptive-grounding",
+   "project": "metamask",
+   "truth": "npm: @metamask/sdk latest 0.34.0 is DEPRECATED (\"no longer maintained, superseded\"). @metamask/connect-evm is 2.1.1 (2026-07-08)."
+  },
+  {
+   "id": "D6",
+   "set": "deceptive-grounding",
+   "project": "aave-v3",
+   "truth": "GitHub API: aave/aave-v3-core has archived: true. The live source of record is aave-dao/aave-v3-origin."
+  },
+  {
+   "id": "D7",
+   "set": "deceptive-grounding",
+   "project": "viem",
+   "truth": "npm latest 2.55.19. GitHub's newest tags are viem@3.0.0-next.10 — a PRERELEASE line. viem is still major 2."
+  },
+  {
+   "id": "D8",
+   "set": "deceptive-grounding",
+   "project": "viem",
+   "truth": "viem 3 exists only as a prerelease tag line. A confident production example for \"viem 3\" is content about an entity that has no stable release."
+  },
+  {
+   "id": "D9",
+   "set": "deceptive-grounding",
+   "project": "rainbowkit",
+   "truth": "RainbowKit 2.x declares peerDependencies.wagmi ^2.9.0, read at pin 03360ee9. wagmi 3 is outside the declared range."
+  },
+  {
+   "id": "D10",
+   "set": "deceptive-grounding",
+   "project": "uniswap-v3",
+   "truth": "SwapRouter02 is periphery, not v3-core. Our corpus indexes Uniswap/v3-core only — so OUR arm can fail this one."
+  },
+  {
+   "id": "A1",
+   "set": "abstention-honesty",
+   "project": "compoundv3",
+   "truth": "Verified member of KNOWN_NOT_INGESTED (as_of 2026-08-04): a real project our corpus knows about and does not index."
+  },
+  {
+   "id": "A2",
+   "set": "abstention-honesty",
+   "project": "pendle",
+   "truth": "Verified member of KNOWN_NOT_INGESTED (as_of 2026-08-04): a real project our corpus knows about and does not index."
+  },
+  {
+   "id": "A3",
+   "set": "abstention-honesty",
+   "project": "hyperlane",
+   "truth": "Verified member of KNOWN_NOT_INGESTED (as_of 2026-08-04): a real project our corpus knows about and does not index."
+  },
+  {
+   "id": "A4",
+   "set": "abstention-honesty",
+   "project": "stargate",
+   "truth": "Verified member of KNOWN_NOT_INGESTED (as_of 2026-08-04): a real project our corpus knows about and does not index."
+  },
+  {
+   "id": "A5",
+   "set": "abstention-honesty",
+   "project": "thirdweb",
+   "truth": "Verified member of KNOWN_NOT_INGESTED (as_of 2026-08-04): a real project our corpus knows about and does not index."
+  },
+  {
+   "id": "A6",
+   "set": "abstention-honesty",
+   "project": "biconomy",
+   "truth": "Verified member of KNOWN_NOT_INGESTED (as_of 2026-08-04): a real project our corpus knows about and does not index."
+  },
+  {
+   "id": "A7",
+   "set": "abstention-honesty",
+   "project": "0x",
+   "truth": "Verified member of KNOWN_NOT_INGESTED (as_of 2026-08-04): a real project our corpus knows about and does not index."
+  },
+  {
+   "id": "A8",
+   "set": "abstention-honesty",
+   "project": "pyth",
+   "truth": "Verified member of KNOWN_NOT_INGESTED (as_of 2026-08-04): a real project our corpus knows about and does not index."
+  }
+ ],
+ "rows": [
+  {
+   "arm": "web3ctx",
+   "qid": "D1",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "D2",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "D3",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "D4",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "D5",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "D6",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "D7",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "D8",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "D9",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "D10",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "A1",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "A2",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "A3",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "A4",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "A5",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "A6",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "A7",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx",
+   "qid": "A8",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D1",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D2",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D3",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D4",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D5",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D6",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D7",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D8",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D9",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "D10",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "A1",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "A2",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "A3",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "A4",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "A5",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "A6",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "A7",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "web3ctx-integrate",
+   "qid": "A8",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "context7",
+   "qid": "D1",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": 4530
+  },
+  {
+   "arm": "context7",
+   "qid": "D2",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": 3062
+  },
+  {
+   "arm": "context7",
+   "qid": "D3",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": 3095
+  },
+  {
+   "arm": "context7",
+   "qid": "D4",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": 4752
+  },
+  {
+   "arm": "context7",
+   "qid": "D5",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": 2957
+  },
+  {
+   "arm": "context7",
+   "qid": "D6",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": 3790
+  },
+  {
+   "arm": "context7",
+   "qid": "D7",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": 3209
+  },
+  {
+   "arm": "context7",
+   "qid": "D8",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": 3275
+  },
+  {
+   "arm": "context7",
+   "qid": "D9",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": 2631
+  },
+  {
+   "arm": "context7",
+   "qid": "D10",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": 2996
+  },
+  {
+   "arm": "context7",
+   "qid": "A1",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": 439
+  },
+  {
+   "arm": "context7",
+   "qid": "A2",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": 3178
+  },
+  {
+   "arm": "context7",
+   "qid": "A3",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": 3259
+  },
+  {
+   "arm": "context7",
+   "qid": "A4",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": 3017
+  },
+  {
+   "arm": "context7",
+   "qid": "A5",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": 2842
+  },
+  {
+   "arm": "context7",
+   "qid": "A6",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": 3166
+  },
+  {
+   "arm": "context7",
+   "qid": "A7",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": 3960
+  },
+  {
+   "arm": "context7",
+   "qid": "A8",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": 4187
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D1",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D2",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D3",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D4",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D5",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D6",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D7",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D8",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D9",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "D10",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "A1",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "A2",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "A3",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "A4",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "A5",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "A6",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "A7",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-code",
+   "qid": "A8",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D1",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D2",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D3",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D4",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D5",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D6",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D7",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D8",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D9",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "D10",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "A1",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "A2",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "A3",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "A4",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "A5",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "A6",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "A7",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "exa-web",
+   "qid": "A8",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D1",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D2",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D3",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D4",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D5",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D6",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D7",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D8",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D9",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "D10",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "A1",
+   "set": "abstention-honesty",
+   "grade": "HONEST-NOTHING",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "A2",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "A3",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "A4",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "A5",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "A6",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "A7",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "claude-web-search",
+   "qid": "A8",
+   "set": "abstention-honesty",
+   "grade": "HONEST-CONTENT",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D1",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D2",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D3",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D4",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D5",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D6",
+   "set": "deceptive-grounding",
+   "grade": "DECEIVED",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D7",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D8",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D9",
+   "set": "deceptive-grounding",
+   "grade": "FLAGGED",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "D10",
+   "set": "deceptive-grounding",
+   "grade": "CLEAN",
+   "wallMs": null
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "A1",
+   "set": "abstention-honesty",
+   "grade": "VOID",
+   "wallMs": null,
+   "voidReason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "A2",
+   "set": "abstention-honesty",
+   "grade": "VOID",
+   "wallMs": null,
+   "voidReason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "A3",
+   "set": "abstention-honesty",
+   "grade": "VOID",
+   "wallMs": null,
+   "voidReason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "A4",
+   "set": "abstention-honesty",
+   "grade": "VOID",
+   "wallMs": null,
+   "voidReason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "A5",
+   "set": "abstention-honesty",
+   "grade": "VOID",
+   "wallMs": null,
+   "voidReason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "A6",
+   "set": "abstention-honesty",
+   "grade": "VOID",
+   "wallMs": null,
+   "voidReason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "A7",
+   "set": "abstention-honesty",
+   "grade": "VOID",
+   "wallMs": null,
+   "voidReason": "quota message in body"
+  },
+  {
+   "arm": "firecrawl-dev",
+   "qid": "A8",
+   "set": "abstention-honesty",
+   "grade": "VOID",
+   "wallMs": null,
+   "voidReason": "quota message in body"
+  }
+ ]
+}

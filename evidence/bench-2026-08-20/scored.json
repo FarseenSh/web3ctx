@@ -41,11 +41,11 @@
    "calledHow": "Public HTTPS endpoint `mcp.context7.com/mcp`, its documented two-step: resolve-library-id then get-library-docs. 🔴 Its earlier VOID was an installation gap in one session, NOT a verdict — reached here over HTTP with no installation at all.",
    "ran": 16,
    "voided": 0,
-   "medianTokens": 558,
+   "medianTokens": 1683,
    "immutable": 0,
-   "totalUrls": 0,
-   "namesVersion": 6,
-   "trapsCaught": 0,
+   "totalUrls": 83,
+   "namesVersion": 8,
+   "trapsCaught": 3,
    "trapsPartial": 2,
    "trapsScored": 6
   },
@@ -126,7 +126,7 @@
    "cells": {
     "web3ctx": "PASS",
     "web3ctx-integrate": "PASS",
-    "context7": "FAIL",
+    "context7": "partial",
     "exa-code": "partial",
     "exa-web": "partial",
     "claude-web-search": "PASS",
@@ -139,7 +139,7 @@
    "cells": {
     "web3ctx": "partial",
     "web3ctx-integrate": "PASS",
-    "context7": "FAIL",
+    "context7": "PASS",
     "exa-code": "partial",
     "exa-web": "PASS",
     "claude-web-search": "PASS",
@@ -152,7 +152,7 @@
    "cells": {
     "web3ctx": "partial",
     "web3ctx-integrate": "PASS",
-    "context7": "partial",
+    "context7": "PASS",
     "exa-code": "PASS",
     "exa-web": "PASS",
     "claude-web-search": "PASS",
@@ -165,7 +165,7 @@
    "cells": {
     "web3ctx": "partial",
     "web3ctx-integrate": "PASS",
-    "context7": "partial",
+    "context7": "PASS",
     "exa-code": "partial",
     "exa-web": "PASS",
     "claude-web-search": "PASS",
@@ -178,7 +178,7 @@
    "cells": {
     "web3ctx": "partial",
     "web3ctx-integrate": "PASS",
-    "context7": "FAIL",
+    "context7": "partial",
     "exa-code": "FAIL",
     "exa-web": "PASS",
     "claude-web-search": "PASS",
