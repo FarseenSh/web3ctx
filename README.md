@@ -89,7 +89,7 @@ not merely old.
 - `overview-v3-2026-08.html` — SUPERSEDED — spec-era deck; its design shell was reused for the site at b557635, its numbers were not
 - `overview-v2-2026-08.html` — RETIRED — pre-16-, already ruled do-not-show
 - `~/web3mcp/*.html` — WRONG — depicts the pre-pivot design that was never built
-- `eval-2026-08.html` — 🔴 WRONG — carries numbers from the slice whose lock was REFUSED (F51). Publishing it would publish figures scored on a slice that does not exist
+- `eval-2026-08.html` — 🔴 WRONG — carries numbers from the slice whose lock was REFUSED (F51). Publishing it would publish figures scored on a slice that does not exist. ⭐ **RETIRED 2026-08-21 (RULING K), and retirement here means UNEMITTABLE, not merely unpublished.** `tools/build-site.ts` used to copy this file verbatim into `docs/eval.html`; `docs/` is served by nothing today, so the page was inert rather than safe — and a generator that can still render a ruled-wrong page is a standing hazard, because the day anyone points a host at `docs/` it publishes. **The code path is DELETED, not flagged**, on the `overview-v2` precedent below: a flag can be flipped back by someone who never read the ruling. Five dead `protocols/…` links died with it — dead twice over, into a PRIVATE repo at a path that exists in neither. ⚠ The FILE stays in this repo as history: **removal is from publication, never from the record.** The only evals page that publishes is `public-site/dist/evals.html`, slot-generated from frozen artifacts under D16 — every figure derived, none typed.
 - `launch-charts.html` — LOCKED — superseded by the generated site, which regenerates instead of storing
 - `status-honest.html, tweet-cards.html` — HISTORICAL — dated states, not current claims
 
