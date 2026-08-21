@@ -12,12 +12,10 @@
 20eb83e07a4690a5cd3907def9e957557920a689ac95725d15817adfc6e51b44  evidence/payload-audit/web3ctx/q08.json
 22f4c8ac27b6bff19dc35680b769fa131f5ff821474e3675810a2f825fb64bb2  evidence/bench-2026-08-20/web3ctx-integrate/T6.raw
 28a9a19417ebf3fd962d2130f3fca6bbcc85c5f5e9f789e4deee7739169580d3  evidence/bench-2026-08-20/web3ctx/T3.raw
-301f9b7b740c0c6a96cc6447debd6679a265dc915387968c90634c0b36542dba  index.html
 3477b6920cd2c23c1f0445987d42b742263819e9f47458555c63e35078f6d1b2  evidence/bench-2026-08-20/web3ctx-integrate/Q01.raw
 3522592c0340c824e704e99831e70b3320301b72b2bcda36ffdbb68d39ecfb87  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D6.raw
 37a9ece66e55982f1b204534d5a7badffb23fd766b1aeb862bcc2f71285fd6e2  evidence/payload-audit/web3ctx/q12.json
 38ea6a172d9d7daa57a6f5ac2ae3a3d5ba4898d7e363cdc98f4466ebfceb2a01  evidence/bench-2026-08-20/web3ctx/T4.raw
-3aebec77efda0b44bbbb8dac9b1eafd6e3530de33f87df937ae4a3e9893603be  evals.html
 3c3381801352ade44f98484a6cd4fda03ef07660a3787625939502844650ee6f  evidence/BENCH-EXT-RESULT-2026-08-20.md
 3c63b28a41023592b41398065657319d4456ee13bdaf585fcdb1dcdaf944e263  evidence/S5.3-DEMOTION-RESULT-2026-08-19.md
 3ca2bea340bc1d413627ce1659321fc6480a16bf141c1bb36a66167eebf6aba3  evidence/bench-2026-08-20/manifest.json
@@ -69,6 +67,7 @@
 941d7610746cf0a7959b37c34b18740f84b30fc5704a5b9e7e523088067d5dbb  evidence/bench-2026-08-20/web3ctx-integrate/T4.raw
 942c709d24667555d5208b1e0cd2bf6acd2dce99d6053250149da026c92a8f91  evidence/payload-audit/web3ctx/q01.json
 94cf2d4e0d69a5a1b5d2b2034e2dbead2fd07a3935f777c6a268bcf81c100f9e  evidence/bench-2026-08-20/web3ctx-integrate/T3.raw
+9546b066f4fb586427b8bc116d2d1be5dd92b55bf85c3fdf96a8982ee5a21fd8  evals.html
 966296fb2c3e73b7596d405fa3cdec79e115618cfafa5a1a5f24ebec8d81fc0a  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx-integrate/D3.raw
 96c299ecbe83ace8c2fd62a210fa689fb900d0e08e9c8cb622913ae2073ce2bf  evidence/F64-PAYLOAD-EFFICIENCY-PRE-REGISTRATION.md
 9d2c513c8c75f1766d46c87ce54290a009d9ad87865d4c6038ae2334ee7282ca  evidence/F68-RESULT-2026-08-19.md
@@ -107,6 +106,7 @@ e6d7f8d47d06595ce29c8d375a174ff45d98d74c22565e33d22efc2fbd9943dc  evidence/PRE-R
 e71c21fb49a333e020f3bb7d427e1d24e1261f34e2380a64dddd893999f0cdbb  evidence/ATTESTATION-PROTOCOL.md
 eb0aa304a2fca014fe9958c15b6375cf845cc2c1c7d82d848426337752334112  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D1.raw
 ec408db188b18cdbc5be81df6ffa17f7d4bf3657b9802ed3426ac10e2f8d5f7c  evidence/payload-audit/web3ctx/q06.json
+ec823ca6f6ec2ef65116348eae9b43798689c5b7ea370659106062bc9e7de62a  index.html
 ed044b678cb1a8a0969c22ff7791d3661685f4f43dc4f599b5d7c10c7d5f160c  evidence/EXTERNAL-EVIDENCE-2026-08-20.md
 eeddcac63b5645b25de00c7ae7b00a71efa52ae6d4345c32c4d8c2d51020a10d  evidence/bench-2026-08-20/web3ctx/Q08.raw
 ef2ecc99d4c864b4065038f24f156bc0c9498a262567853b2eae7d1a20b0e5bd  architecture.html
