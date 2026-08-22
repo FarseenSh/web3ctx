@@ -12,7 +12,6 @@
 20eb83e07a4690a5cd3907def9e957557920a689ac95725d15817adfc6e51b44  evidence/payload-audit/web3ctx/q08.json
 22f4c8ac27b6bff19dc35680b769fa131f5ff821474e3675810a2f825fb64bb2  evidence/bench-2026-08-20/web3ctx-integrate/T6.raw
 28a9a19417ebf3fd962d2130f3fca6bbcc85c5f5e9f789e4deee7739169580d3  evidence/bench-2026-08-20/web3ctx/T3.raw
-2e689d1d69b332e4950c6bf7cda5e4a82ed5d14f38f85cae324fd6d08e314bab  index.html
 3477b6920cd2c23c1f0445987d42b742263819e9f47458555c63e35078f6d1b2  evidence/bench-2026-08-20/web3ctx-integrate/Q01.raw
 3522592c0340c824e704e99831e70b3320301b72b2bcda36ffdbb68d39ecfb87  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D6.raw
 37a9ece66e55982f1b204534d5a7badffb23fd766b1aeb862bcc2f71285fd6e2  evidence/payload-audit/web3ctx/q12.json
@@ -90,11 +89,13 @@ ae80f24d96dc50db92442be42bebc0ae036cc1bd8403150ec2ab6ee0dc6c668a  evidence/BENCH
 b0a40eb78a47e552125f4e4504a7542602a4d236b7b5322ce18a25d0dd3dadd6  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D7.raw
 b14fd4413c5052fefd48547bacc56468b23a535c4be67f33a3c78b3073419823  evidence/bench-2026-08-20/web3ctx/Q02.raw
 b63cc8510095120fe0c44dac63fdc13f934b4ec00230a180d26c6bac8cc2b0b2  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D2.raw
+bc8faf7926d7a10fdcfcbe7b5d867b1117462cd4e855a73ecabb733e4a4f28ad  evals.html
 bd6e8292a79783b9d2381f75b5caae28ed1615e2c0779346f172ffa782fc6ba9  evidence/bench-2026-08-20/web3ctx-integrate/Q05.raw
 c66398a7639be3557fed10f44105df8d0d709677719c1206bde0f21b1c97d5f5  evidence/F72-RESULT-2026-08-20.md
 c89c26237547f9f63776dbb1fac676d4f0dcf0c368cea08ec674626d37b109ab  evidence/spec/artifacts/bench-ext-2026-08-20/manifest.json
 cb2bd79ab9e1048904b8e67a0663c1a15270de8ba68b7e1d007e93e1a7c0e969  evidence/bench-2026-08-20/web3ctx/Q05.raw
 cb9997f31e9cca5024ae82f793180b6150d429280b75f451f4418b6ddab78d4f  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx-integrate/D4.raw
+cf337048076d1a5e8e5d0e794c9eceb6d3798bb5f4dd59e243319f2b9c35d975  index.html
 d0a4bb59c11bae6189ec83ccafaac6b0a8154dc712920d2d34133ebc6f0bc20f  evidence/bench-2026-08-20/web3ctx/T5.raw
 d0a4bb59c11bae6189ec83ccafaac6b0a8154dc712920d2d34133ebc6f0bc20f  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D9.raw
 d50c5969843920bb0d8f76bef05cc3690ddc0d24a8523cb9c13d51175ed1b174  evidence/bench-2026-08-20/web3ctx/T2.raw
@@ -107,7 +108,6 @@ e71c21fb49a333e020f3bb7d427e1d24e1261f34e2380a64dddd893999f0cdbb  evidence/ATTES
 eb0aa304a2fca014fe9958c15b6375cf845cc2c1c7d82d848426337752334112  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D1.raw
 ec408db188b18cdbc5be81df6ffa17f7d4bf3657b9802ed3426ac10e2f8d5f7c  evidence/payload-audit/web3ctx/q06.json
 ed044b678cb1a8a0969c22ff7791d3661685f4f43dc4f599b5d7c10c7d5f160c  evidence/EXTERNAL-EVIDENCE-2026-08-20.md
-eec49bae5676edc2bb975c5c998dbcffe485d036524f9a4d1f446e4b2a0c5db7  evals.html
 eeddcac63b5645b25de00c7ae7b00a71efa52ae6d4345c32c4d8c2d51020a10d  evidence/bench-2026-08-20/web3ctx/Q08.raw
 ef2ecc99d4c864b4065038f24f156bc0c9498a262567853b2eae7d1a20b0e5bd  architecture.html
 f0c187f2d2cdfe0105a5cca25baabe32852e7cb6b375cd23c285cd670c9a9bc1  evidence/stranger-bench-2026-08-20/PROTOCOL.md
