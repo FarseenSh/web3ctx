@@ -328,3 +328,21 @@ open by an instrument does not need a proposal held open beside it.*
 **design change to the bodies rule** and needs a new owner ruling. ⚠ **The stranger benchmark
 finding us the most expensive of four arms is not that ruling** — it is the fourth independent
 confirmation of a cost already ruled structural.
+
+
+---
+
+## F84(b) — PARSERS ARE ROADMAP, ORDERED BY THE DEMAND LEDGER *(ruled 2026-08-22)*
+
+**Python · Go · Java parsing, and `.rst` ingestion, are roadmap items — post-launch, ordered by the
+demand ledger, NOT by tonight's momentum.**
+
+> *"The honest label makes waiting safe; a rushed parser makes it wrong."*
+
+The measured pressure is real — **94 of 623 integration projects (15.1%) are prose-only**, and F85
+adds three languages declared with no grammar at all. Neither is a reason to add a parser in the
+same session that found the gap: adding `.py` multiplies the corpus and changes what every Python
+row means; adding `.rst` changes what a "docs" unit is. Both are scope decisions with cost.
+
+**What ships instead is F84(a)'s coverage descriptor** — the payload says *"this project's code is
+not indexed, and here is the language"*, so a caller is never misled while the queue waits.

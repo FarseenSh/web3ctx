@@ -4,6 +4,7 @@
 0969e4a9acb5fdb9d55eda8e7a1fba8e1ac48157030b1ec5d9f6c47b346e9953  evidence/bench-2026-08-20/web3ctx/Q10.raw
 0e042fe32d8d62f840ec23deb55804875c4ca99e74ce3574a09c882d0c9b83e2  evidence/spec/artifacts/bench-ext-2026-08-20/scored.json
 11a73f37bc5e514b8e5992cc5ffe6f2b93a90d5197a0aaadb867444847c11bb5  evidence/PRE-REG-A-EXPANSION-REATTEMPT.md
+11bffe7cf2a69b217776ec5fe60edea4cf21a4e4b5c791405fbab1a439bce6d4  evidence/ROADMAP-POST-LAUNCH-2026-08-20.md
 12891ea3a4af93f6f26c7f626e99fc1fe89ae2c95167c7d25251c27b7fc3ce17  evidence/bench-2026-08-20/web3ctx-integrate/T1.raw
 12d3df73656a23efcccc05231405bf56e60c1e031a39ff7bc4fa35c200f99dd7  evidence/bench-2026-08-20/web3ctx-integrate/Q04.raw
 13eadb4114de6a8966da2df28ef290d37f6593f248e32c48261c8c3ec0e0cf9c  evidence/bench-2026-08-20/web3ctx/Q07.raw
@@ -41,6 +42,7 @@
 6310260c641cc1e24f606fd223925b133164f61ff57055fc3088b0aca9270312  evidence/stranger-bench-2026-08-20/RESULTS.md
 64391d14592924e7fba75db9a266e0eade114fc33a64ac3001979c3fff74bf1c  evidence/payload-audit/web3ctx/q14.json
 681dc88789c8a3c5a2894bac75afb29e35039069d4262955800ebf95716328e2  evidence/bench-2026-08-20/scored.json
+683b53ee0bb15b562c8794d07b925d1c7cf12b259fb3a6870777f71418143c5c  evals.html
 6930d2d562cb898352691ad2381162327b7fd7d14833e98eac1ba821e8d0042f  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx-integrate/A5.raw
 6930d2d562cb898352691ad2381162327b7fd7d14833e98eac1ba821e8d0042f  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/A5.raw
 6ac74f3a7fc29fb67b4f42a71fd0d4ea603a1e74e6bd27bc3a02a845cb039660  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx-integrate/D1.raw
@@ -60,7 +62,6 @@
 829be6bf04040ddbb1a5b27e26c88fb97a083999e19302117b8ef9d43e9aabac  evidence/payload-audit/web3ctx/q10.json
 83ae9b432081c69f6128f0a4a0d1fa35f2e79afa1a2ad7b1680755c2e276b891  evidence/stranger-bench-2026-08-20/MANIFEST.md
 83dbb954111445693bdcbc97cc2c2a7a64a9fdf09c3425bc97013ddb20b8c1e1  evidence/payload-audit/web3ctx/q02.json
-8b9402bd94543f4d32662f0c40edb87a16e139c5ede8979963113e880ff310d2  evals.html
 8cf7840e1c0ac4fa25456705233756a1ccb40821a28ab3fc3ca36e3554062ad3  evidence/bench-2026-08-20/web3ctx-integrate/Q07.raw
 8e197a3c970b25a1b11e95a223495c3eb636eb56120a0864992d63f7cbb54d5b  evidence/bench-2026-08-20/web3ctx-integrate/Q10.raw
 8e73ed9120804e9a5d5b5ff21ff28438b6c46b74a9f43a7492a3f7ddacff12cf  site.js
@@ -91,15 +92,14 @@ b0a40eb78a47e552125f4e4504a7542602a4d236b7b5322ce18a25d0dd3dadd6  evidence/spec/
 b14fd4413c5052fefd48547bacc56468b23a535c4be67f33a3c78b3073419823  evidence/bench-2026-08-20/web3ctx/Q02.raw
 b63cc8510095120fe0c44dac63fdc13f934b4ec00230a180d26c6bac8cc2b0b2  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D2.raw
 bd6e8292a79783b9d2381f75b5caae28ed1615e2c0779346f172ffa782fc6ba9  evidence/bench-2026-08-20/web3ctx-integrate/Q05.raw
-be903bc06d0395746642ad51615ca3540d34990ca7789f1276031ffc2a8f76ce  index.html
 c66398a7639be3557fed10f44105df8d0d709677719c1206bde0f21b1c97d5f5  evidence/F72-RESULT-2026-08-20.md
 c89c26237547f9f63776dbb1fac676d4f0dcf0c368cea08ec674626d37b109ab  evidence/spec/artifacts/bench-ext-2026-08-20/manifest.json
+ca1cee54f4ebbcae4f1ba278721d708029f94c224e79c0582b69808dfb62f173  index.html
 cb2bd79ab9e1048904b8e67a0663c1a15270de8ba68b7e1d007e93e1a7c0e969  evidence/bench-2026-08-20/web3ctx/Q05.raw
 cb9997f31e9cca5024ae82f793180b6150d429280b75f451f4418b6ddab78d4f  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx-integrate/D4.raw
 d0a4bb59c11bae6189ec83ccafaac6b0a8154dc712920d2d34133ebc6f0bc20f  evidence/bench-2026-08-20/web3ctx/T5.raw
 d0a4bb59c11bae6189ec83ccafaac6b0a8154dc712920d2d34133ebc6f0bc20f  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D9.raw
 d50c5969843920bb0d8f76bef05cc3690ddc0d24a8523cb9c13d51175ed1b174  evidence/bench-2026-08-20/web3ctx/T2.raw
-d707a59daba7d1057fd130729bc0f4851f0749643ffe971ff06d1a175a6a9100  evidence/ROADMAP-POST-LAUNCH-2026-08-20.md
 e28c4636c5f3504f1a3cffd8b09cbf434d174d7a1fe6b17db8d4a69948c8d77d  evidence/W1-PRECISION-PRE-REGISTRATION.md
 e53fd04f4f74f1a6c3e115d0c3c7dcf900d3c1bdcad65f89afaed2075bd70340  evidence/spec/artifacts/globalping-2026-08-20.json
 e5c9c5fbce5179e0a9925b2438044039434cd633418103c7b45390e910f9e039  evidence/bench-2026-08-20/web3ctx/T6.raw
