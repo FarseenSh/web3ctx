@@ -87,6 +87,7 @@ aaa6a1f30c64d860a864157071f782ff77c4803913e809b3863e1860010eba1e  evidence/paylo
 ac961875bbdcd6e8491a52486e7ec04f6d64abc0e9ae1e2b1d7f0890dd0ae6ca  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D3.raw
 ac9ccfdf5a381caed0e877cca38a00656d6bd130b9d06cfd07eaf639357a5371  evidence/payload-audit/web3ctx/q09.json
 ae80f24d96dc50db92442be42bebc0ae036cc1bd8403150ec2ab6ee0dc6c668a  evidence/BENCH-EXT-PRE-REGISTRATION-2026-08-20.md
+af310a69a37bb72eaae5cab80ff61912f478ffc08c930ee5cd5d168ee7fdacb4  evals.html
 b0a40eb78a47e552125f4e4504a7542602a4d236b7b5322ce18a25d0dd3dadd6  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D7.raw
 b14fd4413c5052fefd48547bacc56468b23a535c4be67f33a3c78b3073419823  evidence/bench-2026-08-20/web3ctx/Q02.raw
 b63cc8510095120fe0c44dac63fdc13f934b4ec00230a180d26c6bac8cc2b0b2  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D2.raw
@@ -95,16 +96,15 @@ c66398a7639be3557fed10f44105df8d0d709677719c1206bde0f21b1c97d5f5  evidence/F72-R
 c89c26237547f9f63776dbb1fac676d4f0dcf0c368cea08ec674626d37b109ab  evidence/spec/artifacts/bench-ext-2026-08-20/manifest.json
 cb2bd79ab9e1048904b8e67a0663c1a15270de8ba68b7e1d007e93e1a7c0e969  evidence/bench-2026-08-20/web3ctx/Q05.raw
 cb9997f31e9cca5024ae82f793180b6150d429280b75f451f4418b6ddab78d4f  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx-integrate/D4.raw
-ccfefdb910b0a994c88b089ebeecb4170f820b94fa20c0ddea79297c7611a6ef  evals.html
 d0a4bb59c11bae6189ec83ccafaac6b0a8154dc712920d2d34133ebc6f0bc20f  evidence/bench-2026-08-20/web3ctx/T5.raw
 d0a4bb59c11bae6189ec83ccafaac6b0a8154dc712920d2d34133ebc6f0bc20f  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D9.raw
 d50c5969843920bb0d8f76bef05cc3690ddc0d24a8523cb9c13d51175ed1b174  evidence/bench-2026-08-20/web3ctx/T2.raw
 e28c4636c5f3504f1a3cffd8b09cbf434d174d7a1fe6b17db8d4a69948c8d77d  evidence/W1-PRECISION-PRE-REGISTRATION.md
+e52c71380f957692fa5f26591d4953dfc329a59ddd89ce8b5a9bdb94ee8fb768  index.html
 e53fd04f4f74f1a6c3e115d0c3c7dcf900d3c1bdcad65f89afaed2075bd70340  evidence/spec/artifacts/globalping-2026-08-20.json
 e5c9c5fbce5179e0a9925b2438044039434cd633418103c7b45390e910f9e039  evidence/bench-2026-08-20/web3ctx/T6.raw
 e6d7f8d47d06595ce29c8d375a174ff45d98d74c22565e33d22efc2fbd9943dc  evidence/PRE-REG-B-UNIT-CLASS-DEMOTION.md
 e71c21fb49a333e020f3bb7d427e1d24e1261f34e2380a64dddd893999f0cdbb  evidence/ATTESTATION-PROTOCOL.md
-e837780672bdb3927e6dbdf9d16b181ff4780f8fd41fe3a8bf28325dc20dab04  index.html
 eb0aa304a2fca014fe9958c15b6375cf845cc2c1c7d82d848426337752334112  evidence/spec/artifacts/bench-ext-2026-08-20/web3ctx/D1.raw
 ec408db188b18cdbc5be81df6ffa17f7d4bf3657b9802ed3426ac10e2f8d5f7c  evidence/payload-audit/web3ctx/q06.json
 ed044b678cb1a8a0969c22ff7791d3661685f4f43dc4f599b5d7c10c7d5f160c  evidence/EXTERNAL-EVIDENCE-2026-08-20.md
