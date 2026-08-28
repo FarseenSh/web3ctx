@@ -138,3 +138,18 @@ footer.site a{color:var(--mint);text-decoration:none}
    would turn mint against faint text -- both visible changes nobody asked for. `footer.site
    a.plain` is specific enough to beat the mint rule above it. */
 .kick a.plain,footer.site a.plain{color:inherit;text-decoration:none}
+
+/* ---------- coverage filter ---------- */
+/* The filter box lives inside a .fighead, which is uppercase + letter-spaced — an input inheriting
+   that is unreadable while you type into it, so the field opts out of both. */
+#cov-filter{font-family:var(--mono);font-size:13px;letter-spacing:normal;text-transform:none;
+ background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px;
+ padding:8px 11px;width:min(320px,100%);outline:none}
+#cov-filter:focus{border-color:var(--mintdim)}
+#cov-count{font-family:var(--mono);font-size:11px;color:var(--faint);margin-left:12px;
+ letter-spacing:.08em}
+/* 630 rows is a long page: the header has to survive the scroll or the columns stop meaning
+   anything halfway down. */
+#cov-table thead th{position:sticky;top:0;background:var(--panel);z-index:1}
+#cov-table td{vertical-align:top}
+#cov-table code{font-size:12.5px}

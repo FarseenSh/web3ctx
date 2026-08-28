@@ -1,0 +1,14 @@
+{
+  "question": "how do I bridge USDC with CCTP",
+  "endpoint": "https://mcp.scarai.xyz/mcp",
+  "route": "authless — no key, no signup, the route a stranger uses",
+  "arguments": {
+    "query": "how do I bridge USDC with CCTP"
+  },
+  "captured_at": "2026-08-28",
+  "http_status": 200,
+  "bytes": 26191,
+  "sha256": "bc58a9feba1f63091c443a4a4d87a731b79879f3dff66a8a011d76285c040f51",
+  "excerpt_lines": 39,
+  "total_lines": 231
+}

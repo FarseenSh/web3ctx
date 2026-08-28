@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>web3ctx — who runs it, what it logs, what it promises</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="web3ctx">
+<meta property="og:url" content="https://web3ctx.scarai.xyz/operator.html">
+<meta property="og:title" content="web3ctx — who runs it, what it logs, what it promises">
+<meta property="og:description" content="The operator, the published rate limits, exactly what is recorded (read out of the logging code), retention, and the privacy policy.">
+<meta property="og:image" content="https://web3ctx.scarai.xyz/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="web3ctx — the last mile before your agent signs.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="web3ctx — who runs it, what it logs, what it promises">
+<meta name="twitter:description" content="The operator, the published rate limits, exactly what is recorded (read out of the logging code), retention, and the privacy policy.">
+<meta name="twitter:image" content="https://web3ctx.scarai.xyz/og.png">
+<meta name="description" content="The operator, the published rate limits, exactly what is recorded (read out of the logging code), retention, and the privacy policy.">
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kick"><a class="plain" href="https://scarai.xyz">ScarAI</a> · web3ctx</div>
+  <h1>Who runs this, and <em>what it keeps.</em></h1>
+  <p class="lede">A service you point an agent at should tell you who operates it, what it records,
+  how long it keeps it, and what happens when you exceed its limits. All of it, on one page.</p>
+  <nav class="site">
+    <a href="index.html">Overview</a>
+    <a href="evals.html">Evals</a>
+    <a href="coverage.html">Coverage</a>
+    <a href="architecture.html">Architecture</a>
+  </nav>
+</header>
+
+<section class="blk">
+  <div class="chip">The operator</div>
+  <h2>One person, named.</h2>
+  <div class="cards c3">
+    <div class="card">
+      <h3>Who</h3>
+      <p><b>Farseen Shaikh</b>, trading as <b>ScarAI</b>. An individual, not a company — which is
+      stated here because it changes what you can expect: there is no support rota and no legal
+      entity behind the endpoint.</p>
+    </div>
+    <div class="card">
+      <h3>Where it runs</h3>
+      <p>Cloudflare Workers, D1, R2, KV and Durable Objects — one processor, no third-party
+      analytics, no CDN scripts, no trackers. The site itself loads no external resource.</p>
+    </div>
+    <div class="card">
+      <h3>Contact</h3>
+      <p><a href="mailto:farseen@scarai.xyz">farseen@scarai.xyz</a>, or an issue on the public
+      repository. Maintainers asking for a repository to be de-indexed: same address, and it is
+      removed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="chip">Status</div>
+  <h2>The endpoint answers for itself</h2>
+  <p class="sub">There is no status dashboard, and inventing one would be a page that says "all
+  systems operational" whether or not they are. The server's own health endpoint is the status:
+  it reports live counts read from the database it is actually serving.</p>
+  <div class="cards c3">
+    <div class="card">
+      <h3>Health</h3>
+      <pre class="install">curl https://mcp.scarai.xyz/health</pre>
+    </div>
+    <div class="card">
+      <h3>The MCP endpoint</h3>
+      <pre class="install">https://mcp.scarai.xyz/mcp</pre>
+      <p style="margin-top:10px">Free, authless, no signup. Higher limits at
+      <span class="k">/mcp/oauth</span> with GitHub.</p>
+    </div>
+    <div class="card">
+      <h3>If it is down</h3>
+      <p>You get an HTTP error, not a wrong answer. The server has no fallback path that
+      answers from anything other than the pinned corpus.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="chip">Limits</div>
+  <h2>Published, not discovered by hitting them</h2>
+  <div class="figure">
+    <div class="fighead">rate limits · read from the deployed code at build time</div>
+    <div class="scroll"><table class="data"><thead><tr><th>tier</th><th>cost units / minute</th><th>cost units / day</th><th>how you get it</th></tr></thead><tbody>
+<tr><td><code>authless</code></td><td>120</td><td>2,000</td><td>no account — keyed by IP</td></tr>
+<tr><td><code>free</code></td><td>300</td><td>20,000</td><td>sign in with GitHub — keyed by user id</td></tr>
+<tr><td><code>pro</code></td><td>3,000</td><td>100,000</td><td>not offered yet</td></tr>
+</tbody></table><table class="data" style="margin-top:18px"><thead><tr><th>tool</th><th>cost units per call</th></tr></thead><tbody>
+<tr><td><code>web3_lookup</code></td><td>1</td></tr>
+<tr><td><code>web3_grep</code></td><td>1</td></tr>
+<tr><td><code>web3_fetch</code></td><td>1</td></tr>
+<tr><td><code>web3_search</code></td><td>2</td></tr>
+<tr><td><code>web3_deps</code></td><td>3</td></tr>
+</tbody></table></div>
+  </div>
+  <div class="notebox">A refusal arrives as a <b>readable tool result naming the window that
+  blocked</b> — never an HTTP 429. A transport-level 429 would kill the whole JSON-RPC exchange
+  including the calls that were within budget.</div>
+</section>
+
+<section class="blk">
+  <div class="chip">What is recorded</div>
+  <h2>Read out of the logging code, <em>not written from memory.</em></h2>
+  <p class="sub">The field names below are parsed from the source of the log line itself at build
+  time. If the log line changes and this page is not updated, the build fails.</p>
+  <div id="operator-logged"><div class="cards c3">
+<div class="card"><h3>Per request — logged, not stored</h3><p><code>at</code> · <code>tool</code> · <code>cost</code> · <code>tier</code> · <code>inline_bodies_under</code> · <code>elapsed_ms</code> · <code>rows_read</code> · <code>rows_read_by_tool</code> · <code>d1_duration_ms</code> · <code>d1_calls</code> · <code>retries</code> · <code>l0</code> · <code>bodies</code> · <code>replica</code></p><p style="margin-top:10px">Visible only through Cloudflare's live tail. <b>Not persisted to any store we operate</b>, and there is no query text and no caller identity in it.</p></div>
+<div class="card"><h3>Aggregate metrics</h3><p>Indexed by <code>tool</code> and nothing else. Alongside it: <code>tier</code> · <code>l0Hit</code> · <code>replicaPrimary</code> · <code>rowsRead</code> · <code>cost</code> · <code>d1Ms</code> · <code>d1Calls</code> · <code>elapsedMs</code>.</p><p style="margin-top:10px"><b>No identifier of any kind is attached</b> — no IP, no user, no query.</p></div>
+<div class="card"><h3>What is durable</h3><p><b>Rate-limit counters</b> — four integers per caller, reset on a rolling 24 hours.<br><b>A response cache</b> — keyed by a SHA-256 of your arguments, expiring in 300 seconds.<br><b>The demand ledger</b> — <em>date · project id · decline class · count</em>, 180-day retention, 7 declared classes, and nothing in it can be joined back to a request.</p></div>
+</div></div>
+</section>
+
+<section class="blk">
+  <div class="chip">The full policy</div>
+  <h2>Privacy, in detail</h2>
+  <p class="sub">Written by enumerating what the deployed Worker actually writes — its log calls,
+  its KV writes, its Durable Object storage and its OAuth grants. Where the code and the document
+  disagree, the code is right and the document is a defect.</p>
+  <div class="figure prose"><h1>Privacy Policy — Web3 Context MCP</h1>
+<p><strong>Controller:</strong> web3ctx, a ScarAI product, operated by Farseen Shaikh · <strong>Contact:</strong></p>
+<p><a href="mailto:farseen@scarai.xyz">farseen@scarai.xyz</a></p>
+<p><strong>Last reviewed against the code: 2026-08-28.</strong></p>
+<p>⚠ **Every statement below was written by enumerating what the deployed Worker actually</p>
+<p>writes** — its <code>console.log</code> calls, its KV writes, its Durable Object storage and its OAuth</p>
+<p>grants — not from what the design intends. Where the code and this document ever disagree,</p>
+<p>the code is right and this document is a defect. The sources are <code>apps/mcp/src/index.ts</code></p>
+<p>(<code>emit</code>), <code>cache.ts</code>, <code>ratelimit.ts</code>, <code>telemetry.ts</code> and <code>oauth.ts</code>.</p>
+<hr>
+<h2>What this service is</h2>
+<p>A read-only retrieval endpoint for public, open-source Web3 documentation and code. It</p>
+<p>serves excerpts of public repositories together with citations to the exact commit they came</p>
+<p>from. <strong>It stores no user content, accepts no uploads, and writes nothing to any blockchain.</strong></p>
+<ul>
+<li><strong>Free tier — <code>…/mcp</code>:</strong> no account, no credential, no sign-up.</li>
+<li><strong>Authenticated tier — <code>…/mcp/oauth</code>:</strong> optional, via GitHub, and it buys **only a higher</li>
+</ul>
+<p>  rate limit**. It grants no additional data and unlocks no additional content.</p>
+<hr>
+<h2>What is recorded</h2>
+<h3>1. Operational logs — per request</h3>
+<div class="scroll"><table>
+<tr><th>recorded</th><th>example</th></tr>
+<tr><td>which tool was called</td><td><code>web3_search</code></td></tr>
+<tr><td>the tier</td><td><code>authless</code> / <code>free</code></td></tr>
+<tr><td>cost units charged, elapsed ms</td><td><code>2</code>, <code>375</code></td></tr>
+<tr><td>database rows scanned, query count, retries</td><td><code>660</code>, <code>3</code>, <code>0</code></td></tr>
+<tr><td>cache hit or miss; whether a body was found</td><td><code>{hits:0,misses:1}</code></td></tr>
+<tr><td>which region served the database read</td><td><code>APAC</code>, <code>primary: false</code></td></tr>
+</table></div>
+<p><strong>Not recorded: your query text, the arguments you send, or the payload you receive.</strong></p>
+<p>⚠ <strong>One exception, stated because it is easy to miss:</strong> when a tool call throws, the error</p>
+<p>message is logged. Error messages can quote an identifier or a selector taken from your</p>
+<p>request — for example an unparseable selector. They are not intended to carry query text and</p>
+<p>generally do not, but this is a best-effort statement about message contents, not a guarantee.</p>
+<p>Logs are visible only through Cloudflare's live tail and are **not persisted to any store we</p>
+<p>operate**.</p>
+<h3>2. Aggregate metrics</h3>
+<p>One datapoint per tool call in Cloudflare Analytics Engine, indexed by <strong>tool name</strong> and</p>
+<p>carrying only the numbers in the table above. <strong>No identifier of any kind is attached</strong> — no</p>
+<p>IP, no user, no query.</p>
+<h3>3. Your IP address — as a rate-limit key, on the free tier</h3>
+<p>The free tier is anonymous, so the only thing available to meter is the network address.</p>
+<p>Your IP is used as the <strong>name of a counter</strong> holding two numbers: units spent this minute and</p>
+<p>units spent today.</p>
+<ul>
+<li>It is <strong>not written to any log</strong>, not sent to Analytics Engine, and not shared.</li>
+<li>The counters reset on a rolling basis and are <strong>not retained beyond 24 hours</strong> of activity.</li>
+<li>⚠ **The address is the counter's name, so it exists in that storage for as long as the</li>
+</ul>
+<p>  counter does.** We do not consider this anonymous, and it is why it is described here</p>
+<p>  rather than omitted as "just rate limiting".</p>
+<p><strong>Authenticating removes this</strong>: an authenticated caller's counter is keyed by their GitHub</p>
+<p>numeric user id instead, and the IP is not used.</p>
+<h3>4. Cached responses — and your query text, for five minutes</h3>
+<p>⚠ **This is the one place your query text is stored, and the 2026-08-13 text named the wrong</p>
+<p>mechanism for it.<strong> The cache KEY is a </strong>SHA-256 hash** of the tool name and your arguments, so</p>
+<p>nothing readable is stored there and no key can be turned back into a question. What can contain</p>
+<p>your words is the cached <strong>response</strong>: when the server declines to scope a question it quotes the</p>
+<p>question back — <em>"No scoping evidence in \"…\""</em> — and that sentence is part of the payload that</p>
+<p>gets cached. <strong>Same conclusion, accurate mechanism</strong>; the previous wording is in git history.</p>
+<ul>
+<li><strong>Retention: 5 minutes</strong>, by an expiry set at write time.</li>
+<li>It is a <strong>cache key</strong>, not a log: it is never read back as a record of what anyone asked,</li>
+</ul>
+<p>  is not associated with your IP or identity, and is shared by anyone who sends the same</p>
+<p>  query.</p>
+<ul>
+<li>If this matters for a particular query, do not send it — there is no opt-out flag, and</li>
+</ul>
+<p>  claiming one would be a control we do not have.</p>
+<h3>5. The demand ledger — what was asked for and could not be served</h3>
+<p><em>Added 2026-08-28.</em> When the server <strong>declines</strong> — it did not recognise a project, it knows a</p>
+<p>project and has not indexed its source, it withheld a human-signed recipe from a family question,</p>
+<p>or it found nothing — it increments one counter in its own database.</p>
+<div class="scroll"><table>
+<tr><th>the row is</th><th>example</th></tr>
+<tr><td>a <strong>UTC date</strong></td><td><code>2026-08-28</code></td></tr>
+<tr><td>a <strong>project id from our own published corpus</strong>, or empty</td><td><code>ethena</code></td></tr>
+<tr><td>a <strong>decline class</strong> from a fixed, published list of seven</td><td><code>known-not-ingested</code></td></tr>
+<tr><td>a <strong>count</strong></td><td><code>3</code></td></tr>
+</table></div>
+<p><strong>That is the whole row.</strong> No query text, no fragment of one, no IP, no user id, no time finer</p>
+<p>than a day — and the guard is structural rather than a promise: every value is checked against the</p>
+<p>shape of a corpus project id (<code>^[a-z0-9][a-z0-9._-]{0,63}$</code>) before it is written, so nothing</p>
+<p>containing a space can reach the table. The test suite tries to push a sentence in through each</p>
+<p>field in turn.</p>
+<ul>
+<li><strong>Why it exists:</strong> every decline this service makes is deliberate, and until now nothing recorded</li>
+</ul>
+<p>  what the declines added up to. It is how a project that people keep asking for gets indexed.</p>
+<ul>
+<li><strong>Retention: 180 days</strong>, after which rows are deleted.</li>
+<li><strong>It cannot be joined back to a request</strong>, by us or by anyone with the database: one caller asking</li>
+</ul>
+<p>  eighty times and eighty callers asking once are the same row.</p>
+<h3>6. If you authenticate with GitHub</h3>
+<p>We request <strong>no OAuth scopes at all</strong>. From GitHub's public profile we read and store:</p>
+<div class="scroll"><table>
+<tr><th>stored</th><th>why</th></tr>
+<tr><td>your GitHub numeric id</td><td>the rate-limit key</td></tr>
+<tr><td>your GitHub login</td><td>so a grant can be recognised in support</td></tr>
+<tr><td>your display name, if public</td><td>shown on the consent record</td></tr>
+</table></div>
+<p>⚠ <strong>The GitHub access token is used once — to read that profile — and then discarded.</strong> It</p>
+<p>is never stored. This service cannot act on your GitHub account, read your repositories, or</p>
+<p>see your email.</p>
+<p>Access tokens we issue expire in <strong>1 hour</strong>; refresh tokens are stored until revoked. You can</p>
+<p>revoke access at any time in your GitHub settings under **Applications → Authorized OAuth</p>
+<p>Apps**, which invalidates future logins immediately.</p>
+<hr>
+<h2>What is never recorded</h2>
+<ul>
+<li>Payload contents returned to you.</li>
+<li>Any wallet address, private key, seed phrase or signature. **The service has no field that</li>
+</ul>
+<p>  accepts one**, and none of the five tools takes a credential of any kind.</p>
+<ul>
+<li>Cookies, analytics pixels, device fingerprints, cross-site trackers.</li>
+<li>Your email address.</li>
+</ul>
+<hr>
+<h2>Sharing</h2>
+<p><strong>Nothing is sold, rented, or shared with third parties for any purpose.</strong></p>
+<p>Data is processed on <strong>Cloudflare</strong> infrastructure (Workers, D1, R2, KV, Durable Objects,</p>
+<p>Analytics Engine) as our sole processor. <strong>GitHub</strong> sees an authentication request when — and</p>
+<p>only when — you choose to sign in.</p>
+<hr>
+<h2>Content we serve</h2>
+<p>Excerpts of public, open-source repositories, each carrying its licence-bearing source URL</p>
+<p>and a 40-character commit hash so you can verify it. Excerpts are served under the terms of</p>
+<p>their original licences. If you are a maintainer and want a repository removed, open an issue</p>
+<p>on this project's repository and it will be removed from the index.</p>
+<hr>
+<h2>Contact and changes</h2>
+<p><strong>Email <a href="mailto:farseen@scarai.xyz">farseen@scarai.xyz</a></strong>, or open an issue on</p>
+<p>the project repository.</p>
+<p>To ask for your data: the only records tied to an identity are the OAuth grant fields in §6.</p>
+<p>Revoking the app in your GitHub settings ends future logins immediately; email the address</p>
+<p>above to have the stored grant deleted.</p>
+<p>Material changes are dated at the top of this document, and **the previous text stays in the</p>
+<p>repository's git history** rather than being overwritten — the same rule this project follows</p>
+<p>for everything it publishes.</p>
+<hr>
+<h2>Scope of this document</h2>
+<p>⚠ <strong>This is a factual description of what the software does, not legal advice</strong>, and it has</p>
+<p>not been reviewed by a lawyer.</p>
+<p>⚠ <strong>No GDPR or CCPA rights section appears here, deliberately.</strong> Those sections name a</p>
+<p>controller's legal basis, jurisdiction and statutory procedures, and this service is operated</p>
+<p>by an individual with no company entity behind it. **Boilerplate asserting compliance</p>
+<p>machinery that does not exist would be a worse document than one that omits it** — and this</p>
+<p>is a service whose entire pitch is not asserting things it cannot support. If an entity is</p>
+<p>formed, this section is where that changes.</p></div>
+</section>
+
+<section class="blk">
+  <div class="chip">Licence</div>
+  <h2>Two licences, because this is two kinds of thing</h2>
+  <div class="cards c3">
+    <div class="card">
+      <h3>Code and site — MIT</h3>
+      <p>Take it, change it, ship it.</p>
+    </div>
+    <div class="card">
+      <h3>Evidence — CC BY 4.0</h3>
+      <p>Republish, quote, re-score and disagree with any measurement — attribution keeps the number
+      attached to the run that produced it.</p>
+    </div>
+    <div class="card">
+      <h3>🔴 Served content — <em>not ours</em></h3>
+      <p>Every unit is an excerpt of a third-party open-source repository, served under <b>its
+      own</b> licence, with a 40-character commit pin so you can read that licence at the exact
+      revision quoted.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  web3ctx — <a class="plain" href="https://scarai.xyz">a ScarAI product</a> · <a href="index.html">overview</a> ·
+  <a href="evals.html">evals &amp; evidence</a> · <a href="coverage.html">coverage</a> ·
+  <a href="architecture.html">architecture</a>
+</footer>
+
+</div>
+</body>
+</html>

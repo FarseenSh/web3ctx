@@ -1,0 +1,45 @@
+{
+  "intent": "lookup",
+  "recipe": {
+    "project_id": "cctp",
+    "version": "2",
+    "recipe_type": "usdc-bridge-send",
+    "last_validated": "2026-08-07",
+    "validated_by": "farseen (github: FarseenSh)",
+    "receipts": {
+      "validated_on": "2026-08-07",
+      "validated_by": "farseen (github: FarseenSh)",
+      "checks": [
+        "attest",
+        "test"
+      ],
+      "chains_exercised": [
+        "base-sepolia",
+        "arbitrum-sepolia"
+      ],
+      "on_chain": [
+        {
+          "kind": "txHash",
+          "hash": "0xd4b4e6395f52ad726dd6062e7a7ec47a2d3a7875d36f20fbb154cde756a3d0f5",
+          "role": "approve",
+  … 57 lines omitted — the rest of the receipts and the validated recipe body
+
+  "hits": [
+    {
+      "selector": "circle-fin-provider-cctp-v2@latest::index.d::ChainDefinitionWithCCTPv2",
+      "source_url": "https://unpkg.com/@circle-fin/provider-cctp-v2@1.11.0/index.d.cts#L318-L355",
+      "snippet": "/**\n* Chain definition with CCTPv2 configuration.\n* @alias ChainDefinitionWithCCTPv2\n* @extends ChainDefinition\n* @category Types\n* @description Represents a chain definition that includes CCTPv2 configuration. This is useful for typescript consumers to narrow down the type of chain definition to…",
+      "project": "circle-fin-provider-cctp-v2",
+      "version": "latest",
+      "version_defaulted": false,
+      "last_validated": "2026-08-22T03:06:37Z",
+      "as_of": "2026-08-20T23:25:41.820Z",
+      "provenance_kind": "artifact",
+      "pin_ref": "@circle-fin/provider-cctp-v2@1.11.0"
+    },
+    {
+      "selector": "circle-fin-provider-cctp-v2@latest::index.d::ActionMap",
+  … 135 lines omitted — nine more citations, each with its own pin
+
+  Full payload, byte-for-byte, as the public endpoint returned it on 2026-08-28:
+  evidence/showcase/cctp-search.json

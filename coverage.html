@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>web3ctx — coverage: is my stack in there?</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="web3ctx">
+<meta property="og:url" content="https://web3ctx.scarai.xyz/coverage.html">
+<meta property="og:title" content="web3ctx coverage — is your stack in there?">
+<meta property="og:description" content="Every integration project the corpus holds: versions carried, unit counts, how much is code, and the date of the source we pinned.">
+<meta property="og:image" content="https://web3ctx.scarai.xyz/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="web3ctx — the last mile before your agent signs.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="web3ctx coverage — is your stack in there?">
+<meta name="twitter:description" content="Every integration project the corpus holds: versions carried, unit counts, how much is code, and the date of the source we pinned.">
+<meta name="twitter:image" content="https://web3ctx.scarai.xyz/og.png">
+<meta name="description" content="Every integration project the corpus holds: versions carried, unit counts, how much is code, and the date of the source we pinned.">
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+<script src="coverage.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kick"><a class="plain" href="https://scarai.xyz">ScarAI</a> · web3ctx</div>
+  <h1>Is your stack <em>in there?</em></h1>
+  <p class="lede">Every integration project the corpus holds, with the versions it carries, how much
+  of it is code, and the date of the source we pinned. Filter for the one you care about.</p>
+  <nav class="site">
+    <a href="index.html">Overview</a>
+    <a href="evals.html">Evals</a>
+    <a class="on" href="coverage.html">Coverage</a>
+    <a href="architecture.html">Architecture</a>
+  </nav>
+</header>
+
+<section class="blk">
+  <div class="chip">What this holds</div>
+  <div id="coverage-summary"><div class="cards c3">
+<div class="card scard"><div class="n">Corpus</div><div class="v">630 integration projects + 1,193 specification ids (609 ERC + 583 core EIP + 1 in both repos) = 1,823 total</div><div class="w">the pair, always — a bare total does not publish</div></div>
+<div class="card scard"><div class="n">Code + docs</div><div class="v">536</div><div class="w">integration projects whose source parsed into code units</div></div>
+<div class="card scard"><div class="n">Docs only</div><div class="v">94</div><div class="w">prose is indexed and no code unit exists — stated, never hidden</div></div>
+</div>
+<div class="notebox">Corpus stamp <span class="k">1823p-1392977r-2026-08-22T10:29:20Z+26rc51793fc5</span> · index last loaded <b>2026-08-22</b>. The 26 human-run recipes and the 1,193 specification ids are counted in the pair above; the table below lists the integration projects, which is the half a developer asks about.</div></div>
+</section>
+
+<section class="blk">
+  <div class="chip">Freshness, stated</div>
+  <h2>What the dates mean — <em>and what we do not promise.</em></h2>
+  <div class="cards c3">
+    <div class="card">
+      <h3>Source as of</h3>
+      <p>Every unit carries <span class="k">as_of</span>: the <b>committer date of the commit we
+      pinned</b>. The column below is the newest one a project has. A 2020 date on an archived
+      repository is not staleness — it is the newest thing upstream published.</p>
+    </div>
+    <div class="card">
+      <h3>Pinned, so it can be re-checked</h3>
+      <p>Every citation resolves to an immutable, re-fetchable reference — a 40-character commit,
+      a published package version, or a dated snapshot of a vendor's own bytes. Nothing points at
+      a moving target, so any claim can be re-fetched and disputed.</p>
+    </div>
+    <div class="card">
+      <h3>🔴 No refresh cadence is claimed</h3>
+      <p>Rebuilds are <b>dated events</b>, recorded in the corpus stamp above — not a schedule.
+      We publish when a project was pinned and when the index was last loaded. We do not promise
+      a next date, because we would not be able to keep it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="chip">Every project</div>
+  <h2>Filter for yours</h2>
+  <p class="sub">Type a name, a language, or a coverage label. Matching is plain substring over the
+  whole row — no wildcards to learn.</p>
+  <div class="figure">
+    <div class="fighead">
+      <input id="cov-filter" type="search" placeholder="filter — e.g. viem, uniswap, docs-only"
+        autocomplete="off" spellcheck="false">
+      <span id="cov-count"></span>
+    </div>
+    <div class="scroll"><table class="data" id="cov-table"><thead><tr><th>project</th><th>versions held</th><th>units</th><th>coverage</th><th>source as of</th></tr></thead><tbody>
+<tr data-q="metamask-mobile 8 code+docs"><td><code>metamask-mobile</code></td><td>8</td><td>67,781</td><td>code+docs <span class="dim">(62,856 code · 4,925 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="ledgerjs-hw-app-eth 4.17.0 code+docs"><td><code>ledgerjs-hw-app-eth</code></td><td>4.17.0</td><td>64,345</td><td>code+docs <span class="dim">(50,428 code · 13,917 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="sui 1.78.0 code+docs"><td><code>sui</code></td><td>1.78.0</td><td>44,885</td><td>code+docs <span class="dim">(34,122 code · 10,763 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="starknet-js 10 code+docs"><td><code>starknet-js</code></td><td>10</td><td>44,053</td><td>code+docs <span class="dim">(1,590 code · 42,463 docs)</span></td><td>2026-04-30</td></tr>
+<tr data-q="hyperlane latest code+docs"><td><code>hyperlane</code></td><td>latest</td><td>37,693</td><td>code+docs <span class="dim">(31,206 code · 6,487 docs)</span></td><td>2026-08-14</td></tr>
+<tr data-q="app-monorepo 6 code+docs"><td><code>app-monorepo</code></td><td>6</td><td>37,072</td><td>code+docs <span class="dim">(33,779 code · 3,293 docs)</span></td><td>2026-07-13</td></tr>
+<tr data-q="aptos latest code+docs"><td><code>aptos</code></td><td>latest</td><td>36,590</td><td>code+docs <span class="dim">(32,890 code · 3,700 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="ccxt 4 code+docs"><td><code>ccxt</code></td><td>4</td><td>36,346</td><td>code+docs <span class="dim">(20,668 code · 15,678 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="metamask-extension 13 code+docs"><td><code>metamask-extension</code></td><td>13</td><td>29,840</td><td>code+docs <span class="dim">(27,547 code · 2,293 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="trezor-suite 26 code+docs"><td><code>trezor-suite</code></td><td>26</td><td>28,428</td><td>code+docs <span class="dim">(25,647 code · 2,781 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="thirdweb latest code+docs"><td><code>thirdweb</code></td><td>latest</td><td>22,275</td><td>code+docs <span class="dim">(17,083 code · 5,192 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="stacks-core 4 code+docs"><td><code>stacks-core</code></td><td>4</td><td>19,691</td><td>code+docs <span class="dim">(18,952 code · 739 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="optimism latest code+docs"><td><code>optimism</code></td><td>latest</td><td>19,463</td><td>code+docs <span class="dim">(13,202 code · 6,261 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="viem 2 code+docs"><td><code>viem</code></td><td>2</td><td>19,288</td><td>code+docs <span class="dim">(8,265 code · 11,023 docs)</span></td><td>2026-08-02</td></tr>
+<tr data-q="ethereumjs-monorepo latest code+docs"><td><code>ethereumjs-monorepo</code></td><td>latest</td><td>18,921</td><td>code+docs <span class="dim">(6,002 code · 12,919 docs)</span></td><td>2026-05-29</td></tr>
+<tr data-q="wagmi 2 3 code+docs"><td><code>wagmi</code></td><td>2, 3</td><td>18,540</td><td>code+docs <span class="dim">(5,187 code · 13,353 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="solana 4 code+docs"><td><code>solana</code></td><td>4</td><td>16,962</td><td>code+docs <span class="dim">(16,724 code · 238 docs)</span></td><td>2026-08-07</td></tr>
+<tr data-q="foundry 1.8.0 code+docs"><td><code>foundry</code></td><td>1.8.0</td><td>16,486</td><td>code+docs <span class="dim">(15,513 code · 973 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="asset-tokenization-studio latest code+docs"><td><code>asset-tokenization-studio</code></td><td>latest</td><td>15,040</td><td>code+docs <span class="dim">(12,570 code · 2,470 docs)</span></td><td>2026-06-24</td></tr>
+<tr data-q="reown 1.8.23 code+docs"><td><code>reown</code></td><td>1.8.23</td><td>14,764</td><td>code+docs <span class="dim">(6,539 code · 8,225 docs)</span></td><td>2026-07-22</td></tr>
+<tr data-q="reth 2 code+docs"><td><code>reth</code></td><td>2</td><td>13,394</td><td>code+docs <span class="dim">(11,970 code · 1,424 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="base-monorepo 1.2.0 code+docs"><td><code>base-monorepo</code></td><td>1.2.0</td><td>13,297</td><td>code+docs <span class="dim">(12,449 code · 848 docs)</span></td><td>2026-07-20</td></tr>
+<tr data-q="ethereum-org-website 11 code+docs"><td><code>ethereum-org-website</code></td><td>11</td><td>11,324</td><td>code+docs <span class="dim">(3,058 code · 8,266 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="ledger-device-management-kit 0.7.0 code+docs"><td><code>ledger-device-management-kit</code></td><td>0.7.0</td><td>10,965</td><td>code+docs <span class="dim">(8,400 code · 2,565 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="ccip 2 code+docs"><td><code>ccip</code></td><td>2</td><td>10,879</td><td>code+docs <span class="dim">(8,938 code · 1,941 docs)</span></td><td>2025-01-09</td></tr>
+<tr data-q="hedera-docs 0.2.0 docs-only mdx css javascript"><td><code>hedera-docs</code></td><td>0.2.0</td><td>10,670</td><td>docs-only <span class="dim">(MDX, CSS, JavaScript not indexed)</span></td><td>2026-06-05</td></tr>
+<tr data-q="wormhole 2 code+docs"><td><code>wormhole</code></td><td>2</td><td>10,497</td><td>code+docs <span class="dim">(9,085 code · 1,412 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="linea latest code+docs"><td><code>linea</code></td><td>latest</td><td>10,135</td><td>code+docs <span class="dim">(6,458 code · 3,677 docs)</span></td><td>2026-07-14</td></tr>
+<tr data-q="sovereign-sdk latest code+docs"><td><code>sovereign-sdk</code></td><td>latest</td><td>10,081</td><td>code+docs <span class="dim">(8,622 code · 1,459 docs)</span></td><td>2026-07-09</td></tr>
+<tr data-q="hardhat latest code+docs"><td><code>hardhat</code></td><td>latest</td><td>9,631</td><td>code+docs <span class="dim">(7,769 code · 1,862 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="internet-court-skill 0 code+docs"><td><code>internet-court-skill</code></td><td>0</td><td>9,369</td><td>code+docs <span class="dim">(379 code · 8,990 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="taiko-mono latest code+docs"><td><code>taiko-mono</code></td><td>latest</td><td>9,240</td><td>code+docs <span class="dim">(5,138 code · 4,102 docs)</span></td><td>2026-07-03</td></tr>
+<tr data-q="rainbowkit latest code+docs"><td><code>rainbowkit</code></td><td>latest</td><td>9,192</td><td>code+docs <span class="dim">(871 code · 8,321 docs)</span></td><td>2026-05-06</td></tr>
+<tr data-q="rainbow 2 code+docs"><td><code>rainbow</code></td><td>2</td><td>9,116</td><td>code+docs <span class="dim">(8,198 code · 918 docs)</span></td><td>2026-08-10</td></tr>
+<tr data-q="dogecoin 1 code+docs"><td><code>dogecoin</code></td><td>1</td><td>8,972</td><td>code+docs <span class="dim">(8,094 code · 878 docs)</span></td><td>2024-12-01</td></tr>
+<tr data-q="pyth latest code+docs"><td><code>pyth</code></td><td>latest</td><td>8,909</td><td>code+docs <span class="dim">(6,890 code · 2,019 docs)</span></td><td>2026-08-07</td></tr>
+<tr data-q="zksync latest code+docs"><td><code>zksync</code></td><td>latest</td><td>8,679</td><td>code+docs <span class="dim">(5,629 code · 3,050 docs)</span></td><td>2026-08-08</td></tr>
+<tr data-q="lifi-contracts latest code+docs"><td><code>lifi-contracts</code></td><td>latest</td><td>8,609</td><td>code+docs <span class="dim">(5,421 code · 3,188 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="lifi latest code+docs"><td><code>lifi</code></td><td>latest</td><td>8,516</td><td>code+docs <span class="dim">(5,367 code · 3,149 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="rabby 0 code+docs"><td><code>rabby</code></td><td>0</td><td>8,010</td><td>code+docs <span class="dim">(7,807 code · 203 docs)</span></td><td>2026-08-14</td></tr>
+<tr data-q="remix-project 2 code+docs"><td><code>remix-project</code></td><td>2</td><td>7,723</td><td>code+docs <span class="dim">(7,105 code · 618 docs)</span></td><td>2026-07-24</td></tr>
+<tr data-q="agglayer-contracts 12.2.3 code+docs"><td><code>agglayer-contracts</code></td><td>12.2.3</td><td>7,363</td><td>code+docs <span class="dim">(3,095 code · 4,268 docs)</span></td><td>2026-03-09</td></tr>
+<tr data-q="solana-agent-kit 2 code+docs"><td><code>solana-agent-kit</code></td><td>2</td><td>7,283</td><td>code+docs <span class="dim">(2,316 code · 4,967 docs)</span></td><td>2025-07-24</td></tr>
+<tr data-q="solang 0 code+docs"><td><code>solang</code></td><td>0</td><td>7,159</td><td>code+docs <span class="dim">(7,025 code · 134 docs)</span></td><td>2026-07-07</td></tr>
+<tr data-q="cdp-sdk 1.55.0 code+docs"><td><code>cdp-sdk</code></td><td>1.55.0</td><td>7,087</td><td>code+docs <span class="dim">(5,893 code · 1,194 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="coinbase-cdp latest code+docs"><td><code>coinbase-cdp</code></td><td>latest</td><td>7,087</td><td>code+docs <span class="dim">(5,893 code · 1,194 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="the-graph 0.45 code+docs"><td><code>the-graph</code></td><td>0.45</td><td>6,554</td><td>code+docs <span class="dim">(5,633 code · 921 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="starknet 2.20.0 code+docs"><td><code>starknet</code></td><td>2.20.0</td><td>6,458</td><td>code+docs <span class="dim">(6,299 code · 159 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="verge 26 code+docs"><td><code>verge</code></td><td>26</td><td>6,337</td><td>code+docs <span class="dim">(5,195 code · 1,142 docs)</span></td><td>2026-07-02</td></tr>
+<tr data-q="prediction-market latest code+docs"><td><code>prediction-market</code></td><td>latest</td><td>6,273</td><td>code+docs <span class="dim">(6,053 code · 220 docs)</span></td><td>2026-08-21</td></tr>
+<tr data-q="eattheblocks latest code+docs"><td><code>eattheblocks</code></td><td>latest</td><td>6,230</td><td>code+docs <span class="dim">(4,656 code · 1,574 docs)</span></td><td>2021-10-22</td></tr>
+<tr data-q="squid-sdk latest code+docs"><td><code>squid-sdk</code></td><td>latest</td><td>6,168</td><td>code+docs <span class="dim">(3,335 code · 2,833 docs)</span></td><td>2026-07-30</td></tr>
+<tr data-q="rango-client latest code+docs"><td><code>rango-client</code></td><td>latest</td><td>6,110</td><td>code+docs <span class="dim">(2,934 code · 3,176 docs)</span></td><td>2026-07-28</td></tr>
+<tr data-q="anchor 1.1.2 code+docs"><td><code>anchor</code></td><td>1.1.2</td><td>6,004</td><td>code+docs <span class="dim">(3,552 code · 2,452 docs)</span></td><td>2026-07-21</td></tr>
+<tr data-q="solady 0.1.26 code+docs"><td><code>solady</code></td><td>0.1.26</td><td>5,967</td><td>code+docs <span class="dim">(3,519 code · 2,448 docs)</span></td><td>2026-08-02</td></tr>
+<tr data-q="0x latest code+docs"><td><code>0x</code></td><td>latest</td><td>5,955</td><td>code+docs <span class="dim">(3,414 code · 2,541 docs)</span></td><td>2023-11-16</td></tr>
+<tr data-q="maskbook latest code+docs"><td><code>maskbook</code></td><td>latest</td><td>5,915</td><td>code+docs <span class="dim">(5,737 code · 178 docs)</span></td><td>2026-07-15</td></tr>
+<tr data-q="datahaven 0.26 code+docs"><td><code>datahaven</code></td><td>0.26</td><td>5,715</td><td>code+docs <span class="dim">(5,243 code · 472 docs)</span></td><td>2026-03-04</td></tr>
+<tr data-q="lido 4 code+docs"><td><code>lido</code></td><td>4</td><td>5,687</td><td>code+docs <span class="dim">(5,564 code · 123 docs)</span></td><td>2026-07-24</td></tr>
+<tr data-q="embark 6 code+docs"><td><code>embark</code></td><td>6</td><td>5,684</td><td>code+docs <span class="dim">(628 code · 5,056 docs)</span></td><td>2020-04-27</td></tr>
+<tr data-q="mytonwallet 26 code+docs"><td><code>mytonwallet</code></td><td>26</td><td>5,560</td><td>code+docs <span class="dim">(5,376 code · 184 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="solana-playground latest code+docs"><td><code>solana-playground</code></td><td>latest</td><td>5,541</td><td>code+docs <span class="dim">(5,406 code · 135 docs)</span></td><td>2026-08-21</td></tr>
+<tr data-q="hiero-consensus-node 0.76.1 code+docs"><td><code>hiero-consensus-node</code></td><td>0.76.1</td><td>5,419</td><td>code+docs <span class="dim">(1,354 code · 4,065 docs)</span></td><td>2026-08-05</td></tr>
+<tr data-q="stablecoin-studio 4.4.0 code+docs"><td><code>stablecoin-studio</code></td><td>4.4.0</td><td>5,292</td><td>code+docs <span class="dim">(3,089 code · 2,203 docs)</span></td><td>2026-06-29</td></tr>
+<tr data-q="balancer-v3 latest code+docs"><td><code>balancer-v3</code></td><td>latest</td><td>5,278</td><td>code+docs <span class="dim">(5,048 code · 230 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="eigenlayer 1 code+docs"><td><code>eigenlayer</code></td><td>1</td><td>5,238</td><td>code+docs <span class="dim">(4,246 code · 992 docs)</span></td><td>2026-06-24</td></tr>
+<tr data-q="hiero-ledger-proto latest code+docs"><td><code>hiero-ledger-proto</code></td><td>latest</td><td>4,823</td><td>code+docs <span class="dim">(2,830 code · 1,993 docs)</span></td><td>2026-06-09</td></tr>
+<tr data-q="ant-design-web3 latest code+docs"><td><code>ant-design-web3</code></td><td>latest</td><td>4,822</td><td>code+docs <span class="dim">(3,006 code · 1,816 docs)</span></td><td>2025-12-19</td></tr>
+<tr data-q="argent-x 5 code+docs"><td><code>argent-x</code></td><td>5</td><td>4,801</td><td>code+docs <span class="dim">(4,531 code · 270 docs)</span></td><td>2025-03-14</td></tr>
+<tr data-q="hiero-cli 1.2.0 code+docs"><td><code>hiero-cli</code></td><td>1.2.0</td><td>4,592</td><td>code+docs <span class="dim">(3,327 code · 1,265 docs)</span></td><td>2026-06-24</td></tr>
+<tr data-q="starknet-foundry 0.63 code+docs"><td><code>starknet-foundry</code></td><td>0.63</td><td>4,580</td><td>code+docs <span class="dim">(2,777 code · 1,803 docs)</span></td><td>2026-08-06</td></tr>
+<tr data-q="gmx 2 code+docs"><td><code>gmx</code></td><td>2</td><td>4,512</td><td>code+docs <span class="dim">(4,412 code · 100 docs)</span></td><td>2025-09-09</td></tr>
+<tr data-q="protocol-monorepo latest code+docs"><td><code>protocol-monorepo</code></td><td>latest</td><td>4,387</td><td>code+docs <span class="dim">(3,719 code · 668 docs)</span></td><td>2026-06-26</td></tr>
+<tr data-q="ether-fi latest code+docs"><td><code>ether-fi</code></td><td>latest</td><td>4,266</td><td>code+docs <span class="dim">(3,517 code · 749 docs)</span></td><td>2026-07-15</td></tr>
+<tr data-q="hiero-improvement-proposals latest code+docs"><td><code>hiero-improvement-proposals</code></td><td>latest</td><td>4,028</td><td>code+docs <span class="dim">(69 code · 3,959 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="lifi-widget 4.1.3 code+docs"><td><code>lifi-widget</code></td><td>4.1.3</td><td>3,975</td><td>code+docs <span class="dim">(2,370 code · 1,605 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="acala 2 code+docs"><td><code>acala</code></td><td>2</td><td>3,907</td><td>code+docs <span class="dim">(3,889 code · 18 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="across latest code+docs"><td><code>across</code></td><td>latest</td><td>3,884</td><td>code+docs <span class="dim">(3,703 code · 181 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="revm 115 code+docs"><td><code>revm</code></td><td>115</td><td>3,800</td><td>code+docs <span class="dim">(1,638 code · 2,162 docs)</span></td><td>2026-07-23</td></tr>
+<tr data-q="metamask-sdk 0.34.1 code+docs"><td><code>metamask-sdk</code></td><td>0.34.1</td><td>3,770</td><td>code+docs <span class="dim">(2,399 code · 1,371 docs)</span></td><td>2026-06-15</td></tr>
+<tr data-q="uniswap-sdks latest code+docs"><td><code>uniswap-sdks</code></td><td>latest</td><td>3,589</td><td>code+docs <span class="dim">(3,172 code · 417 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="celo latest code+docs"><td><code>celo</code></td><td>latest</td><td>3,568</td><td>code+docs <span class="dim">(3,219 code · 349 docs)</span></td><td>2026-04-14</td></tr>
+<tr data-q="coinbase-onchainkit 1.1.2 code+docs"><td><code>coinbase-onchainkit</code></td><td>1.1.2</td><td>3,521</td><td>code+docs <span class="dim">(2,837 code · 684 docs)</span></td><td>2025-10-28</td></tr>
+<tr data-q="secretnetwork 1 code+docs"><td><code>secretnetwork</code></td><td>1</td><td>3,480</td><td>code+docs <span class="dim">(2,712 code · 768 docs)</span></td><td>2026-06-08</td></tr>
+<tr data-q="relay latest code+docs"><td><code>relay</code></td><td>latest</td><td>3,418</td><td>code+docs <span class="dim">(1,306 code · 2,112 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="world-chain 2.4.2 code+docs"><td><code>world-chain</code></td><td>2.4.2</td><td>3,394</td><td>code+docs <span class="dim">(2,746 code · 648 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="stargate latest code+docs"><td><code>stargate</code></td><td>latest</td><td>3,357</td><td>code+docs <span class="dim">(2,173 code · 1,184 docs)</span></td><td>2026-08-07</td></tr>
+<tr data-q="ethers 5 6 code+docs"><td><code>ethers</code></td><td>5, 6</td><td>3,320</td><td>code+docs <span class="dim">(3,047 code · 273 docs)</span></td><td>2026-06-18</td></tr>
+<tr data-q="substreams-chain-modules latest code+docs"><td><code>substreams-chain-modules</code></td><td>latest</td><td>3,221</td><td>code+docs <span class="dim">(3,121 code · 100 docs)</span></td><td>2026-07-28</td></tr>
+<tr data-q="aave-v3 3.6.0 code+docs"><td><code>aave-v3</code></td><td>3.6.0</td><td>3,180</td><td>code+docs <span class="dim">(2,336 code · 844 docs)</span></td><td>2026-06-19</td></tr>
+<tr data-q="slither 0.11 code+docs"><td><code>slither</code></td><td>0.11</td><td>3,174</td><td>code+docs <span class="dim">(2,333 code · 841 docs)</span></td><td>2026-07-28</td></tr>
+<tr data-q="sourcify latest code+docs"><td><code>sourcify</code></td><td>latest</td><td>3,034</td><td>code+docs <span class="dim">(2,534 code · 500 docs)</span></td><td>2026-07-06</td></tr>
+<tr data-q="plutus 1 code+docs"><td><code>plutus</code></td><td>1</td><td>2,893</td><td>code+docs <span class="dim">(8 code · 2,885 docs)</span></td><td>2026-08-06</td></tr>
+<tr data-q="alchemy-aa-sdk 5 code+docs"><td><code>alchemy-aa-sdk</code></td><td>5</td><td>2,784</td><td>code+docs <span class="dim">(887 code · 1,897 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="hiero-json-rpc-relay 0.78.3 code+docs"><td><code>hiero-json-rpc-relay</code></td><td>0.78.3</td><td>2,782</td><td>code+docs <span class="dim">(2,011 code · 771 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="hyperliquid-sdk latest code+docs"><td><code>hyperliquid-sdk</code></td><td>latest</td><td>2,762</td><td>code+docs <span class="dim">(2,748 code · 14 docs)</span></td><td>2026-05-09</td></tr>
+<tr data-q="seaport 1 code+docs"><td><code>seaport</code></td><td>1</td><td>2,735</td><td>code+docs <span class="dim">(2,609 code · 126 docs)</span></td><td>2024-03-20</td></tr>
+<tr data-q="program-examples latest code+docs"><td><code>program-examples</code></td><td>latest</td><td>2,725</td><td>code+docs <span class="dim">(2,418 code · 307 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="chainlink latest code+docs"><td><code>chainlink</code></td><td>latest</td><td>2,672</td><td>code+docs <span class="dim">(19 code · 2,653 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="hashgraph-proto latest code+docs"><td><code>hashgraph-proto</code></td><td>latest</td><td>2,664</td><td>code+docs <span class="dim">(2,664 code · 0 docs)</span></td><td>2025-11-20</td></tr>
+<tr data-q="hedera-agent-kit-js 4.1.0 code+docs"><td><code>hedera-agent-kit-js</code></td><td>4.1.0</td><td>2,661</td><td>code+docs <span class="dim">(1,862 code · 799 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="x402 1 code+docs"><td><code>x402</code></td><td>1</td><td>2,654</td><td>code+docs <span class="dim">(1,968 code · 686 docs)</span></td><td>2025-12-10</td></tr>
+<tr data-q="uniswap-ai latest code+docs"><td><code>uniswap-ai</code></td><td>latest</td><td>2,652</td><td>code+docs <span class="dim">(16 code · 2,636 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="world-id-protocol 1.2.3 code+docs"><td><code>world-id-protocol</code></td><td>1.2.3</td><td>2,594</td><td>code+docs <span class="dim">(2,234 code · 360 docs)</span></td><td>2026-08-17</td></tr>
+<tr data-q="web3-ethereum-defi latest code+docs"><td><code>web3-ethereum-defi</code></td><td>latest</td><td>2,566</td><td>code+docs <span class="dim">(301 code · 2,265 docs)</span></td><td>2026-06-12</td></tr>
+<tr data-q="ledger-wallet-api 3.4.3 code+docs"><td><code>ledger-wallet-api</code></td><td>3.4.3</td><td>2,557</td><td>code+docs <span class="dim">(450 code · 2,107 docs)</span></td><td>2026-08-06</td></tr>
+<tr data-q="circle-fin-app-kit latest code+docs"><td><code>circle-fin-app-kit</code></td><td>latest</td><td>2,544</td><td>code+docs <span class="dim">(2,500 code · 44 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="ledger-wallet-provider 1.4.2 code+docs"><td><code>ledger-wallet-provider</code></td><td>1.4.2</td><td>2,523</td><td>code+docs <span class="dim">(2,144 code · 379 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="arc-app-kit 1.12.0 code+docs"><td><code>arc-app-kit</code></td><td>1.12.0</td><td>2,520</td><td>code+docs <span class="dim">(2,476 code · 44 docs)</span></td><td>2026-08-07</td></tr>
+<tr data-q="openzeppelin-contracts 5.x code+docs"><td><code>openzeppelin-contracts</code></td><td>5.x</td><td>2,490</td><td>code+docs <span class="dim">(2,088 code · 402 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="astar 5 code+docs"><td><code>astar</code></td><td>5</td><td>2,409</td><td>code+docs <span class="dim">(2,276 code · 133 docs)</span></td><td>2026-07-30</td></tr>
+<tr data-q="erpc 0 code+docs"><td><code>erpc</code></td><td>0</td><td>2,409</td><td>code+docs <span class="dim">(199 code · 2,210 docs)</span></td><td>2026-08-05</td></tr>
+<tr data-q="cre-templates latest code+docs"><td><code>cre-templates</code></td><td>latest</td><td>2,401</td><td>code+docs <span class="dim">(1,573 code · 828 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="base-contracts 8.2.1 code+docs"><td><code>base-contracts</code></td><td>8.2.1</td><td>2,392</td><td>code+docs <span class="dim">(2,353 code · 39 docs)</span></td><td>2026-06-10</td></tr>
+<tr data-q="melonjs 19 code+docs"><td><code>melonjs</code></td><td>19</td><td>2,347</td><td>code+docs <span class="dim">(1,774 code · 573 docs)</span></td><td>2026-07-28</td></tr>
+<tr data-q="hiero-sdk-rust 0.45.0 code+docs"><td><code>hiero-sdk-rust</code></td><td>0.45.0</td><td>2,287</td><td>code+docs <span class="dim">(2,233 code · 54 docs)</span></td><td>2026-04-30</td></tr>
+<tr data-q="shardeum 1 code+docs"><td><code>shardeum</code></td><td>1</td><td>2,273</td><td>code+docs <span class="dim">(2,134 code · 139 docs)</span></td><td>2025-08-30</td></tr>
+<tr data-q="dynamic 5.3.1 code+docs"><td><code>dynamic</code></td><td>5.3.1</td><td>2,206</td><td>code+docs <span class="dim">(2,205 code · 1 docs)</span></td><td>2026-08-14</td></tr>
+<tr data-q="walletconnect 2.23.10 code+docs"><td><code>walletconnect</code></td><td>2.23.10</td><td>2,176</td><td>code+docs <span class="dim">(1,242 code · 934 docs)</span></td><td>2026-06-24</td></tr>
+<tr data-q="walletconnect-monorepo latest code+docs"><td><code>walletconnect-monorepo</code></td><td>latest</td><td>2,176</td><td>code+docs <span class="dim">(1,242 code · 934 docs)</span></td><td>2026-06-24</td></tr>
+<tr data-q="openzeppelin-upgradeable 5 code+docs"><td><code>openzeppelin-upgradeable</code></td><td>5</td><td>2,100</td><td>code+docs <span class="dim">(1,707 code · 393 docs)</span></td><td>2026-07-29</td></tr>
+<tr data-q="agentpay-sdk 0 code+docs"><td><code>agentpay-sdk</code></td><td>0</td><td>2,050</td><td>code+docs <span class="dim">(1,816 code · 234 docs)</span></td><td>2026-06-08</td></tr>
+<tr data-q="swap-vm 1.0.2 code+docs"><td><code>swap-vm</code></td><td>1.0.2</td><td>2,021</td><td>code+docs <span class="dim">(1,212 code · 809 docs)</span></td><td>2026-07-26</td></tr>
+<tr data-q="intentkit 2 code+docs"><td><code>intentkit</code></td><td>2</td><td>1,936</td><td>code+docs <span class="dim">(295 code · 1,641 docs)</span></td><td>2026-06-14</td></tr>
+<tr data-q="zerodev latest code+docs"><td><code>zerodev</code></td><td>latest</td><td>1,917</td><td>code+docs <span class="dim">(1,154 code · 763 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="agglayer 0.5.1 code+docs"><td><code>agglayer</code></td><td>0.5.1</td><td>1,895</td><td>code+docs <span class="dim">(1,671 code · 224 docs)</span></td><td>2026-06-08</td></tr>
+<tr data-q="base-account-sdk 2.5.10 code+docs"><td><code>base-account-sdk</code></td><td>2.5.10</td><td>1,873</td><td>code+docs <span class="dim">(1,687 code · 186 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="blockscout 11 code+docs"><td><code>blockscout</code></td><td>11</td><td>1,841</td><td>code+docs <span class="dim">(438 code · 1,403 docs)</span></td><td>2026-08-10</td></tr>
+<tr data-q="layerzero v2 code+docs"><td><code>layerzero</code></td><td>v2</td><td>1,836</td><td>code+docs <span class="dim">(1,653 code · 183 docs)</span></td><td>2026-02-27</td></tr>
+<tr data-q="lifi-sdk 4.1.7 code+docs"><td><code>lifi-sdk</code></td><td>4.1.7</td><td>1,833</td><td>code+docs <span class="dim">(875 code · 958 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="avalanche 1 code+docs"><td><code>avalanche</code></td><td>1</td><td>1,751</td><td>code+docs <span class="dim">(55 code · 1,696 docs)</span></td><td>2026-03-26</td></tr>
+<tr data-q="mycrypto 1 code+docs"><td><code>mycrypto</code></td><td>1</td><td>1,730</td><td>code+docs <span class="dim">(1,694 code · 36 docs)</span></td><td>2021-06-10</td></tr>
+<tr data-q="pimlico latest code+docs"><td><code>pimlico</code></td><td>latest</td><td>1,696</td><td>code+docs <span class="dim">(749 code · 947 docs)</span></td><td>2026-07-09</td></tr>
+<tr data-q="hiero-mirror-node 0.161.3 code+docs"><td><code>hiero-mirror-node</code></td><td>0.161.3</td><td>1,683</td><td>code+docs <span class="dim">(617 code · 1,066 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="spark 1 code+docs"><td><code>spark</code></td><td>1</td><td>1,674</td><td>code+docs <span class="dim">(1,547 code · 127 docs)</span></td><td>2024-03-19</td></tr>
+<tr data-q="ensjs 4.2.2 4.3.1 code+docs"><td><code>ensjs</code></td><td>4.2.2, 4.3.1</td><td>1,669</td><td>code+docs <span class="dim">(1,079 code · 590 docs)</span></td><td>2026-06-24</td></tr>
+<tr data-q="0g-storage-node 1.2.0 code+docs"><td><code>0g-storage-node</code></td><td>1.2.0</td><td>1,668</td><td>code+docs <span class="dim">(1,589 code · 79 docs)</span></td><td>2026-01-21</td></tr>
+<tr data-q="web3-onboard 2 code+docs"><td><code>web3-onboard</code></td><td>2</td><td>1,625</td><td>code+docs <span class="dim">(598 code · 1,027 docs)</span></td><td>2024-12-27</td></tr>
+<tr data-q="typechain latest code+docs"><td><code>typechain</code></td><td>latest</td><td>1,570</td><td>code+docs <span class="dim">(1,165 code · 405 docs)</span></td><td>2023-10-15</td></tr>
+<tr data-q="skandha latest code+docs"><td><code>skandha</code></td><td>latest</td><td>1,559</td><td>code+docs <span class="dim">(1,492 code · 67 docs)</span></td><td>2026-07-11</td></tr>
+<tr data-q="ens-dao latest docs-only unknown"><td><code>ens-dao</code></td><td>latest</td><td>1,548</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-22</td></tr>
+<tr data-q="aave-v4 4.0 code+docs"><td><code>aave-v4</code></td><td>4.0</td><td>1,546</td><td>code+docs <span class="dim">(1,305 code · 241 docs)</span></td><td>2026-07-21</td></tr>
+<tr data-q="wallet-adapter latest code+docs"><td><code>wallet-adapter</code></td><td>latest</td><td>1,514</td><td>code+docs <span class="dim">(419 code · 1,095 docs)</span></td><td>2026-04-01</td></tr>
+<tr data-q="0g-compute-ts-sdk 0.9.0 code+docs"><td><code>0g-compute-ts-sdk</code></td><td>0.9.0</td><td>1,505</td><td>code+docs <span class="dim">(1,289 code · 216 docs)</span></td><td>2026-07-17</td></tr>
+<tr data-q="hiero-sdk-js 2.87.0 code+docs"><td><code>hiero-sdk-js</code></td><td>2.87.0</td><td>1,499</td><td>code+docs <span class="dim">(426 code · 1,073 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="0g-doc latest code+docs"><td><code>0g-doc</code></td><td>latest</td><td>1,485</td><td>code+docs <span class="dim">(39 code · 1,446 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="base-bridge 1.0.0 code+docs"><td><code>base-bridge</code></td><td>1.0.0</td><td>1,471</td><td>code+docs <span class="dim">(1,417 code · 54 docs)</span></td><td>2025-12-05</td></tr>
+<tr data-q="ledgerjs-monorepo-legacy 6.29.0 code+docs"><td><code>ledgerjs-monorepo-legacy</code></td><td>6.29.0</td><td>1,471</td><td>code+docs <span class="dim">(654 code · 817 docs)</span></td><td>2022-04-27</td></tr>
+<tr data-q="chainlink-ccip-sdk latest code+docs"><td><code>chainlink-ccip-sdk</code></td><td>latest</td><td>1,454</td><td>code+docs <span class="dim">(1,442 code · 12 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ens 1 code+docs"><td><code>ens</code></td><td>1</td><td>1,446</td><td>code+docs <span class="dim">(1,352 code · 94 docs)</span></td><td>2026-03-13</td></tr>
+<tr data-q="uniswapx-sdk latest code+docs"><td><code>uniswapx-sdk</code></td><td>latest</td><td>1,437</td><td>code+docs <span class="dim">(1,431 code · 6 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="erc-4337 0.7 0.8 0.9 final code+docs"><td><code>erc-4337</code></td><td>0.7, 0.8, 0.9, final</td><td>1,423</td><td>code+docs <span class="dim">(1,220 code · 203 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="web3auth 11 code+docs"><td><code>web3auth</code></td><td>11</td><td>1,418</td><td>code+docs <span class="dim">(1,119 code · 299 docs)</span></td><td>2026-08-06</td></tr>
+<tr data-q="ethereum latest docs-only python just jinja"><td><code>ethereum</code></td><td>latest</td><td>1,405</td><td>docs-only <span class="dim">(Python, Just, Jinja not indexed)</span></td><td>2026-07-15</td></tr>
+<tr data-q="yellowstone-grpc 15 code+docs"><td><code>yellowstone-grpc</code></td><td>15</td><td>1,329</td><td>code+docs <span class="dim">(927 code · 402 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="uniswap-v4-periphery 1.0.4 code+docs"><td><code>uniswap-v4-periphery</code></td><td>1.0.4</td><td>1,305</td><td>code+docs <span class="dim">(1,294 code · 11 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="coinbase-agentkit 20250311 code+docs"><td><code>coinbase-agentkit</code></td><td>20250311</td><td>1,290</td><td>code+docs <span class="dim">(572 code · 718 docs)</span></td><td>2025-03-07</td></tr>
+<tr data-q="ens-docs latest docs-only unknown"><td><code>ens-docs</code></td><td>latest</td><td>1,268</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-22</td></tr>
+<tr data-q="substreams-skills 1.6.0 code+docs"><td><code>substreams-skills</code></td><td>1.6.0</td><td>1,213</td><td>code+docs <span class="dim">(107 code · 1,106 docs)</span></td><td>2026-08-17</td></tr>
+<tr data-q="powfaucet 2 code+docs"><td><code>powfaucet</code></td><td>2</td><td>1,180</td><td>code+docs <span class="dim">(1,152 code · 28 docs)</span></td><td>2026-07-30</td></tr>
+<tr data-q="arbitrum 3 code+docs"><td><code>arbitrum</code></td><td>3</td><td>1,171</td><td>code+docs <span class="dim">(966 code · 205 docs)</span></td><td>2026-07-24</td></tr>
+<tr data-q="compound-v3 latest code+docs"><td><code>compound-v3</code></td><td>latest</td><td>1,159</td><td>code+docs <span class="dim">(859 code · 300 docs)</span></td><td>2022-07-07</td></tr>
+<tr data-q="aerodrome 1 code+docs"><td><code>aerodrome</code></td><td>1</td><td>1,141</td><td>code+docs <span class="dim">(1,043 code · 98 docs)</span></td><td>2023-08-27</td></tr>
+<tr data-q="ledgerhq-icons-ui latest code+docs"><td><code>ledgerhq-icons-ui</code></td><td>latest</td><td>1,140</td><td>code+docs <span class="dim">(1,130 code · 10 docs)</span></td><td>2026-03-03</td></tr>
+<tr data-q="madara 0 code+docs"><td><code>madara</code></td><td>0</td><td>1,117</td><td>code+docs <span class="dim">(875 code · 242 docs)</span></td><td>2024-05-31</td></tr>
+<tr data-q="base-skills 0.2.0 docs-only python shell"><td><code>base-skills</code></td><td>0.2.0</td><td>1,114</td><td>docs-only <span class="dim">(Python, Shell not indexed)</span></td><td>2026-06-23</td></tr>
+<tr data-q="safe-global-safe-smart-account latest code+docs"><td><code>safe-global-safe-smart-account</code></td><td>latest</td><td>1,024</td><td>code+docs <span class="dim">(1,010 code · 14 docs)</span></td><td>2026-02-02</td></tr>
+<tr data-q="zora latest code+docs"><td><code>zora</code></td><td>latest</td><td>1,022</td><td>code+docs <span class="dim">(896 code · 126 docs)</span></td><td>2023-11-28</td></tr>
+<tr data-q="nft-storage latest code+docs"><td><code>nft-storage</code></td><td>latest</td><td>1,019</td><td>code+docs <span class="dim">(53 code · 966 docs)</span></td><td>2024-07-02</td></tr>
+<tr data-q="juno 0 code+docs"><td><code>juno</code></td><td>0</td><td>1,005</td><td>code+docs <span class="dim">(94 code · 911 docs)</span></td><td>2026-07-21</td></tr>
+<tr data-q="chainlink-ccip-tools-ts latest code+docs"><td><code>chainlink-ccip-tools-ts</code></td><td>latest</td><td>1,003</td><td>code+docs <span class="dim">(984 code · 19 docs)</span></td><td>2025-11-06</td></tr>
+<tr data-q="solana-swap-api latest code+docs"><td><code>solana-swap-api</code></td><td>latest</td><td>989</td><td>code+docs <span class="dim">(918 code · 71 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="circle-skills latest docs-only javascript"><td><code>circle-skills</code></td><td>latest</td><td>944</td><td>docs-only <span class="dim">(JavaScript not indexed)</span></td><td>2026-08-13</td></tr>
+<tr data-q="world-developer-docs latest docs-only mdx javascript css"><td><code>world-developer-docs</code></td><td>latest</td><td>940</td><td>docs-only <span class="dim">(MDX, JavaScript, CSS not indexed)</span></td><td>2026-08-20</td></tr>
+<tr data-q="forge-std 1.16.2 code+docs"><td><code>forge-std</code></td><td>1.16.2</td><td>938</td><td>code+docs <span class="dim">(900 code · 38 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="hiero-ledger-sdk latest code+docs"><td><code>hiero-ledger-sdk</code></td><td>latest</td><td>925</td><td>code+docs <span class="dim">(897 code · 28 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="safe 1.5 code+docs"><td><code>safe</code></td><td>1.5</td><td>925</td><td>code+docs <span class="dim">(692 code · 233 docs)</span></td><td>2026-06-05</td></tr>
+<tr data-q="world-idkit-js-legacy 2.2.5 code+docs"><td><code>world-idkit-js-legacy</code></td><td>2.2.5</td><td>900</td><td>code+docs <span class="dim">(120 code · 780 docs)</span></td><td>2025-10-02</td></tr>
+<tr data-q="substreams-evm 0.1.0 code+docs"><td><code>substreams-evm</code></td><td>0.1.0</td><td>895</td><td>code+docs <span class="dim">(744 code · 151 docs)</span></td><td>2026-05-07</td></tr>
+<tr data-q="semgrep-smart-contracts 1 code+docs"><td><code>semgrep-smart-contracts</code></td><td>1</td><td>888</td><td>code+docs <span class="dim">(876 code · 12 docs)</span></td><td>2025-06-02</td></tr>
+<tr data-q="safe-smart-account 1 code+docs"><td><code>safe-smart-account</code></td><td>1</td><td>880</td><td>code+docs <span class="dim">(651 code · 229 docs)</span></td><td>2025-07-03</td></tr>
+<tr data-q="basenames 1.1.2 code+docs"><td><code>basenames</code></td><td>1.1.2</td><td>876</td><td>code+docs <span class="dim">(852 code · 24 docs)</span></td><td>2025-11-10</td></tr>
+<tr data-q="bnb-chain 1 code+docs"><td><code>bnb-chain</code></td><td>1</td><td>874</td><td>code+docs <span class="dim">(32 code · 842 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="account-abstraction 0 0.9 code+docs"><td><code>account-abstraction</code></td><td>0, 0.9</td><td>862</td><td>code+docs <span class="dim">(830 code · 32 docs)</span></td><td>2025-12-16</td></tr>
+<tr data-q="argent-contracts 2 code+docs"><td><code>argent-contracts</code></td><td>2</td><td>860</td><td>code+docs <span class="dim">(813 code · 47 docs)</span></td><td>2021-04-29</td></tr>
+<tr data-q="oms-wallet-typescript-sdk 0.2.0 code+docs"><td><code>oms-wallet-typescript-sdk</code></td><td>0.2.0</td><td>860</td><td>code+docs <span class="dim">(622 code · 238 docs)</span></td><td>2026-07-15</td></tr>
+<tr data-q="uniswap-v4 1.0.2 code+docs"><td><code>uniswap-v4</code></td><td>1.0.2</td><td>850</td><td>code+docs <span class="dim">(832 code · 18 docs)</span></td><td>2026-04-02</td></tr>
+<tr data-q="hiero-sdk-java 2.77.0 code+docs"><td><code>hiero-sdk-java</code></td><td>2.77.0</td><td>846</td><td>code+docs <span class="dim">(153 code · 693 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="lifi-contract-types 2.0.0 code+docs"><td><code>lifi-contract-types</code></td><td>2.0.0</td><td>829</td><td>code+docs <span class="dim">(827 code · 2 docs)</span></td><td>2022-10-19</td></tr>
+<tr data-q="1inch latest code+docs"><td><code>1inch</code></td><td>latest</td><td>826</td><td>code+docs <span class="dim">(212 code · 614 docs)</span></td><td>2026-08-06</td></tr>
+<tr data-q="ityfuzz 0 code+docs"><td><code>ityfuzz</code></td><td>0</td><td>813</td><td>code+docs <span class="dim">(764 code · 49 docs)</span></td><td>2023-07-23</td></tr>
+<tr data-q="hiero-sdk-python 0.2.10 code+docs"><td><code>hiero-sdk-python</code></td><td>0.2.10</td><td>810</td><td>code+docs <span class="dim">(6 code · 804 docs)</span></td><td>2026-07-30</td></tr>
+<tr data-q="gnark 0 code+docs"><td><code>gnark</code></td><td>0</td><td>802</td><td>code+docs <span class="dim">(458 code · 344 docs)</span></td><td>2026-05-13</td></tr>
+<tr data-q="firedancer 0 code+docs"><td><code>firedancer</code></td><td>0</td><td>801</td><td>code+docs <span class="dim">(74 code · 727 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="polygon-bor 2.10.0 code+docs"><td><code>polygon-bor</code></td><td>2.10.0</td><td>789</td><td>code+docs <span class="dim">(32 code · 757 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="boat-x-framework latest code+docs"><td><code>boat-x-framework</code></td><td>latest</td><td>786</td><td>code+docs <span class="dim">(10 code · 776 docs)</span></td><td>2023-10-01</td></tr>
+<tr data-q="bazuka latest code+docs"><td><code>bazuka</code></td><td>latest</td><td>784</td><td>code+docs <span class="dim">(779 code · 5 docs)</span></td><td>2023-10-12</td></tr>
+<tr data-q="learn-evm-attacks 1 code+docs"><td><code>learn-evm-attacks</code></td><td>1</td><td>778</td><td>code+docs <span class="dim">(477 code · 301 docs)</span></td><td>2024-01-26</td></tr>
+<tr data-q="ledger-app-ethereum 1.22.1 docs-only c python cmake"><td><code>ledger-app-ethereum</code></td><td>1.22.1</td><td>773</td><td>docs-only <span class="dim">(C, Python, CMake not indexed)</span></td><td>2026-05-27</td></tr>
+<tr data-q="safe-global-safe-4337 latest code+docs"><td><code>safe-global-safe-4337</code></td><td>latest</td><td>751</td><td>code+docs <span class="dim">(729 code · 22 docs)</span></td><td>2024-06-19</td></tr>
+<tr data-q="openzeppelin-relayer-sdk latest code+docs"><td><code>openzeppelin-relayer-sdk</code></td><td>latest</td><td>750</td><td>code+docs <span class="dim">(732 code · 18 docs)</span></td><td>2026-02-19</td></tr>
+<tr data-q="sismo-badges latest code+docs"><td><code>sismo-badges</code></td><td>latest</td><td>747</td><td>code+docs <span class="dim">(733 code · 14 docs)</span></td><td>2023-01-11</td></tr>
+<tr data-q="heimdall-rs 0 code+docs"><td><code>heimdall-rs</code></td><td>0</td><td>743</td><td>code+docs <span class="dim">(710 code · 33 docs)</span></td><td>2026-04-14</td></tr>
+<tr data-q="solana-web3-js 1 code+docs"><td><code>solana-web3-js</code></td><td>1</td><td>739</td><td>code+docs <span class="dim">(716 code · 23 docs)</span></td><td>2025-07-31</td></tr>
+<tr data-q="cow-protocol 1 code+docs"><td><code>cow-protocol</code></td><td>1</td><td>712</td><td>code+docs <span class="dim">(682 code · 30 docs)</span></td><td>2025-05-13</td></tr>
+<tr data-q="bigmi 0.10.1 code+docs"><td><code>bigmi</code></td><td>0.10.1</td><td>696</td><td>code+docs <span class="dim">(403 code · 293 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="0g-nitro 2025.01.21 code+docs"><td><code>0g-nitro</code></td><td>2025.01.21</td><td>692</td><td>code+docs <span class="dim">(681 code · 11 docs)</span></td><td>2024-09-23</td></tr>
+<tr data-q="0g-storage-kv 1.5.1 code+docs"><td><code>0g-storage-kv</code></td><td>1.5.1</td><td>692</td><td>code+docs <span class="dim">(673 code · 19 docs)</span></td><td>2026-03-17</td></tr>
+<tr data-q="1inch-sdks 0.4.1 code+docs"><td><code>1inch-sdks</code></td><td>0.4.1</td><td>692</td><td>code+docs <span class="dim">(567 code · 125 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="adamant-im 4 code+docs"><td><code>adamant-im</code></td><td>4</td><td>665</td><td>code+docs <span class="dim">(603 code · 62 docs)</span></td><td>2026-08-10</td></tr>
+<tr data-q="solders 0 code+docs"><td><code>solders</code></td><td>0</td><td>654</td><td>code+docs <span class="dim">(525 code · 129 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="metaboss 0 code+docs"><td><code>metaboss</code></td><td>0</td><td>640</td><td>code+docs <span class="dim">(435 code · 205 docs)</span></td><td>2026-04-23</td></tr>
+<tr data-q="cctp v1 v2 version-shared code+docs"><td><code>cctp</code></td><td>v1, v2, version-shared</td><td>639</td><td>code+docs <span class="dim">(605 code · 34 docs)</span></td><td>2026-06-18</td></tr>
+<tr data-q="uniswap-universal-router 2.2.0 code+docs"><td><code>uniswap-universal-router</code></td><td>2.2.0</td><td>604</td><td>code+docs <span class="dim">(512 code · 92 docs)</span></td><td>2026-05-27</td></tr>
+<tr data-q="world-minikit-js 2.0.3 code+docs"><td><code>world-minikit-js</code></td><td>2.0.3</td><td>591</td><td>code+docs <span class="dim">(396 code · 195 docs)</span></td><td>2026-04-06</td></tr>
+<tr data-q="hedera-nft-sdk 3.1.4 code+docs"><td><code>hedera-nft-sdk</code></td><td>3.1.4</td><td>583</td><td>code+docs <span class="dim">(416 code · 167 docs)</span></td><td>2024-06-05</td></tr>
+<tr data-q="hiero-sdk-go 2.84.0 code+docs"><td><code>hiero-sdk-go</code></td><td>2.84.0</td><td>575</td><td>code+docs <span class="dim">(145 code · 430 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="hiero-contracts 0.1.2 code+docs"><td><code>hiero-contracts</code></td><td>0.1.2</td><td>565</td><td>code+docs <span class="dim">(525 code · 40 docs)</span></td><td>2026-05-05</td></tr>
+<tr data-q="chainlink-evm-gauntlet-ccip latest code+docs"><td><code>chainlink-evm-gauntlet-ccip</code></td><td>latest</td><td>559</td><td>code+docs <span class="dim">(557 code · 2 docs)</span></td><td>2024-06-03</td></tr>
+<tr data-q="nethermind 1 code+docs"><td><code>nethermind</code></td><td>1</td><td>552</td><td>code+docs <span class="dim">(66 code · 486 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="circle-fin-adapter-viem-v2 latest code+docs"><td><code>circle-fin-adapter-viem-v2</code></td><td>latest</td><td>551</td><td>code+docs <span class="dim">(496 code · 55 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="base-eip-8130 latest code+docs"><td><code>base-eip-8130</code></td><td>latest</td><td>550</td><td>code+docs <span class="dim">(526 code · 24 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="arc-bridge-kit 1.13.0 code+docs"><td><code>arc-bridge-kit</code></td><td>1.13.0</td><td>549</td><td>code+docs <span class="dim">(413 code · 136 docs)</span></td><td>2026-08-07</td></tr>
+<tr data-q="circle-fin-bridge-kit latest code+docs"><td><code>circle-fin-bridge-kit</code></td><td>latest</td><td>549</td><td>code+docs <span class="dim">(413 code · 136 docs)</span></td><td>2026-08-07</td></tr>
+<tr data-q="evmos 20 code+docs"><td><code>evmos</code></td><td>20</td><td>547</td><td>code+docs <span class="dim">(203 code · 344 docs)</span></td><td>2024-10-21</td></tr>
+<tr data-q="arc-app-kit-adapters 1.15.1 code+docs"><td><code>arc-app-kit-adapters</code></td><td>1.15.1</td><td>541</td><td>code+docs <span class="dim">(486 code · 55 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="cairo-contracts 3 code+docs"><td><code>cairo-contracts</code></td><td>3</td><td>541</td><td>code+docs <span class="dim">(122 code · 419 docs)</span></td><td>2025-12-11</td></tr>
+<tr data-q="ledgerhq-cryptoassets latest code+docs"><td><code>ledgerhq-cryptoassets</code></td><td>latest</td><td>530</td><td>code+docs <span class="dim">(500 code · 30 docs)</span></td><td>2026-07-28</td></tr>
+<tr data-q="circle-fin-adapter-ethers-v6 latest code+docs"><td><code>circle-fin-adapter-ethers-v6</code></td><td>latest</td><td>528</td><td>code+docs <span class="dim">(468 code · 60 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="uniswap-v3 3.0.0 code+docs"><td><code>uniswap-v3</code></td><td>3.0.0</td><td>528</td><td>code+docs <span class="dim">(500 code · 28 docs)</span></td><td>2026-04-30</td></tr>
+<tr data-q="world-mini-apps-ui-kit 1.6.0 code+docs"><td><code>world-mini-apps-ui-kit</code></td><td>1.6.0</td><td>527</td><td>code+docs <span class="dim">(392 code · 135 docs)</span></td><td>2026-01-22</td></tr>
+<tr data-q="v3-periphery 1 code+docs"><td><code>v3-periphery</code></td><td>1</td><td>521</td><td>code+docs <span class="dim">(504 code · 17 docs)</span></td><td>2021-11-05</td></tr>
+<tr data-q="ledgerhq-device-management-kit latest code+docs"><td><code>ledgerhq-device-management-kit</code></td><td>latest</td><td>512</td><td>code+docs <span class="dim">(483 code · 29 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="uniswap-smart-order-router latest code+docs"><td><code>uniswap-smart-order-router</code></td><td>latest</td><td>512</td><td>code+docs <span class="dim">(472 code · 40 docs)</span></td><td>2026-01-23</td></tr>
+<tr data-q="circle-fin-developer-controlled-wallets latest code+docs"><td><code>circle-fin-developer-controlled-wallets</code></td><td>latest</td><td>506</td><td>code+docs <span class="dim">(496 code · 10 docs)</span></td><td>2026-07-01</td></tr>
+<tr data-q="world-id-contracts 1.0.0 code+docs"><td><code>world-id-contracts</code></td><td>1.0.0</td><td>506</td><td>code+docs <span class="dim">(467 code · 39 docs)</span></td><td>2024-07-15</td></tr>
+<tr data-q="intellij-solidity 2 code+docs"><td><code>intellij-solidity</code></td><td>2</td><td>505</td><td>code+docs <span class="dim">(474 code · 31 docs)</span></td><td>2026-02-08</td></tr>
+<tr data-q="circle-fin-adapter-solana-kit latest code+docs"><td><code>circle-fin-adapter-solana-kit</code></td><td>latest</td><td>492</td><td>code+docs <span class="dim">(436 code · 56 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="circle-fin-adapter-solana latest code+docs"><td><code>circle-fin-adapter-solana</code></td><td>latest</td><td>488</td><td>code+docs <span class="dim">(436 code · 52 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="prb-math 4 code+docs"><td><code>prb-math</code></td><td>4</td><td>477</td><td>code+docs <span class="dim">(323 code · 154 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="echidna 2 code+docs"><td><code>echidna</code></td><td>2</td><td>465</td><td>code+docs <span class="dim">(380 code · 85 docs)</span></td><td>2026-07-24</td></tr>
+<tr data-q="dapptools latest code+docs"><td><code>dapptools</code></td><td>latest</td><td>444</td><td>code+docs <span class="dim">(55 code · 389 docs)</span></td><td>2021-11-15</td></tr>
+<tr data-q="lifi-composer latest docs-only unknown"><td><code>lifi-composer</code></td><td>latest</td><td>443</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="nft-contracts latest code+docs"><td><code>nft-contracts</code></td><td>latest</td><td>443</td><td>code+docs <span class="dim">(333 code · 110 docs)</span></td><td>2026-07-31</td></tr>
+<tr data-q="web3uikit latest code+docs"><td><code>web3uikit</code></td><td>latest</td><td>442</td><td>code+docs <span class="dim">(43 code · 399 docs)</span></td><td>2023-06-14</td></tr>
+<tr data-q="solana-py 0 docs-only python shell makefile"><td><code>solana-py</code></td><td>0</td><td>441</td><td>docs-only <span class="dim">(Python, Shell, Makefile not indexed)</span></td><td>2026-06-27</td></tr>
+<tr data-q="ledgerhq-coin-solana latest code+docs"><td><code>ledgerhq-coin-solana</code></td><td>latest</td><td>438</td><td>code+docs <span class="dim">(438 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="money-legos 2 code+docs"><td><code>money-legos</code></td><td>2</td><td>428</td><td>code+docs <span class="dim">(239 code · 189 docs)</span></td><td>2021-04-02</td></tr>
+<tr data-q="world-idkit 1.1.0 code+docs"><td><code>world-idkit</code></td><td>1.1.0</td><td>426</td><td>code+docs <span class="dim">(366 code · 60 docs)</span></td><td>2026-04-06</td></tr>
+<tr data-q="brownie 1 code+docs"><td><code>brownie</code></td><td>1</td><td>425</td><td>code+docs <span class="dim">(26 code · 399 docs)</span></td><td>2026-06-21</td></tr>
+<tr data-q="hedera-wallet-connect 2.1.3 code+docs"><td><code>hedera-wallet-connect</code></td><td>2.1.3</td><td>417</td><td>code+docs <span class="dim">(394 code · 23 docs)</span></td><td>2026-04-06</td></tr>
+<tr data-q="safe-global-safe-passkey latest code+docs"><td><code>safe-global-safe-passkey</code></td><td>latest</td><td>416</td><td>code+docs <span class="dim">(390 code · 26 docs)</span></td><td>2024-06-17</td></tr>
+<tr data-q="hiero-local-node 2.40.2 code+docs"><td><code>hiero-local-node</code></td><td>2.40.2</td><td>405</td><td>code+docs <span class="dim">(252 code · 153 docs)</span></td><td>2026-05-12</td></tr>
+<tr data-q="safe-global-types-kit latest code+docs"><td><code>safe-global-types-kit</code></td><td>latest</td><td>404</td><td>code+docs <span class="dim">(399 code · 5 docs)</span></td><td>2026-06-22</td></tr>
+<tr data-q="lifi-perps-sdk latest code+docs"><td><code>lifi-perps-sdk</code></td><td>latest</td><td>403</td><td>code+docs <span class="dim">(393 code · 10 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="circle-fin-adapter-circle-wallets latest code+docs"><td><code>circle-fin-adapter-circle-wallets</code></td><td>latest</td><td>400</td><td>code+docs <span class="dim">(366 code · 34 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="polygon-heimdall-v2 0.11.0 docs-only go shell makefile"><td><code>polygon-heimdall-v2</code></td><td>0.11.0</td><td>398</td><td>docs-only <span class="dim">(Go, Shell, Makefile not indexed)</span></td><td>2026-08-18</td></tr>
+<tr data-q="go-ethereum 1 code+docs"><td><code>go-ethereum</code></td><td>1</td><td>394</td><td>code+docs <span class="dim">(32 code · 362 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="circle-fin-user-controlled-wallets latest code+docs"><td><code>circle-fin-user-controlled-wallets</code></td><td>latest</td><td>389</td><td>code+docs <span class="dim">(381 code · 8 docs)</span></td><td>2026-07-01</td></tr>
+<tr data-q="trystero 0.25 code+docs"><td><code>trystero</code></td><td>0.25</td><td>387</td><td>code+docs <span class="dim">(345 code · 42 docs)</span></td><td>2026-07-13</td></tr>
+<tr data-q="uniswapx 2 code+docs"><td><code>uniswapx</code></td><td>2</td><td>387</td><td>code+docs <span class="dim">(372 code · 15 docs)</span></td><td>2024-08-05</td></tr>
+<tr data-q="solmate 6.8.0 code+docs"><td><code>solmate</code></td><td>6.8.0</td><td>381</td><td>code+docs <span class="dim">(374 code · 7 docs)</span></td><td>2025-07-21</td></tr>
+<tr data-q="sky 1 code+docs"><td><code>sky</code></td><td>1</td><td>365</td><td>code+docs <span class="dim">(346 code · 19 docs)</span></td><td>2021-04-19</td></tr>
+<tr data-q="web3j 6 code+docs"><td><code>web3j</code></td><td>6</td><td>363</td><td>code+docs <span class="dim">(86 code · 277 docs)</span></td><td>2026-06-29</td></tr>
+<tr data-q="clear-signing-erc7730-registry latest docs-only javascript shell"><td><code>clear-signing-erc7730-registry</code></td><td>latest</td><td>362</td><td>docs-only <span class="dim">(JavaScript, Shell not indexed)</span></td><td>2026-08-20</td></tr>
+<tr data-q="hiero-sdk-cpp 0.55.0 code+docs"><td><code>hiero-sdk-cpp</code></td><td>0.55.0</td><td>362</td><td>code+docs <span class="dim">(120 code · 242 docs)</span></td><td>2026-05-08</td></tr>
+<tr data-q="uniswap-liquidity-launcher-sdk latest code+docs"><td><code>uniswap-liquidity-launcher-sdk</code></td><td>latest</td><td>362</td><td>code+docs <span class="dim">(342 code · 20 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="xrp-community-wallet 1 code+docs"><td><code>xrp-community-wallet</code></td><td>1</td><td>362</td><td>code+docs <span class="dim">(338 code · 24 docs)</span></td><td>2026-07-09</td></tr>
+<tr data-q="ledgerhq-coin-evm latest code+docs"><td><code>ledgerhq-coin-evm</code></td><td>latest</td><td>361</td><td>code+docs <span class="dim">(250 code · 111 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="scaffold-eth-2 0 code+docs"><td><code>scaffold-eth-2</code></td><td>0</td><td>360</td><td>code+docs <span class="dim">(258 code · 102 docs)</span></td><td>2024-04-16</td></tr>
+<tr data-q="kurtosis-cdk 0.5.21 code+docs"><td><code>kurtosis-cdk</code></td><td>0.5.21</td><td>358</td><td>code+docs <span class="dim">(3 code · 355 docs)</span></td><td>2026-07-30</td></tr>
+<tr data-q="hedera-agent-kit-py 3.3.0 docs-only python"><td><code>hedera-agent-kit-py</code></td><td>3.3.0</td><td>356</td><td>docs-only <span class="dim">(Python not indexed)</span></td><td>2026-04-02</td></tr>
+<tr data-q="0g-storage-ts-sdk latest code+docs"><td><code>0g-storage-ts-sdk</code></td><td>latest</td><td>351</td><td>code+docs <span class="dim">(240 code · 111 docs)</span></td><td>2026-06-03</td></tr>
+<tr data-q="ledgerhq-context-module latest code+docs"><td><code>ledgerhq-context-module</code></td><td>latest</td><td>349</td><td>code+docs <span class="dim">(338 code · 11 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="stacks latest docs-only unknown"><td><code>stacks</code></td><td>latest</td><td>347</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-05-20</td></tr>
+<tr data-q="morpho 1 code+docs"><td><code>morpho</code></td><td>1</td><td>340</td><td>code+docs <span class="dim">(313 code · 27 docs)</span></td><td>2023-12-23</td></tr>
+<tr data-q="trails-sdk 0.18.2 code+docs"><td><code>trails-sdk</code></td><td>0.18.2</td><td>340</td><td>code+docs <span class="dim">(312 code · 28 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="coinbase-wallet-sdk 4.3.4 code+docs"><td><code>coinbase-wallet-sdk</code></td><td>4.3.4</td><td>333</td><td>code+docs <span class="dim">(314 code · 19 docs)</span></td><td>2025-06-06</td></tr>
+<tr data-q="aggkit 0.10.0 code+docs"><td><code>aggkit</code></td><td>0.10.0</td><td>330</td><td>code+docs <span class="dim">(24 code · 306 docs)</span></td><td>2026-07-09</td></tr>
+<tr data-q="lifi-intents latest docs-only unknown"><td><code>lifi-intents</code></td><td>latest</td><td>326</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="rango-sdk latest code+docs"><td><code>rango-sdk</code></td><td>latest</td><td>326</td><td>code+docs <span class="dim">(245 code · 81 docs)</span></td><td>2026-05-18</td></tr>
+<tr data-q="circle-fin-earn-kit latest code+docs"><td><code>circle-fin-earn-kit</code></td><td>latest</td><td>325</td><td>code+docs <span class="dim">(313 code · 12 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-solana latest code+docs"><td><code>ledgerhq-device-signer-kit-solana</code></td><td>latest</td><td>319</td><td>code+docs <span class="dim">(291 code · 28 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="metaplex 2 code+docs"><td><code>metaplex</code></td><td>2</td><td>313</td><td>code+docs <span class="dim">(307 code · 6 docs)</span></td><td>2023-02-16</td></tr>
+<tr data-q="openzeppelin-upgrades-core latest code+docs"><td><code>openzeppelin-upgrades-core</code></td><td>latest</td><td>304</td><td>code+docs <span class="dim">(154 code · 150 docs)</span></td><td>2026-06-02</td></tr>
+<tr data-q="remix-ide 0.12 docs-only unknown"><td><code>remix-ide</code></td><td>0.12</td><td>301</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2023-03-14</td></tr>
+<tr data-q="circle-fin-unified-balance-kit latest code+docs"><td><code>circle-fin-unified-balance-kit</code></td><td>latest</td><td>293</td><td>code+docs <span class="dim">(262 code · 31 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="permit2 latest code+docs"><td><code>permit2</code></td><td>latest</td><td>293</td><td>code+docs <span class="dim">(279 code · 14 docs)</span></td><td>2023-09-29</td></tr>
+<tr data-q="world-id-state-bridge latest code+docs"><td><code>world-id-state-bridge</code></td><td>latest</td><td>292</td><td>code+docs <span class="dim">(254 code · 38 docs)</span></td><td>2026-03-26</td></tr>
+<tr data-q="ledgerhq-hw-app-btc latest code+docs"><td><code>ledgerhq-hw-app-btc</code></td><td>latest</td><td>291</td><td>code+docs <span class="dim">(136 code · 155 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="circle-fin-swap-kit latest code+docs"><td><code>circle-fin-swap-kit</code></td><td>latest</td><td>290</td><td>code+docs <span class="dim">(261 code · 29 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="arc-unified-balance-kit 1.4.0 code+docs"><td><code>arc-unified-balance-kit</code></td><td>1.4.0</td><td>289</td><td>code+docs <span class="dim">(258 code · 31 docs)</span></td><td>2026-08-07</td></tr>
+<tr data-q="arc-swap-kit 1.5.1 code+docs"><td><code>arc-swap-kit</code></td><td>1.5.1</td><td>288</td><td>code+docs <span class="dim">(259 code · 29 docs)</span></td><td>2026-08-07</td></tr>
+<tr data-q="lifi-perps-sdk-provider-lighter latest code+docs"><td><code>lifi-perps-sdk-provider-lighter</code></td><td>latest</td><td>280</td><td>code+docs <span class="dim">(274 code · 6 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="arc-commerce latest code+docs"><td><code>arc-commerce</code></td><td>latest</td><td>278</td><td>code+docs <span class="dim">(268 code · 10 docs)</span></td><td>2026-02-04</td></tr>
+<tr data-q="cake-wallet 6 docs-only dart shell cmake"><td><code>cake-wallet</code></td><td>6</td><td>275</td><td>docs-only <span class="dim">(Dart, Shell, CMake not indexed)</span></td><td>2026-08-12</td></tr>
+<tr data-q="create-solana-dapp latest code+docs"><td><code>create-solana-dapp</code></td><td>latest</td><td>271</td><td>code+docs <span class="dim">(195 code · 76 docs)</span></td><td>2026-08-06</td></tr>
+<tr data-q="privy 3.37.1 code+docs"><td><code>privy</code></td><td>3.37.1</td><td>266</td><td>code+docs <span class="dim">(262 code · 4 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="safe-global-protocol-kit latest code+docs"><td><code>safe-global-protocol-kit</code></td><td>latest</td><td>261</td><td>code+docs <span class="dim">(252 code · 9 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="trezor-firmware latest docs-only c python html"><td><code>trezor-firmware</code></td><td>latest</td><td>259</td><td>docs-only <span class="dim">(C, Python, HTML not indexed)</span></td><td>2019-04-18</td></tr>
+<tr data-q="defi-sdk 2 code+docs"><td><code>defi-sdk</code></td><td>2</td><td>254</td><td>code+docs <span class="dim">(226 code · 28 docs)</span></td><td>2020-04-23</td></tr>
+<tr data-q="circle-fin-provider-cctp-v2 latest code+docs"><td><code>circle-fin-provider-cctp-v2</code></td><td>latest</td><td>249</td><td>code+docs <span class="dim">(226 code · 23 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="curve latest code+docs"><td><code>curve</code></td><td>latest</td><td>249</td><td>code+docs <span class="dim">(11 code · 238 docs)</span></td><td>2025-05-29</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-ethereum latest code+docs"><td><code>ledgerhq-device-signer-kit-ethereum</code></td><td>latest</td><td>245</td><td>code+docs <span class="dim">(216 code · 29 docs)</span></td><td>2026-05-18</td></tr>
+<tr data-q="ledgerhq-react-ui latest code+docs"><td><code>ledgerhq-react-ui</code></td><td>latest</td><td>243</td><td>code+docs <span class="dim">(224 code · 19 docs)</span></td><td>2026-07-16</td></tr>
+<tr data-q="circle-fin-smart-contract-platform latest code+docs"><td><code>circle-fin-smart-contract-platform</code></td><td>latest</td><td>238</td><td>code+docs <span class="dim">(230 code · 8 docs)</span></td><td>2026-07-01</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-bitcoin latest code+docs"><td><code>ledgerhq-device-signer-kit-bitcoin</code></td><td>latest</td><td>232</td><td>code+docs <span class="dim">(200 code · 32 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="cryo 0 code+docs"><td><code>cryo</code></td><td>0</td><td>230</td><td>code+docs <span class="dim">(201 code · 29 docs)</span></td><td>2023-08-13</td></tr>
+<tr data-q="hiero-sdk-swift 0.51.0 code+docs"><td><code>hiero-sdk-swift</code></td><td>0.51.0</td><td>221</td><td>code+docs <span class="dim">(4 code · 217 docs)</span></td><td>2026-05-06</td></tr>
+<tr data-q="mythril 0.24 code+docs"><td><code>mythril</code></td><td>0.24</td><td>219</td><td>code+docs <span class="dim">(192 code · 27 docs)</span></td><td>2024-03-27</td></tr>
+<tr data-q="circle-fin-provider-stablecoin-service-swap latest code+docs"><td><code>circle-fin-provider-stablecoin-service-swap</code></td><td>latest</td><td>216</td><td>code+docs <span class="dim">(160 code · 56 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="lifi-perps-sdk-provider-hyperliquid latest code+docs"><td><code>lifi-perps-sdk-provider-hyperliquid</code></td><td>latest</td><td>211</td><td>code+docs <span class="dim">(206 code · 5 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="whatsabi 0 code+docs"><td><code>whatsabi</code></td><td>0</td><td>211</td><td>code+docs <span class="dim">(195 code · 16 docs)</span></td><td>2026-07-10</td></tr>
+<tr data-q="ledgerhq-coin-sui latest code+docs"><td><code>ledgerhq-coin-sui</code></td><td>latest</td><td>210</td><td>code+docs <span class="dim">(210 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-coin-zcash latest code+docs"><td><code>ledgerhq-coin-zcash</code></td><td>latest</td><td>210</td><td>code+docs <span class="dim">(206 code · 4 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="world-agentkit 0.2.0 code+docs"><td><code>world-agentkit</code></td><td>0.2.0</td><td>209</td><td>code+docs <span class="dim">(80 code · 129 docs)</span></td><td>2026-04-29</td></tr>
+<tr data-q="1inch-fusion 2.4.11 code+docs"><td><code>1inch-fusion</code></td><td>2.4.11</td><td>207</td><td>code+docs <span class="dim">(91 code · 116 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="axelar 6 code+docs"><td><code>axelar</code></td><td>6</td><td>205</td><td>code+docs <span class="dim">(164 code · 41 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="ledger-agent-skills latest docs-only unknown"><td><code>ledger-agent-skills</code></td><td>latest</td><td>204</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-07-20</td></tr>
+<tr data-q="lifi-sdk-provider-ethereum latest code+docs"><td><code>lifi-sdk-provider-ethereum</code></td><td>latest</td><td>202</td><td>code+docs <span class="dim">(190 code · 12 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="circle-fin-provider-gateway-v1 latest code+docs"><td><code>circle-fin-provider-gateway-v1</code></td><td>latest</td><td>201</td><td>code+docs <span class="dim">(183 code · 18 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="oms-wallet-kotlin-sdk 0.2.0 docs-only kotlin shell"><td><code>oms-wallet-kotlin-sdk</code></td><td>0.2.0</td><td>199</td><td>docs-only <span class="dim">(Kotlin, Shell not indexed)</span></td><td>2026-07-15</td></tr>
+<tr data-q="lifi-api latest docs-only unknown"><td><code>lifi-api</code></td><td>latest</td><td>196</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="oms-wallet-react-native-sdk 0.2.0 code+docs"><td><code>oms-wallet-react-native-sdk</code></td><td>0.2.0</td><td>196</td><td>code+docs <span class="dim">(66 code · 130 docs)</span></td><td>2026-07-15</td></tr>
+<tr data-q="walletwasabi 2 docs-only c# shell scheme"><td><code>walletwasabi</code></td><td>2</td><td>196</td><td>docs-only <span class="dim">(C#, Shell, Scheme not indexed)</span></td><td>2026-07-22</td></tr>
+<tr data-q="ledgerhq-native-ui latest code+docs"><td><code>ledgerhq-native-ui</code></td><td>latest</td><td>195</td><td>code+docs <span class="dim">(177 code · 18 docs)</span></td><td>2026-08-11</td></tr>
+<tr data-q="uniswap-v4-core latest docs-only unknown"><td><code>uniswap-v4-core</code></td><td>latest</td><td>190</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2025-05-13</td></tr>
+<tr data-q="ledgerhq-coin-bitcoin latest code+docs"><td><code>ledgerhq-coin-bitcoin</code></td><td>latest</td><td>189</td><td>code+docs <span class="dim">(189 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-dmk-ledger-wallet latest code+docs"><td><code>ledgerhq-dmk-ledger-wallet</code></td><td>latest</td><td>189</td><td>code+docs <span class="dim">(183 code · 6 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="ledgerhq-coin-hedera latest code+docs"><td><code>ledgerhq-coin-hedera</code></td><td>latest</td><td>186</td><td>code+docs <span class="dim">(186 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="openzeppelin-adapter-evm latest code+docs"><td><code>openzeppelin-adapter-evm</code></td><td>latest</td><td>184</td><td>code+docs <span class="dim">(134 code · 50 docs)</span></td><td>2026-08-21</td></tr>
+<tr data-q="gaianet-node 0.5 code+docs"><td><code>gaianet-node</code></td><td>0.5</td><td>179</td><td>code+docs <span class="dim">(9 code · 170 docs)</span></td><td>2025-08-11</td></tr>
+<tr data-q="ledgerhq-coin-cosmos latest code+docs"><td><code>ledgerhq-coin-cosmos</code></td><td>latest</td><td>178</td><td>code+docs <span class="dim">(178 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="fisco-bcos 3 code+docs"><td><code>fisco-bcos</code></td><td>3</td><td>177</td><td>code+docs <span class="dim">(99 code · 78 docs)</span></td><td>2026-01-14</td></tr>
+<tr data-q="lifi-cli 0.1.1 code+docs"><td><code>lifi-cli</code></td><td>0.1.1</td><td>177</td><td>code+docs <span class="dim">(123 code · 54 docs)</span></td><td>2026-05-17</td></tr>
+<tr data-q="waykichain 3 docs-only c++ c m4"><td><code>waykichain</code></td><td>3</td><td>177</td><td>docs-only <span class="dim">(C++, C, M4 not indexed)</span></td><td>2021-05-10</td></tr>
+<tr data-q="oms-wallet-swift-sdk 0.2.0 docs-only swift python shell"><td><code>oms-wallet-swift-sdk</code></td><td>0.2.0</td><td>176</td><td>docs-only <span class="dim">(Swift, Python, Shell not indexed)</span></td><td>2026-07-15</td></tr>
+<tr data-q="uniswap-v3-sdk latest code+docs"><td><code>uniswap-v3-sdk</code></td><td>latest</td><td>173</td><td>code+docs <span class="dim">(171 code · 2 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="aqua 1.0.0 code+docs"><td><code>aqua</code></td><td>1.0.0</td><td>172</td><td>code+docs <span class="dim">(136 code · 36 docs)</span></td><td>2026-03-17</td></tr>
+<tr data-q="gun 0.2019 code+docs"><td><code>gun</code></td><td>0.2019</td><td>172</td><td>code+docs <span class="dim">(54 code · 118 docs)</span></td><td>2019-04-14</td></tr>
+<tr data-q="0g-agent-nft latest code+docs"><td><code>0g-agent-nft</code></td><td>latest</td><td>170</td><td>code+docs <span class="dim">(157 code · 13 docs)</span></td><td>2026-02-02</td></tr>
+<tr data-q="ledgerhq-types-live latest code+docs"><td><code>ledgerhq-types-live</code></td><td>latest</td><td>170</td><td>code+docs <span class="dim">(168 code · 2 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="evmone 0 docs-only c++ cmake c"><td><code>evmone</code></td><td>0</td><td>167</td><td>docs-only <span class="dim">(C++, CMake, C not indexed)</span></td><td>2026-08-11</td></tr>
+<tr data-q="lifi-perps-types latest code+docs"><td><code>lifi-perps-types</code></td><td>latest</td><td>166</td><td>code+docs <span class="dim">(154 code · 12 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="openzeppelin-ui-types latest code+docs"><td><code>openzeppelin-ui-types</code></td><td>latest</td><td>166</td><td>code+docs <span class="dim">(147 code · 19 docs)</span></td><td>2026-08-21</td></tr>
+<tr data-q="ledgerhq-hw-app-eth latest code+docs"><td><code>ledgerhq-hw-app-eth</code></td><td>latest</td><td>165</td><td>code+docs <span class="dim">(78 code · 87 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-coin-aleo latest code+docs"><td><code>ledgerhq-coin-aleo</code></td><td>latest</td><td>162</td><td>code+docs <span class="dim">(162 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="chainlink-evm-gauntlet-ocr latest code+docs"><td><code>chainlink-evm-gauntlet-ocr</code></td><td>latest</td><td>160</td><td>code+docs <span class="dim">(159 code · 1 docs)</span></td><td>2025-04-17</td></tr>
+<tr data-q="ledgerhq-coin-tron latest code+docs"><td><code>ledgerhq-coin-tron</code></td><td>latest</td><td>160</td><td>code+docs <span class="dim">(160 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="chainlink-evm-gauntlet-mercury latest code+docs"><td><code>chainlink-evm-gauntlet-mercury</code></td><td>latest</td><td>157</td><td>code+docs <span class="dim">(156 code · 1 docs)</span></td><td>2024-08-06</td></tr>
+<tr data-q="epusdt 2 docs-only go shell html"><td><code>epusdt</code></td><td>2</td><td>155</td><td>docs-only <span class="dim">(Go, Shell, HTML not indexed)</span></td><td>2026-07-23</td></tr>
+<tr data-q="ledgerhq-coin-cardano latest code+docs"><td><code>ledgerhq-coin-cardano</code></td><td>latest</td><td>154</td><td>code+docs <span class="dim">(154 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-coin-polkadot latest code+docs"><td><code>ledgerhq-coin-polkadot</code></td><td>latest</td><td>153</td><td>code+docs <span class="dim">(153 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledger-secure-sdk 27.0.1 docs-only c c++ python"><td><code>ledger-secure-sdk</code></td><td>27.0.1</td><td>152</td><td>docs-only <span class="dim">(C, C++, Python not indexed)</span></td><td>2026-08-03</td></tr>
+<tr data-q="ledgerhq-coin-concordium latest code+docs"><td><code>ledgerhq-coin-concordium</code></td><td>latest</td><td>152</td><td>code+docs <span class="dim">(152 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledger-device-rust-sdk 0.1.0 code+docs"><td><code>ledger-device-rust-sdk</code></td><td>0.1.0</td><td>151</td><td>code+docs <span class="dim">(138 code · 13 docs)</span></td><td>2023-12-07</td></tr>
+<tr data-q="ledgerhq-coin-kaspa latest code+docs"><td><code>ledgerhq-coin-kaspa</code></td><td>latest</td><td>148</td><td>code+docs <span class="dim">(148 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="chainlink-evm-gauntlet-functions latest code+docs"><td><code>chainlink-evm-gauntlet-functions</code></td><td>latest</td><td>145</td><td>code+docs <span class="dim">(139 code · 6 docs)</span></td><td>2024-08-26</td></tr>
+<tr data-q="wasm3 0.5 docs-only c python c++"><td><code>wasm3</code></td><td>0.5</td><td>141</td><td>docs-only <span class="dim">(C, Python, C++ not indexed)</span></td><td>2021-06-02</td></tr>
+<tr data-q="lifi-perps-sdk-provider-ondo latest code+docs"><td><code>lifi-perps-sdk-provider-ondo</code></td><td>latest</td><td>138</td><td>code+docs <span class="dim">(131 code · 7 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="uniswap-v4-sdk latest code+docs"><td><code>uniswap-v4-sdk</code></td><td>latest</td><td>138</td><td>code+docs <span class="dim">(138 code · 0 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="ledgerhq-ledger-wallet-framework latest code+docs"><td><code>ledgerhq-ledger-wallet-framework</code></td><td>latest</td><td>137</td><td>code+docs <span class="dim">(133 code · 4 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="uniswap-universal-router-sdk latest code+docs"><td><code>uniswap-universal-router-sdk</code></td><td>latest</td><td>137</td><td>code+docs <span class="dim">(114 code · 23 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="ledgerhq-coin-celo latest code+docs"><td><code>ledgerhq-coin-celo</code></td><td>latest</td><td>136</td><td>code+docs <span class="dim">(136 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-coin-vechain latest code+docs"><td><code>ledgerhq-coin-vechain</code></td><td>latest</td><td>136</td><td>code+docs <span class="dim">(136 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="hedera-custodians-library 1.4.3 code+docs"><td><code>hedera-custodians-library</code></td><td>1.4.3</td><td>135</td><td>code+docs <span class="dim">(104 code · 31 docs)</span></td><td>2026-05-06</td></tr>
+<tr data-q="chainlink-evm-gauntlet-vrfv2plus latest code+docs"><td><code>chainlink-evm-gauntlet-vrfv2plus</code></td><td>latest</td><td>134</td><td>code+docs <span class="dim">(118 code · 16 docs)</span></td><td>2024-07-12</td></tr>
+<tr data-q="flow-nft latest docs-only cadence go makefile"><td><code>flow-nft</code></td><td>latest</td><td>134</td><td>docs-only <span class="dim">(Cadence, Go, Makefile not indexed)</span></td><td>2026-04-09</td></tr>
+<tr data-q="openzeppelin-ui-components latest code+docs"><td><code>openzeppelin-ui-components</code></td><td>latest</td><td>134</td><td>code+docs <span class="dim">(117 code · 17 docs)</span></td><td>2026-08-21</td></tr>
+<tr data-q="scroll latest code+docs"><td><code>scroll</code></td><td>latest</td><td>133</td><td>code+docs <span class="dim">(86 code · 47 docs)</span></td><td>2025-03-08</td></tr>
+<tr data-q="openzeppelin-hardhat-upgrades latest code+docs"><td><code>openzeppelin-hardhat-upgrades</code></td><td>latest</td><td>130</td><td>code+docs <span class="dim">(112 code · 18 docs)</span></td><td>2026-07-23</td></tr>
+<tr data-q="bcoin 2 docs-only javascript shell html"><td><code>bcoin</code></td><td>2</td><td>129</td><td>docs-only <span class="dim">(JavaScript, Shell, HTML not indexed)</span></td><td>2021-11-12</td></tr>
+<tr data-q="ledgerhq-coin-canton latest code+docs"><td><code>ledgerhq-coin-canton</code></td><td>latest</td><td>126</td><td>code+docs <span class="dim">(122 code · 4 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="use-nft 0 code+docs"><td><code>use-nft</code></td><td>0</td><td>122</td><td>code+docs <span class="dim">(103 code · 19 docs)</span></td><td>2022-05-03</td></tr>
+<tr data-q="xerc20 1 code+docs"><td><code>xerc20</code></td><td>1</td><td>122</td><td>code+docs <span class="dim">(102 code · 20 docs)</span></td><td>2025-02-13</td></tr>
+<tr data-q="did-sdk-js 0.1.1 code+docs"><td><code>did-sdk-js</code></td><td>0.1.1</td><td>120</td><td>code+docs <span class="dim">(109 code · 11 docs)</span></td><td>2021-08-30</td></tr>
+<tr data-q="ledgerhq-coin-aptos latest code+docs"><td><code>ledgerhq-coin-aptos</code></td><td>latest</td><td>120</td><td>code+docs <span class="dim">(120 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="vyper 0.4 docs-only python makefile batchfile"><td><code>vyper</code></td><td>0.4</td><td>120</td><td>docs-only <span class="dim">(Python, Makefile, Batchfile not indexed)</span></td><td>2025-06-18</td></tr>
+<tr data-q="openzeppelin-upgrade-safe-transpiler latest code+docs"><td><code>openzeppelin-upgrade-safe-transpiler</code></td><td>latest</td><td>117</td><td>code+docs <span class="dim">(61 code · 56 docs)</span></td><td>2026-08-20</td></tr>
+<tr data-q="hummingbot 2 docs-only python cython c++"><td><code>hummingbot</code></td><td>2</td><td>115</td><td>docs-only <span class="dim">(Python, Cython, C++ not indexed)</span></td><td>2026-07-29</td></tr>
+<tr data-q="polygon-cdk 0.5.4 code+docs"><td><code>polygon-cdk</code></td><td>0.5.4</td><td>113</td><td>code+docs <span class="dim">(50 code · 63 docs)</span></td><td>2025-05-07</td></tr>
+<tr data-q="web3py 7.16.0 code+docs"><td><code>web3py</code></td><td>7.16.0</td><td>113</td><td>code+docs <span class="dim">(77 code · 36 docs)</span></td><td>2026-05-01</td></tr>
+<tr data-q="ledgerhq-coin-multiversx latest code+docs"><td><code>ledgerhq-coin-multiversx</code></td><td>latest</td><td>112</td><td>code+docs <span class="dim">(112 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-coin-near latest code+docs"><td><code>ledgerhq-coin-near</code></td><td>latest</td><td>112</td><td>code+docs <span class="dim">(112 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-coin-mina latest code+docs"><td><code>ledgerhq-coin-mina</code></td><td>latest</td><td>108</td><td>code+docs <span class="dim">(108 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="hiero-did-sdk-python 0.1.7 docs-only python makefile"><td><code>hiero-did-sdk-python</code></td><td>0.1.7</td><td>106</td><td>docs-only <span class="dim">(Python, Makefile not indexed)</span></td><td>2026-03-24</td></tr>
+<tr data-q="ledgerhq-coin-algorand latest code+docs"><td><code>ledgerhq-coin-algorand</code></td><td>latest</td><td>106</td><td>code+docs <span class="dim">(106 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-wallet-btc latest code+docs"><td><code>ledgerhq-wallet-btc</code></td><td>latest</td><td>106</td><td>code+docs <span class="dim">(101 code · 5 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-concordium latest code+docs"><td><code>ledgerhq-device-signer-kit-concordium</code></td><td>latest</td><td>105</td><td>code+docs <span class="dim">(80 code · 25 docs)</span></td><td>2026-05-18</td></tr>
+<tr data-q="ledgerhq-coin-internet_computer latest code+docs"><td><code>ledgerhq-coin-internet_computer</code></td><td>latest</td><td>104</td><td>code+docs <span class="dim">(104 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-live-nft-react latest code+docs"><td><code>ledgerhq-live-nft-react</code></td><td>latest</td><td>104</td><td>code+docs <span class="dim">(104 code · 0 docs)</span></td><td>2025-09-16</td></tr>
+<tr data-q="0g-storage-ts-starter-kit latest code+docs"><td><code>0g-storage-ts-starter-kit</code></td><td>latest</td><td>102</td><td>code+docs <span class="dim">(76 code · 26 docs)</span></td><td>2026-04-25</td></tr>
+<tr data-q="multicall3 latest code+docs"><td><code>multicall3</code></td><td>latest</td><td>102</td><td>code+docs <span class="dim">(64 code · 38 docs)</span></td><td>2026-01-23</td></tr>
+<tr data-q="ledgerhq-coin-filecoin latest code+docs"><td><code>ledgerhq-coin-filecoin</code></td><td>latest</td><td>100</td><td>code+docs <span class="dim">(100 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-live-wallet latest code+docs"><td><code>ledgerhq-live-wallet</code></td><td>latest</td><td>99</td><td>code+docs <span class="dim">(88 code · 11 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="chainlink-evm-gauntlet-mcm latest code+docs"><td><code>chainlink-evm-gauntlet-mcm</code></td><td>latest</td><td>97</td><td>code+docs <span class="dim">(91 code · 6 docs)</span></td><td>2024-12-17</td></tr>
+<tr data-q="hashgraph-hedera-wallet-connect latest code+docs"><td><code>hashgraph-hedera-wallet-connect</code></td><td>latest</td><td>97</td><td>code+docs <span class="dim">(74 code · 23 docs)</span></td><td>2026-04-06</td></tr>
+<tr data-q="solana-go 1 docs-only go assembly shell"><td><code>solana-go</code></td><td>1</td><td>97</td><td>docs-only <span class="dim">(Go, Assembly, Shell not indexed)</span></td><td>2026-06-30</td></tr>
+<tr data-q="zkevm-bridge-service 0.6.3 code+docs"><td><code>zkevm-bridge-service</code></td><td>0.6.3</td><td>97</td><td>code+docs <span class="dim">(43 code · 54 docs)</span></td><td>2025-11-20</td></tr>
+<tr data-q="uniswap-router-sdk latest code+docs"><td><code>uniswap-router-sdk</code></td><td>latest</td><td>95</td><td>code+docs <span class="dim">(93 code · 2 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="ens-cli latest code+docs"><td><code>ens-cli</code></td><td>latest</td><td>91</td><td>code+docs <span class="dim">(64 code · 27 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="samila 1 docs-only python shell batchfile"><td><code>samila</code></td><td>1</td><td>91</td><td>docs-only <span class="dim">(Python, Shell, Batchfile not indexed)</span></td><td>2025-07-16</td></tr>
+<tr data-q="ledgerhq-coin-elrond latest code+docs"><td><code>ledgerhq-coin-elrond</code></td><td>latest</td><td>90</td><td>code+docs <span class="dim">(90 code · 0 docs)</span></td><td>2025-02-28</td></tr>
+<tr data-q="ledger-app-boilerplate-rust 1.8.0 code+docs"><td><code>ledger-app-boilerplate-rust</code></td><td>1.8.0</td><td>88</td><td>code+docs <span class="dim">(40 code · 48 docs)</span></td><td>2026-04-27</td></tr>
+<tr data-q="ledgerhq-coin-stacks latest code+docs"><td><code>ledgerhq-coin-stacks</code></td><td>latest</td><td>88</td><td>code+docs <span class="dim">(88 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="uniswap-sdk-core latest code+docs"><td><code>uniswap-sdk-core</code></td><td>latest</td><td>88</td><td>code+docs <span class="dim">(87 code · 1 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="chainlink-evm-gauntlet-common latest code+docs"><td><code>chainlink-evm-gauntlet-common</code></td><td>latest</td><td>87</td><td>code+docs <span class="dim">(73 code · 14 docs)</span></td><td>2024-04-10</td></tr>
+<tr data-q="0g-da-node 1.1.3 code+docs"><td><code>0g-da-node</code></td><td>1.1.3</td><td>86</td><td>code+docs <span class="dim">(81 code · 5 docs)</span></td><td>2024-10-16</td></tr>
+<tr data-q="chainlink-functions-toolkit latest code+docs"><td><code>chainlink-functions-toolkit</code></td><td>latest</td><td>85</td><td>code+docs <span class="dim">(39 code · 46 docs)</span></td><td>2024-09-16</td></tr>
+<tr data-q="farcaster 2023 docs-only unknown"><td><code>farcaster</code></td><td>2023</td><td>85</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2023-09-01</td></tr>
+<tr data-q="ledgerhq-coin-casper latest code+docs"><td><code>ledgerhq-coin-casper</code></td><td>latest</td><td>84</td><td>code+docs <span class="dim">(84 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="circle-fin-w3s-pw-react-native-sdk latest code+docs"><td><code>circle-fin-w3s-pw-react-native-sdk</code></td><td>latest</td><td>81</td><td>code+docs <span class="dim">(24 code · 57 docs)</span></td><td>2026-07-28</td></tr>
+<tr data-q="lifi-sdk-provider-solana latest code+docs"><td><code>lifi-sdk-provider-solana</code></td><td>latest</td><td>80</td><td>code+docs <span class="dim">(68 code · 12 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-icp latest code+docs"><td><code>ledgerhq-device-signer-kit-icp</code></td><td>latest</td><td>79</td><td>code+docs <span class="dim">(60 code · 19 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="worldcoin-minikit-js latest code+docs"><td><code>worldcoin-minikit-js</code></td><td>latest</td><td>78</td><td>code+docs <span class="dim">(67 code · 11 docs)</span></td><td>2026-04-06</td></tr>
+<tr data-q="did-sdk-java 1.0.0 docs-only java xslt dockerfile"><td><code>did-sdk-java</code></td><td>1.0.0</td><td>77</td><td>docs-only <span class="dim">(Java, XSLT, Dockerfile not indexed)</span></td><td>2021-07-07</td></tr>
+<tr data-q="token-profile latest code+docs"><td><code>token-profile</code></td><td>latest</td><td>77</td><td>code+docs <span class="dim">(9 code · 68 docs)</span></td><td>2025-09-12</td></tr>
+<tr data-q="ledgerhq-wallet-pnl latest code+docs"><td><code>ledgerhq-wallet-pnl</code></td><td>latest</td><td>76</td><td>code+docs <span class="dim">(72 code · 4 docs)</span></td><td>2026-07-23</td></tr>
+<tr data-q="lifi-earn latest docs-only unknown"><td><code>lifi-earn</code></td><td>latest</td><td>76</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="openzeppelin-wizard latest code+docs"><td><code>openzeppelin-wizard</code></td><td>latest</td><td>75</td><td>code+docs <span class="dim">(66 code · 9 docs)</span></td><td>2026-08-07</td></tr>
+<tr data-q="starkscan-verifier latest code+docs"><td><code>starkscan-verifier</code></td><td>latest</td><td>75</td><td>code+docs <span class="dim">(64 code · 11 docs)</span></td><td>2023-03-24</td></tr>
+<tr data-q="unstoppable-wallet-android 0 docs-only kotlin shell"><td><code>unstoppable-wallet-android</code></td><td>0</td><td>73</td><td>docs-only <span class="dim">(Kotlin, Shell not indexed)</span></td><td>2026-07-22</td></tr>
+<tr data-q="chainlink-ccip-cli latest code+docs"><td><code>chainlink-ccip-cli</code></td><td>latest</td><td>72</td><td>code+docs <span class="dim">(43 code · 29 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-aleo latest code+docs"><td><code>ledgerhq-device-signer-kit-aleo</code></td><td>latest</td><td>72</td><td>code+docs <span class="dim">(68 code · 4 docs)</span></td><td>2026-06-11</td></tr>
+<tr data-q="chainlink-evm-gauntlet-token latest code+docs"><td><code>chainlink-evm-gauntlet-token</code></td><td>latest</td><td>70</td><td>code+docs <span class="dim">(66 code · 4 docs)</span></td><td>2024-04-10</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-cosmos latest code+docs"><td><code>ledgerhq-device-signer-kit-cosmos</code></td><td>latest</td><td>70</td><td>code+docs <span class="dim">(50 code · 20 docs)</span></td><td>2026-05-26</td></tr>
+<tr data-q="hashgraph-cryptography latest code+docs"><td><code>hashgraph-cryptography</code></td><td>latest</td><td>68</td><td>code+docs <span class="dim">(68 code · 0 docs)</span></td><td>2026-03-13</td></tr>
+<tr data-q="ledgerhq-coin-ton latest code+docs"><td><code>ledgerhq-coin-ton</code></td><td>latest</td><td>68</td><td>code+docs <span class="dim">(68 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="lifi-types latest code+docs"><td><code>lifi-types</code></td><td>latest</td><td>67</td><td>code+docs <span class="dim">(53 code · 14 docs)</span></td><td>2026-08-05</td></tr>
+<tr data-q="ledgerhq-hw-ledger-key-ring-protocol latest code+docs"><td><code>ledgerhq-hw-ledger-key-ring-protocol</code></td><td>latest</td><td>65</td><td>code+docs <span class="dim">(64 code · 1 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="v2-core 1 code+docs"><td><code>v2-core</code></td><td>1</td><td>65</td><td>code+docs <span class="dim">(60 code · 5 docs)</span></td><td>2020-05-18</td></tr>
+<tr data-q="lifi-intent latest code+docs"><td><code>lifi-intent</code></td><td>latest</td><td>63</td><td>code+docs <span class="dim">(50 code · 13 docs)</span></td><td>2026-08-21</td></tr>
+<tr data-q="lifi-mcp-server latest docs-only unknown"><td><code>lifi-mcp-server</code></td><td>latest</td><td>63</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="openzeppelin-ui-utils latest code+docs"><td><code>openzeppelin-ui-utils</code></td><td>latest</td><td>63</td><td>code+docs <span class="dim">(53 code · 10 docs)</span></td><td>2026-08-21</td></tr>
+<tr data-q="safe-global-safe-react-hooks latest code+docs"><td><code>safe-global-safe-react-hooks</code></td><td>latest</td><td>62</td><td>code+docs <span class="dim">(53 code · 9 docs)</span></td><td>2025-04-02</td></tr>
+<tr data-q="ledgerhq-coin-icon latest code+docs"><td><code>ledgerhq-coin-icon</code></td><td>latest</td><td>60</td><td>code+docs <span class="dim">(60 code · 0 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-cryptoassets-evm-signatures latest code+docs"><td><code>ledgerhq-cryptoassets-evm-signatures</code></td><td>latest</td><td>60</td><td>code+docs <span class="dim">(60 code · 0 docs)</span></td><td>2025-11-20</td></tr>
+<tr data-q="ledgerhq-hw-app-canton latest code+docs"><td><code>ledgerhq-hw-app-canton</code></td><td>latest</td><td>60</td><td>code+docs <span class="dim">(20 code · 40 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ore-cli-legacy 2 code+docs"><td><code>ore-cli-legacy</code></td><td>2</td><td>60</td><td>code+docs <span class="dim">(52 code · 8 docs)</span></td><td>2024-08-22</td></tr>
+<tr data-q="ledgerhq-react-native-hw-transport-ble latest code+docs"><td><code>ledgerhq-react-native-hw-transport-ble</code></td><td>latest</td><td>59</td><td>code+docs <span class="dim">(30 code · 29 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="openzeppelin-wizard-cairo latest code+docs"><td><code>openzeppelin-wizard-cairo</code></td><td>latest</td><td>59</td><td>code+docs <span class="dim">(49 code · 10 docs)</span></td><td>2026-06-18</td></tr>
+<tr data-q="chainlink-evm-gauntlet-safe latest code+docs"><td><code>chainlink-evm-gauntlet-safe</code></td><td>latest</td><td>58</td><td>code+docs <span class="dim">(48 code · 10 docs)</span></td><td>2024-12-17</td></tr>
+<tr data-q="nft-marketplace latest docs-only css javascript html"><td><code>nft-marketplace</code></td><td>latest</td><td>57</td><td>docs-only <span class="dim">(CSS, JavaScript, HTML not indexed)</span></td><td>2025-11-01</td></tr>
+<tr data-q="flashside latest code+docs"><td><code>flashside</code></td><td>latest</td><td>56</td><td>code+docs <span class="dim">(50 code · 6 docs)</span></td><td>2022-05-01</td></tr>
+<tr data-q="ledgerhq-evm-tools latest code+docs"><td><code>ledgerhq-evm-tools</code></td><td>latest</td><td>56</td><td>code+docs <span class="dim">(54 code · 2 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="safe-global-relay-kit latest code+docs"><td><code>safe-global-relay-kit</code></td><td>latest</td><td>56</td><td>code+docs <span class="dim">(49 code · 7 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="uniswap-v2-sdk latest code+docs"><td><code>uniswap-v2-sdk</code></td><td>latest</td><td>55</td><td>code+docs <span class="dim">(54 code · 1 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="hiero-ledger-cryptography latest code+docs"><td><code>hiero-ledger-cryptography</code></td><td>latest</td><td>54</td><td>code+docs <span class="dim">(54 code · 0 docs)</span></td><td>2026-08-12</td></tr>
+<tr data-q="lifi-sdk-provider-tron latest code+docs"><td><code>lifi-sdk-provider-tron</code></td><td>latest</td><td>54</td><td>code+docs <span class="dim">(42 code · 12 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="swap-vm-template 0.0.2 code+docs"><td><code>swap-vm-template</code></td><td>0.0.2</td><td>54</td><td>code+docs <span class="dim">(35 code · 19 docs)</span></td><td>2025-11-20</td></tr>
+<tr data-q="ledgerhq-hw-app-concordium latest code+docs"><td><code>ledgerhq-hw-app-concordium</code></td><td>latest</td><td>53</td><td>code+docs <span class="dim">(12 code · 41 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="blend-my-nfts 4 docs-only python"><td><code>blend-my-nfts</code></td><td>4</td><td>52</td><td>docs-only <span class="dim">(Python not indexed)</span></td><td>2022-08-28</td></tr>
+<tr data-q="ledgerhq-device-management-kit-devtools-ui latest code+docs"><td><code>ledgerhq-device-management-kit-devtools-ui</code></td><td>latest</td><td>52</td><td>code+docs <span class="dim">(52 code · 0 docs)</span></td><td>2026-03-17</td></tr>
+<tr data-q="openzeppelin-contracts-mcp latest code+docs"><td><code>openzeppelin-contracts-mcp</code></td><td>latest</td><td>52</td><td>code+docs <span class="dim">(40 code · 12 docs)</span></td><td>2026-08-17</td></tr>
+<tr data-q="chainlink-evm-gauntlet latest code+docs"><td><code>chainlink-evm-gauntlet</code></td><td>latest</td><td>51</td><td>code+docs <span class="dim">(49 code · 2 docs)</span></td><td>2024-07-12</td></tr>
+<tr data-q="ledger-app-builder 3.8.0 docs-only dockerfile shell"><td><code>ledger-app-builder</code></td><td>3.8.0</td><td>50</td><td>docs-only <span class="dim">(Dockerfile, Shell not indexed)</span></td><td>2023-10-09</td></tr>
+<tr data-q="lifi-enterprise latest docs-only unknown"><td><code>lifi-enterprise</code></td><td>latest</td><td>50</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="openzeppelin-wizard-stellar latest code+docs"><td><code>openzeppelin-wizard-stellar</code></td><td>latest</td><td>50</td><td>code+docs <span class="dim">(43 code · 7 docs)</span></td><td>2026-08-17</td></tr>
+<tr data-q="openzeppelin-ui-renderer latest code+docs"><td><code>openzeppelin-ui-renderer</code></td><td>latest</td><td>48</td><td>code+docs <span class="dim">(18 code · 30 docs)</span></td><td>2026-08-21</td></tr>
+<tr data-q="ledgerhq-concordium-core latest code+docs"><td><code>ledgerhq-concordium-core</code></td><td>latest</td><td>47</td><td>code+docs <span class="dim">(38 code · 9 docs)</span></td><td>2026-07-16</td></tr>
+<tr data-q="openzeppelin-defender-sdk-relay-signer-client latest code+docs"><td><code>openzeppelin-defender-sdk-relay-signer-client</code></td><td>latest</td><td>47</td><td>code+docs <span class="dim">(27 code · 20 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-tron latest code+docs"><td><code>ledgerhq-device-signer-kit-tron</code></td><td>latest</td><td>46</td><td>code+docs <span class="dim">(42 code · 4 docs)</span></td><td>2026-07-07</td></tr>
+<tr data-q="0g-da-op-plasma latest docs-only go makefile dockerfile"><td><code>0g-da-op-plasma</code></td><td>latest</td><td>45</td><td>docs-only <span class="dim">(Go, Makefile, Dockerfile not indexed)</span></td><td>2024-12-31</td></tr>
+<tr data-q="kairos 4 docs-only go html shell"><td><code>kairos</code></td><td>4</td><td>45</td><td>docs-only <span class="dim">(Go, HTML, Shell not indexed)</span></td><td>2026-06-17</td></tr>
+<tr data-q="lifi-widget-provider latest code+docs"><td><code>lifi-widget-provider</code></td><td>latest</td><td>45</td><td>code+docs <span class="dim">(29 code · 16 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="openzeppelin-wizard-common latest code+docs"><td><code>openzeppelin-wizard-common</code></td><td>latest</td><td>45</td><td>code+docs <span class="dim">(44 code · 1 docs)</span></td><td>2026-08-17</td></tr>
+<tr data-q="lifi-wallet-management latest code+docs"><td><code>lifi-wallet-management</code></td><td>latest</td><td>44</td><td>code+docs <span class="dim">(28 code · 16 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="chainlink-contracts latest docs-only unknown"><td><code>chainlink-contracts</code></td><td>latest</td><td>43</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2025-09-30</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-hyperliquid latest code+docs"><td><code>ledgerhq-device-signer-kit-hyperliquid</code></td><td>latest</td><td>43</td><td>code+docs <span class="dim">(39 code · 4 docs)</span></td><td>2026-05-18</td></tr>
+<tr data-q="ledgerhq-hw-app-starknet latest code+docs"><td><code>ledgerhq-hw-app-starknet</code></td><td>latest</td><td>42</td><td>code+docs <span class="dim">(7 code · 35 docs)</span></td><td>2026-02-02</td></tr>
+<tr data-q="ledgerhq-hw-app-str latest code+docs"><td><code>ledgerhq-hw-app-str</code></td><td>latest</td><td>42</td><td>code+docs <span class="dim">(8 code · 34 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-hw-app-trx latest code+docs"><td><code>ledgerhq-hw-app-trx</code></td><td>latest</td><td>42</td><td>code+docs <span class="dim">(14 code · 28 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="lifi-sdk-provider-bitcoin latest code+docs"><td><code>lifi-sdk-provider-bitcoin</code></td><td>latest</td><td>42</td><td>code+docs <span class="dim">(30 code · 12 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="bitshares-core 7 docs-only c++ cmake python"><td><code>bitshares-core</code></td><td>7</td><td>40</td><td>docs-only <span class="dim">(C++, CMake, Python not indexed)</span></td><td>2023-12-15</td></tr>
+<tr data-q="lifi-sdk-provider-stellar latest code+docs"><td><code>lifi-sdk-provider-stellar</code></td><td>latest</td><td>40</td><td>code+docs <span class="dim">(28 code · 12 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="uniswap-redux-multicall latest code+docs"><td><code>uniswap-redux-multicall</code></td><td>latest</td><td>40</td><td>code+docs <span class="dim">(36 code · 4 docs)</span></td><td>2022-11-15</td></tr>
+<tr data-q="crypto-signal latest docs-only python dockerfile makefile"><td><code>crypto-signal</code></td><td>latest</td><td>39</td><td>docs-only <span class="dim">(Python, Dockerfile, Makefile not indexed)</span></td><td>2022-08-09</td></tr>
+<tr data-q="uniswap-smart-wallet-sdk latest code+docs"><td><code>uniswap-smart-wallet-sdk</code></td><td>latest</td><td>39</td><td>code+docs <span class="dim">(33 code · 6 docs)</span></td><td>2026-08-13</td></tr>
+<tr data-q="ledgerhq-hw-app-exchange latest code+docs"><td><code>ledgerhq-hw-app-exchange</code></td><td>latest</td><td>38</td><td>code+docs <span class="dim">(20 code · 18 docs)</span></td><td>2026-08-14</td></tr>
+<tr data-q="ledgerhq-hw-transport-webhid latest code+docs"><td><code>ledgerhq-hw-transport-webhid</code></td><td>latest</td><td>38</td><td>code+docs <span class="dim">(8 code · 30 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="ledgerhq-wallet-api-exchange-module latest code+docs"><td><code>ledgerhq-wallet-api-exchange-module</code></td><td>latest</td><td>38</td><td>code+docs <span class="dim">(34 code · 4 docs)</span></td><td>2026-07-16</td></tr>
+<tr data-q="ledgerhq-coin-tester-evm latest code+docs"><td><code>ledgerhq-coin-tester-evm</code></td><td>latest</td><td>37</td><td>code+docs <span class="dim">(32 code · 5 docs)</span></td><td>2026-06-05</td></tr>
+<tr data-q="lifi-tenderlysim latest code+docs"><td><code>lifi-tenderlysim</code></td><td>latest</td><td>37</td><td>code+docs <span class="dim">(22 code · 15 docs)</span></td><td>2026-07-16</td></tr>
+<tr data-q="uniswap-token-list-bridge-utils latest code+docs"><td><code>uniswap-token-list-bridge-utils</code></td><td>latest</td><td>37</td><td>code+docs <span class="dim">(26 code · 11 docs)</span></td><td>2026-02-09</td></tr>
+<tr data-q="safe-global-api-kit latest code+docs"><td><code>safe-global-api-kit</code></td><td>latest</td><td>36</td><td>code+docs <span class="dim">(27 code · 9 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-device-management-kit-devtools-core latest code+docs"><td><code>ledgerhq-device-management-kit-devtools-core</code></td><td>latest</td><td>35</td><td>code+docs <span class="dim">(19 code · 16 docs)</span></td><td>2026-03-17</td></tr>
+<tr data-q="ledgerhq-live-nft latest code+docs"><td><code>ledgerhq-live-nft</code></td><td>latest</td><td>35</td><td>code+docs <span class="dim">(34 code · 1 docs)</span></td><td>2025-09-16</td></tr>
+<tr data-q="lifi-data-types latest code+docs"><td><code>lifi-data-types</code></td><td>latest</td><td>35</td><td>code+docs <span class="dim">(22 code · 13 docs)</span></td><td>2026-08-10</td></tr>
+<tr data-q="ledgerhq-hw-app-solana latest code+docs"><td><code>ledgerhq-hw-app-solana</code></td><td>latest</td><td>34</td><td>code+docs <span class="dim">(8 code · 26 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="swapper-toolkit latest docs-only unknown"><td><code>swapper-toolkit</code></td><td>latest</td><td>34</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-04-07</td></tr>
+<tr data-q="awesome-0g latest docs-only unknown"><td><code>awesome-0g</code></td><td>latest</td><td>33</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-03-18</td></tr>
+<tr data-q="ledgerhq-psbtv2 latest code+docs"><td><code>ledgerhq-psbtv2</code></td><td>latest</td><td>33</td><td>code+docs <span class="dim">(24 code · 9 docs)</span></td><td>2026-05-04</td></tr>
+<tr data-q="lifi-solana-programs latest code+docs"><td><code>lifi-solana-programs</code></td><td>latest</td><td>33</td><td>code+docs <span class="dim">(27 code · 6 docs)</span></td><td>2024-11-25</td></tr>
+<tr data-q="safe-global-sdk-starter-kit latest code+docs"><td><code>safe-global-sdk-starter-kit</code></td><td>latest</td><td>33</td><td>code+docs <span class="dim">(26 code · 7 docs)</span></td><td>2026-06-22</td></tr>
+<tr data-q="ledgerhq-device-transport-kit-react-native-ble latest code+docs"><td><code>ledgerhq-device-transport-kit-react-native-ble</code></td><td>latest</td><td>32</td><td>code+docs <span class="dim">(22 code · 10 docs)</span></td><td>2026-01-09</td></tr>
+<tr data-q="ledgerhq-devices latest code+docs"><td><code>ledgerhq-devices</code></td><td>latest</td><td>32</td><td>code+docs <span class="dim">(6 code · 26 docs)</span></td><td>2026-07-16</td></tr>
+<tr data-q="ledgerhq-device-signer-kit-polkadot latest code+docs"><td><code>ledgerhq-device-signer-kit-polkadot</code></td><td>latest</td><td>31</td><td>code+docs <span class="dim">(27 code · 4 docs)</span></td><td>2026-06-01</td></tr>
+<tr data-q="ledgerhq-ledger-bitcoin latest code+docs"><td><code>ledgerhq-ledger-bitcoin</code></td><td>latest</td><td>31</td><td>code+docs <span class="dim">(24 code · 7 docs)</span></td><td>2026-03-25</td></tr>
+<tr data-q="safe-global-safe-deployments latest code+docs"><td><code>safe-global-safe-deployments</code></td><td>latest</td><td>31</td><td>code+docs <span class="dim">(18 code · 13 docs)</span></td><td>2026-08-06</td></tr>
+<tr data-q="ledgerhq-hw-transport-web-ble latest code+docs"><td><code>ledgerhq-hw-transport-web-ble</code></td><td>latest</td><td>30</td><td>code+docs <span class="dim">(12 code · 18 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="ledgerhq-live-countervalues latest code+docs"><td><code>ledgerhq-live-countervalues</code></td><td>latest</td><td>30</td><td>code+docs <span class="dim">(26 code · 4 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-device-transport-kit-react-native-hid latest code+docs"><td><code>ledgerhq-device-transport-kit-react-native-hid</code></td><td>latest</td><td>29</td><td>code+docs <span class="dim">(20 code · 9 docs)</span></td><td>2026-06-16</td></tr>
+<tr data-q="openzeppelin-contracts-cli latest code+docs"><td><code>openzeppelin-contracts-cli</code></td><td>latest</td><td>29</td><td>code+docs <span class="dim">(26 code · 3 docs)</span></td><td>2026-08-17</td></tr>
+<tr data-q="chainlink-cre-sdk-javy-plugin latest docs-only unknown"><td><code>chainlink-cre-sdk-javy-plugin</code></td><td>latest</td><td>27</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-05-28</td></tr>
+<tr data-q="ledgerhq-speculos-device-controller latest code+docs"><td><code>ledgerhq-speculos-device-controller</code></td><td>latest</td><td>27</td><td>code+docs <span class="dim">(22 code · 5 docs)</span></td><td>2026-05-26</td></tr>
+<tr data-q="uniswap-tamperproof-transactions latest code+docs"><td><code>uniswap-tamperproof-transactions</code></td><td>latest</td><td>27</td><td>code+docs <span class="dim">(11 code · 16 docs)</span></td><td>2025-09-12</td></tr>
+<tr data-q="unstoppable-wallet-ios 0 docs-only swift ruby"><td><code>unstoppable-wallet-ios</code></td><td>0</td><td>27</td><td>docs-only <span class="dim">(Swift, Ruby not indexed)</span></td><td>2026-06-19</td></tr>
+<tr data-q="base 1 docs-only shell dockerfile"><td><code>base</code></td><td>1</td><td>26</td><td>docs-only <span class="dim">(Shell, Dockerfile not indexed)</span></td><td>2026-07-22</td></tr>
+<tr data-q="base-node 1.2.0 docs-only shell dockerfile"><td><code>base-node</code></td><td>1.2.0</td><td>26</td><td>docs-only <span class="dim">(Shell, Dockerfile not indexed)</span></td><td>2026-07-22</td></tr>
+<tr data-q="ledgerhq-coin-modules-monitoring latest code+docs"><td><code>ledgerhq-coin-modules-monitoring</code></td><td>latest</td><td>26</td><td>code+docs <span class="dim">(10 code · 16 docs)</span></td><td>2026-06-04</td></tr>
+<tr data-q="ledgerhq-hw-transport-node-hid-singleton latest code+docs"><td><code>ledgerhq-hw-transport-node-hid-singleton</code></td><td>latest</td><td>26</td><td>code+docs <span class="dim">(6 code · 20 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="defi latest docs-only python"><td><code>defi</code></td><td>latest</td><td>25</td><td>docs-only <span class="dim">(Python not indexed)</span></td><td>2022-04-12</td></tr>
+<tr data-q="ledgerhq-domain-service latest code+docs"><td><code>ledgerhq-domain-service</code></td><td>latest</td><td>25</td><td>code+docs <span class="dim">(22 code · 3 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-live-currency-format latest code+docs"><td><code>ledgerhq-live-currency-format</code></td><td>latest</td><td>24</td><td>code+docs <span class="dim">(20 code · 4 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="lifi-sdk-provider-sui latest code+docs"><td><code>lifi-sdk-provider-sui</code></td><td>latest</td><td>24</td><td>code+docs <span class="dim">(12 code · 12 docs)</span></td><td>2026-08-18</td></tr>
+<tr data-q="chainlink-contracts-ccip latest docs-only unknown"><td><code>chainlink-contracts-ccip</code></td><td>latest</td><td>23</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-06-18</td></tr>
+<tr data-q="gocoin 1 docs-only go html javascript"><td><code>gocoin</code></td><td>1</td><td>23</td><td>docs-only <span class="dim">(Go, HTML, JavaScript not indexed)</span></td><td>2025-11-13</td></tr>
+<tr data-q="ledgerhq-hw-app-aptos latest code+docs"><td><code>ledgerhq-hw-app-aptos</code></td><td>latest</td><td>23</td><td>code+docs <span class="dim">(8 code · 15 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-hw-app-vet latest code+docs"><td><code>ledgerhq-hw-app-vet</code></td><td>latest</td><td>23</td><td>code+docs <span class="dim">(10 code · 13 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-live-env latest code+docs"><td><code>ledgerhq-live-env</code></td><td>latest</td><td>23</td><td>code+docs <span class="dim">(18 code · 5 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="lifi-widget-provider-ethereum latest code+docs"><td><code>lifi-widget-provider-ethereum</code></td><td>latest</td><td>23</td><td>code+docs <span class="dim">(7 code · 16 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="openzeppelin-defender-sdk-action-client latest code+docs"><td><code>openzeppelin-defender-sdk-action-client</code></td><td>latest</td><td>23</td><td>code+docs <span class="dim">(16 code · 7 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="pycoingecko 3 docs-only python"><td><code>pycoingecko</code></td><td>3</td><td>23</td><td>docs-only <span class="dim">(Python not indexed)</span></td><td>2024-11-13</td></tr>
+<tr data-q="ledgerhq-ledger-auth latest code+docs"><td><code>ledgerhq-ledger-auth</code></td><td>latest</td><td>22</td><td>code+docs <span class="dim">(18 code · 4 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="lifi-widget-provider-solana latest code+docs"><td><code>lifi-widget-provider-solana</code></td><td>latest</td><td>22</td><td>code+docs <span class="dim">(6 code · 16 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="ledgerhq-coin-tester latest code+docs"><td><code>ledgerhq-coin-tester</code></td><td>latest</td><td>21</td><td>code+docs <span class="dim">(6 code · 15 docs)</span></td><td>2026-04-22</td></tr>
+<tr data-q="ledgerhq-hw-app-icon latest code+docs"><td><code>ledgerhq-hw-app-icon</code></td><td>latest</td><td>21</td><td>code+docs <span class="dim">(8 code · 13 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-hw-transport-node-hid latest code+docs"><td><code>ledgerhq-hw-transport-node-hid</code></td><td>latest</td><td>21</td><td>code+docs <span class="dim">(4 code · 17 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="openzeppelin-defender-sdk-deploy-client latest code+docs"><td><code>openzeppelin-defender-sdk-deploy-client</code></td><td>latest</td><td>21</td><td>code+docs <span class="dim">(14 code · 7 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="openzeppelin-foundry-upgrades latest docs-only unknown"><td><code>openzeppelin-foundry-upgrades</code></td><td>latest</td><td>21</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-05</td></tr>
+<tr data-q="openzeppelin-test-environment latest code+docs"><td><code>openzeppelin-test-environment</code></td><td>latest</td><td>21</td><td>code+docs <span class="dim">(14 code · 7 docs)</span></td><td>2020-12-22</td></tr>
+<tr data-q="hashgraph-hethers latest code+docs"><td><code>hashgraph-hethers</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(16 code · 4 docs)</span></td><td>2023-02-17</td></tr>
+<tr data-q="ledgerhq-device-transport-kit-web-hid latest code+docs"><td><code>ledgerhq-device-transport-kit-web-hid</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(12 code · 8 docs)</span></td><td>2026-06-16</td></tr>
+<tr data-q="ledgerhq-hw-app-elrond latest code+docs"><td><code>ledgerhq-hw-app-elrond</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(4 code · 16 docs)</span></td><td>2024-09-27</td></tr>
+<tr data-q="ledgerhq-hw-app-multiversx latest code+docs"><td><code>ledgerhq-hw-app-multiversx</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(4 code · 16 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-hw-transport-mocker latest code+docs"><td><code>ledgerhq-hw-transport-mocker</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(16 code · 4 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-live-network latest code+docs"><td><code>ledgerhq-live-network</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(16 code · 4 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="lifi-widget-provider-bitcoin latest code+docs"><td><code>lifi-widget-provider-bitcoin</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(4 code · 16 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="lifi-widget-provider-sui latest code+docs"><td><code>lifi-widget-provider-sui</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(4 code · 16 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="lifi-widget-provider-tron latest code+docs"><td><code>lifi-widget-provider-tron</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(4 code · 16 docs)</span></td><td>2026-07-27</td></tr>
+<tr data-q="safe-global-safe-contracts latest code+docs"><td><code>safe-global-safe-contracts</code></td><td>latest</td><td>20</td><td>code+docs <span class="dim">(12 code · 8 docs)</span></td><td>2024-09-12</td></tr>
+<tr data-q="seaprotocol latest docs-only move shell"><td><code>seaprotocol</code></td><td>latest</td><td>20</td><td>docs-only <span class="dim">(Move, Shell not indexed)</span></td><td>2026-03-02</td></tr>
+<tr data-q="arc-contract-addresses latest docs-only unknown"><td><code>arc-contract-addresses</code></td><td>latest</td><td>19</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="ledgerhq-coin-tester-bitcoin latest code+docs"><td><code>ledgerhq-coin-tester-bitcoin</code></td><td>latest</td><td>19</td><td>code+docs <span class="dim">(14 code · 5 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="ledgerhq-coin-tester-polkadot latest code+docs"><td><code>ledgerhq-coin-tester-polkadot</code></td><td>latest</td><td>19</td><td>code+docs <span class="dim">(14 code · 5 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="ledgerhq-coin-tester-tron latest code+docs"><td><code>ledgerhq-coin-tester-tron</code></td><td>latest</td><td>19</td><td>code+docs <span class="dim">(14 code · 5 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="ledgerhq-hw-app-near latest code+docs"><td><code>ledgerhq-hw-app-near</code></td><td>latest</td><td>19</td><td>code+docs <span class="dim">(6 code · 13 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-hw-transport-node-speculos latest code+docs"><td><code>ledgerhq-hw-transport-node-speculos</code></td><td>latest</td><td>19</td><td>code+docs <span class="dim">(4 code · 15 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-react-native-hid latest code+docs"><td><code>ledgerhq-react-native-hid</code></td><td>latest</td><td>19</td><td>code+docs <span class="dim">(2 code · 17 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="safe-global-safe-singleton-factory latest code+docs"><td><code>safe-global-safe-singleton-factory</code></td><td>latest</td><td>19</td><td>code+docs <span class="dim">(1 code · 18 docs)</span></td><td>2025-07-09</td></tr>
+<tr data-q="world-id-onchain-template latest code+docs"><td><code>world-id-onchain-template</code></td><td>latest</td><td>19</td><td>code+docs <span class="dim">(12 code · 7 docs)</span></td><td>2025-09-23</td></tr>
+<tr data-q="openzeppelin-defender-sdk-monitor-client latest code+docs"><td><code>openzeppelin-defender-sdk-monitor-client</code></td><td>latest</td><td>18</td><td>code+docs <span class="dim">(17 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="uniswap-python 0 docs-only python makefile"><td><code>uniswap-python</code></td><td>0</td><td>18</td><td>docs-only <span class="dim">(Python, Makefile not indexed)</span></td><td>2026-07-29</td></tr>
+<tr data-q="ledgerhq-coin-tester-solana latest code+docs"><td><code>ledgerhq-coin-tester-solana</code></td><td>latest</td><td>17</td><td>code+docs <span class="dim">(12 code · 5 docs)</span></td><td>2026-06-04</td></tr>
+<tr data-q="ledgerhq-hw-app-algorand latest code+docs"><td><code>ledgerhq-hw-app-algorand</code></td><td>latest</td><td>17</td><td>code+docs <span class="dim">(6 code · 11 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-hw-app-celo latest code+docs"><td><code>ledgerhq-hw-app-celo</code></td><td>latest</td><td>17</td><td>code+docs <span class="dim">(10 code · 7 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="arc-chain latest docs-only unknown"><td><code>arc-chain</code></td><td>latest</td><td>16</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="ledgerhq-hw-app-polkadot latest code+docs"><td><code>ledgerhq-hw-app-polkadot</code></td><td>latest</td><td>16</td><td>code+docs <span class="dim">(4 code · 12 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-live-countervalues-react latest code+docs"><td><code>ledgerhq-live-countervalues-react</code></td><td>latest</td><td>16</td><td>code+docs <span class="dim">(12 code · 4 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="world-chain-simple-node latest docs-only shell"><td><code>world-chain-simple-node</code></td><td>latest</td><td>16</td><td>docs-only <span class="dim">(Shell not indexed)</span></td><td>2026-08-18</td></tr>
+<tr data-q="0g-storage-go-starter-kit latest docs-only go"><td><code>0g-storage-go-starter-kit</code></td><td>latest</td><td>15</td><td>docs-only <span class="dim">(Go not indexed)</span></td><td>2026-05-16</td></tr>
+<tr data-q="arc-evm-differences latest docs-only unknown"><td><code>arc-evm-differences</code></td><td>latest</td><td>15</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="ledgerhq-coin-tester-xrp latest code+docs"><td><code>ledgerhq-coin-tester-xrp</code></td><td>latest</td><td>15</td><td>code+docs <span class="dim">(10 code · 5 docs)</span></td><td>2026-07-15</td></tr>
+<tr data-q="ledgerhq-device-contacts-kit latest code+docs"><td><code>ledgerhq-device-contacts-kit</code></td><td>latest</td><td>15</td><td>code+docs <span class="dim">(12 code · 3 docs)</span></td><td>2026-08-10</td></tr>
+<tr data-q="ledgerhq-device-mockserver-client latest code+docs"><td><code>ledgerhq-device-mockserver-client</code></td><td>latest</td><td>15</td><td>code+docs <span class="dim">(15 code · 0 docs)</span></td><td>2026-07-21</td></tr>
+<tr data-q="ledgerhq-hw-app-tezos latest code+docs"><td><code>ledgerhq-hw-app-tezos</code></td><td>latest</td><td>15</td><td>code+docs <span class="dim">(4 code · 11 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="openzeppelin-contracts-upgradeable latest docs-only unknown"><td><code>openzeppelin-contracts-upgradeable</code></td><td>latest</td><td>15</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-02-27</td></tr>
+<tr data-q="ledgerhq-device-transport-kit-speculos latest code+docs"><td><code>ledgerhq-device-transport-kit-speculos</code></td><td>latest</td><td>14</td><td>code+docs <span class="dim">(6 code · 8 docs)</span></td><td>2026-05-26</td></tr>
+<tr data-q="ledgerhq-hw-transport-http latest code+docs"><td><code>ledgerhq-hw-transport-http</code></td><td>latest</td><td>14</td><td>code+docs <span class="dim">(6 code · 8 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="openzeppelin-defender-sdk-base-client latest code+docs"><td><code>openzeppelin-defender-sdk-base-client</code></td><td>latest</td><td>14</td><td>code+docs <span class="dim">(13 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="0g-storage-client 1.3.0 docs-only go python makefile"><td><code>0g-storage-client</code></td><td>1.3.0</td><td>13</td><td>docs-only <span class="dim">(Go, Python, Makefile not indexed)</span></td><td>2026-02-24</td></tr>
+<tr data-q="hiero-ledger-hiero-contracts latest docs-only unknown"><td><code>hiero-ledger-hiero-contracts</code></td><td>latest</td><td>13</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-05-05</td></tr>
+<tr data-q="ledgerhq-hw-bolos latest code+docs"><td><code>ledgerhq-hw-bolos</code></td><td>latest</td><td>13</td><td>code+docs <span class="dim">(8 code · 5 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="metamask-desktop 1 docs-only css javascript html"><td><code>metamask-desktop</code></td><td>1</td><td>13</td><td>docs-only <span class="dim">(CSS, JavaScript, HTML not indexed)</span></td><td>2026-06-14</td></tr>
+<tr data-q="safe-global-mock-contract latest docs-only unknown"><td><code>safe-global-mock-contract</code></td><td>latest</td><td>13</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2023-07-13</td></tr>
+<tr data-q="safe-global-safe-modules-deployments latest code+docs"><td><code>safe-global-safe-modules-deployments</code></td><td>latest</td><td>13</td><td>code+docs <span class="dim">(7 code · 6 docs)</span></td><td>2026-08-03</td></tr>
+<tr data-q="safe-global-testing-kit latest code+docs"><td><code>safe-global-testing-kit</code></td><td>latest</td><td>13</td><td>code+docs <span class="dim">(12 code · 1 docs)</span></td><td>2026-06-22</td></tr>
+<tr data-q="ledgerhq-hw-transport-node-speculos-http latest code+docs"><td><code>ledgerhq-hw-transport-node-speculos-http</code></td><td>latest</td><td>12</td><td>code+docs <span class="dim">(2 code · 10 docs)</span></td><td>2026-08-04</td></tr>
+<tr data-q="ledgerhq-iframe-provider latest code+docs"><td><code>ledgerhq-iframe-provider</code></td><td>latest</td><td>12</td><td>code+docs <span class="dim">(3 code · 9 docs)</span></td><td>2023-01-19</td></tr>
+<tr data-q="ledgerhq-live-cli latest docs-only unknown"><td><code>ledgerhq-live-cli</code></td><td>latest</td><td>12</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-19</td></tr>
+<tr data-q="nft-api latest docs-only unknown"><td><code>nft-api</code></td><td>latest</td><td>12</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2023-10-04</td></tr>
+<tr data-q="worldcoin-agentkit-core latest code+docs"><td><code>worldcoin-agentkit-core</code></td><td>latest</td><td>12</td><td>code+docs <span class="dim">(12 code · 0 docs)</span></td><td>2026-04-29</td></tr>
+<tr data-q="openzeppelin-defender-sdk-notification-channel-client latest code+docs"><td><code>openzeppelin-defender-sdk-notification-channel-client</code></td><td>latest</td><td>11</td><td>code+docs <span class="dim">(10 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="openzeppelin-defender-sdk-proposal-client latest code+docs"><td><code>openzeppelin-defender-sdk-proposal-client</code></td><td>latest</td><td>11</td><td>code+docs <span class="dim">(10 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="uniswap-conedison latest code+docs"><td><code>uniswap-conedison</code></td><td>latest</td><td>11</td><td>code+docs <span class="dim">(9 code · 2 docs)</span></td><td>2023-07-10</td></tr>
+<tr data-q="uniswap-token-lists latest docs-only unknown"><td><code>uniswap-token-lists</code></td><td>latest</td><td>11</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2025-10-24</td></tr>
+<tr data-q="ledgerhq-device-management-kit-devtools-rozenite latest code+docs"><td><code>ledgerhq-device-management-kit-devtools-rozenite</code></td><td>latest</td><td>10</td><td>code+docs <span class="dim">(7 code · 3 docs)</span></td><td>2026-03-17</td></tr>
+<tr data-q="ledgerhq-hw-transport-vault latest code+docs"><td><code>ledgerhq-hw-transport-vault</code></td><td>latest</td><td>10</td><td>code+docs <span class="dim">(2 code · 8 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="ledgerhq-signer-utils latest code+docs"><td><code>ledgerhq-signer-utils</code></td><td>latest</td><td>10</td><td>code+docs <span class="dim">(9 code · 1 docs)</span></td><td>2026-07-09</td></tr>
+<tr data-q="rssaggregatorforweb3 1 docs-only python"><td><code>rssaggregatorforweb3</code></td><td>1</td><td>10</td><td>docs-only <span class="dim">(Python not indexed)</span></td><td>2022-08-29</td></tr>
+<tr data-q="safe-global-safe-core-sdk-utils latest code+docs"><td><code>safe-global-safe-core-sdk-utils</code></td><td>latest</td><td>10</td><td>code+docs <span class="dim">(5 code · 5 docs)</span></td><td>2023-07-03</td></tr>
+<tr data-q="ledgerhq-swift-bridge-hw-transport-ble latest code+docs"><td><code>ledgerhq-swift-bridge-hw-transport-ble</code></td><td>latest</td><td>9</td><td>code+docs <span class="dim">(2 code · 7 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="ledgerhq-types-devices latest code+docs"><td><code>ledgerhq-types-devices</code></td><td>latest</td><td>9</td><td>code+docs <span class="dim">(2 code · 7 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="ledgerhq-ui-shared latest code+docs"><td><code>ledgerhq-ui-shared</code></td><td>latest</td><td>9</td><td>code+docs <span class="dim">(6 code · 3 docs)</span></td><td>2025-11-05</td></tr>
+<tr data-q="openzeppelin-defender-sdk-key-value-store-client latest code+docs"><td><code>openzeppelin-defender-sdk-key-value-store-client</code></td><td>latest</td><td>9</td><td>code+docs <span class="dim">(4 code · 5 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="openzeppelin-uniswap-hooks latest docs-only unknown"><td><code>openzeppelin-uniswap-hooks</code></td><td>latest</td><td>9</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2025-11-27</td></tr>
+<tr data-q="polygon-oms-api latest docs-only unknown"><td><code>polygon-oms-api</code></td><td>latest</td><td>9</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-21</td></tr>
+<tr data-q="chainlink-gauntlet-contracts-ocr2 latest code+docs"><td><code>chainlink-gauntlet-contracts-ocr2</code></td><td>latest</td><td>8</td><td>code+docs <span class="dim">(8 code · 0 docs)</span></td><td>2022-11-22</td></tr>
+<tr data-q="ledgerhq-ledger-trust-service latest code+docs"><td><code>ledgerhq-ledger-trust-service</code></td><td>latest</td><td>8</td><td>code+docs <span class="dim">(8 code · 0 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="ledgerhq-live-hooks latest code+docs"><td><code>ledgerhq-live-hooks</code></td><td>latest</td><td>8</td><td>code+docs <span class="dim">(8 code · 0 docs)</span></td><td>2026-04-15</td></tr>
+<tr data-q="ledgerhq-live-signer-concordium latest code+docs"><td><code>ledgerhq-live-signer-concordium</code></td><td>latest</td><td>8</td><td>code+docs <span class="dim">(6 code · 2 docs)</span></td><td>2026-08-19</td></tr>
+<tr data-q="openzeppelin-confidential-contracts latest docs-only unknown"><td><code>openzeppelin-confidential-contracts</code></td><td>latest</td><td>8</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-08-10</td></tr>
+<tr data-q="openzeppelin-defender-sdk-relay-client latest code+docs"><td><code>openzeppelin-defender-sdk-relay-client</code></td><td>latest</td><td>8</td><td>code+docs <span class="dim">(7 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="world-idkit-swift 4.0.11 docs-only swift c"><td><code>world-idkit-swift</code></td><td>4.0.11</td><td>8</td><td>docs-only <span class="dim">(Swift, C not indexed)</span></td><td>2026-08-09</td></tr>
+<tr data-q="worldcoin-minikit-react latest code+docs"><td><code>worldcoin-minikit-react</code></td><td>latest</td><td>8</td><td>code+docs <span class="dim">(5 code · 3 docs)</span></td><td>2026-04-06</td></tr>
+<tr data-q="openzeppelin-contract-loader latest code+docs"><td><code>openzeppelin-contract-loader</code></td><td>latest</td><td>7</td><td>code+docs <span class="dim">(1 code · 6 docs)</span></td><td>2021-08-20</td></tr>
+<tr data-q="openzeppelin-defender-sdk latest code+docs"><td><code>openzeppelin-defender-sdk</code></td><td>latest</td><td>7</td><td>code+docs <span class="dim">(5 code · 2 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="uniswap-v2-periphery latest docs-only unknown"><td><code>uniswap-v2-periphery</code></td><td>latest</td><td>7</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2020-06-05</td></tr>
+<tr data-q="go-ibax 1 docs-only go makefile shell"><td><code>go-ibax</code></td><td>1</td><td>6</td><td>docs-only <span class="dim">(Go, Makefile, Shell not indexed)</span></td><td>2024-11-08</td></tr>
+<tr data-q="openzeppelin-defender-sdk-network-client latest code+docs"><td><code>openzeppelin-defender-sdk-network-client</code></td><td>latest</td><td>6</td><td>code+docs <span class="dim">(5 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="uniswap-v3-core latest docs-only unknown"><td><code>uniswap-v3-core</code></td><td>latest</td><td>6</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2022-01-26</td></tr>
+<tr data-q="ledgerhq-device-transport-kit-mockserver latest code+docs"><td><code>ledgerhq-device-transport-kit-mockserver</code></td><td>latest</td><td>5</td><td>code+docs <span class="dim">(5 code · 0 docs)</span></td><td>2026-07-21</td></tr>
+<tr data-q="openzeppelin-defender-sdk-approval-process-client latest code+docs"><td><code>openzeppelin-defender-sdk-approval-process-client</code></td><td>latest</td><td>5</td><td>code+docs <span class="dim">(4 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="openzeppelin-defender-sdk-relay-group-client latest code+docs"><td><code>openzeppelin-defender-sdk-relay-group-client</code></td><td>latest</td><td>5</td><td>code+docs <span class="dim">(4 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="solana-mcp-vybe 1 docs-only unknown"><td><code>solana-mcp-vybe</code></td><td>1</td><td>5</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2026-05-11</td></tr>
+<tr data-q="solidity 0.8 docs-only c++ yul shell"><td><code>solidity</code></td><td>0.8</td><td>5</td><td>docs-only <span class="dim">(C++, Yul, Shell not indexed)</span></td><td>2026-07-09</td></tr>
+<tr data-q="uniswap-merkle-distributor latest docs-only unknown"><td><code>uniswap-merkle-distributor</code></td><td>latest</td><td>5</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2020-09-13</td></tr>
+<tr data-q="uniswap-v2-core latest docs-only unknown"><td><code>uniswap-v2-core</code></td><td>latest</td><td>5</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2020-05-18</td></tr>
+<tr data-q="ledgerhq-swift-bridge-hw-app-solana latest code+docs"><td><code>ledgerhq-swift-bridge-hw-app-solana</code></td><td>latest</td><td>4</td><td>code+docs <span class="dim">(2 code · 2 docs)</span></td><td>2026-06-30</td></tr>
+<tr data-q="openzeppelin-adapters-vite latest code+docs"><td><code>openzeppelin-adapters-vite</code></td><td>latest</td><td>4</td><td>code+docs <span class="dim">(4 code · 0 docs)</span></td><td>2026-08-21</td></tr>
+<tr data-q="openzeppelin-defender-sdk-account-client latest code+docs"><td><code>openzeppelin-defender-sdk-account-client</code></td><td>latest</td><td>4</td><td>code+docs <span class="dim">(3 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="openzeppelin-defender-sdk-address-book-client latest code+docs"><td><code>openzeppelin-defender-sdk-address-book-client</code></td><td>latest</td><td>4</td><td>code+docs <span class="dim">(3 code · 1 docs)</span></td><td>2026-02-05</td></tr>
+<tr data-q="uniswap-lib latest docs-only unknown"><td><code>uniswap-lib</code></td><td>latest</td><td>4</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2020-12-16</td></tr>
+<tr data-q="uniswap-v3-periphery latest docs-only unknown"><td><code>uniswap-v3-periphery</code></td><td>latest</td><td>4</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2023-09-27</td></tr>
+<tr data-q="chainlink-abi latest docs-only unknown"><td><code>chainlink-abi</code></td><td>latest</td><td>3</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2021-01-27</td></tr>
+<tr data-q="chainlink-ccip-read-server latest code+docs"><td><code>chainlink-ccip-read-server</code></td><td>latest</td><td>3</td><td>code+docs <span class="dim">(2 code · 1 docs)</span></td><td>2022-01-28</td></tr>
+<tr data-q="chainlink-evm-gauntlet-ledger latest code+docs"><td><code>chainlink-evm-gauntlet-ledger</code></td><td>latest</td><td>2</td><td>code+docs <span class="dim">(2 code · 0 docs)</span></td><td>2024-04-10</td></tr>
+<tr data-q="0gchain-aristotle 1.0.6 docs-only unknown"><td><code>0gchain-aristotle</code></td><td>1.0.6</td><td>1</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2025-10-16</td></tr>
+<tr data-q="0gchain-ng 3.0.8 docs-only unknown"><td><code>0gchain-ng</code></td><td>3.0.8</td><td>1</td><td>docs-only <span class="dim">(unknown not indexed)</span></td><td>2025-10-16</td></tr>
+<tr data-q="coinbin 1 docs-only javascript html css"><td><code>coinbin</code></td><td>1</td><td>1</td><td>docs-only <span class="dim">(JavaScript, HTML, CSS not indexed)</span></td><td>2020-07-06</td></tr>
+</tbody></table></div>
+  </div>
+  <div class="notebox">🔴 <b>Three declared languages have no pinned grammar</b> — Vyper, Move and
+  Cairo. Files in those languages are cloned and produce <b>no units</b>, so a project written in
+  one of them shows as <span class="k">docs-only</span> here. That is the honest label, and it is
+  why the label exists.</div>
+</section>
+
+<footer class="site">
+  web3ctx — <a class="plain" href="https://scarai.xyz">a ScarAI product</a> · <a href="index.html">overview</a> ·
+  <a href="evals.html">evals &amp; evidence</a> · <a href="architecture.html">architecture</a> ·
+  <a href="operator.html">who runs it</a> ·
+  every number on this page is read from the live database at build time.
+</footer>
+
+</div>
+</body>
+</html>

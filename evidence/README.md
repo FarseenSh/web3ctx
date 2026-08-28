@@ -22,7 +22,7 @@ do not do it.
 
 ## What is here, and why each file is here
 
-- **`./`** *(5 files)* — the three rendered pages + stylesheet — the site itself
+- **`./`** *(9 files)* — the three rendered pages + stylesheet — the site itself
 - **`evidence/LAUNCH-FACTS-FROZEN-2026-08-13.md`** — L1–L5, frozen; the source of every launch number
 - **`evidence/PAYLOAD-AUDIT-2026-08-13.md`** — the audit protocol and its limitations, including the seven payloads we destroyed
 - **`evidence/payload-audit/web3ctx/`** *(16 files)* — OUR OWN cached payloads — the only arm whose bytes are ours to publish
@@ -62,6 +62,11 @@ do not do it.
 - **`evidence/spec/17-SOTA-REVIEW-2026-08.md`** — corrections C33–C44
 - **`evidence/spec/09-EVAL-HARNESS.md`** — the eval spec the pre-registrations reference
 - **`evidence/spec/06-MCP-INTERFACE.md`** — the surface contract — every public payload field, documented
+- **`evidence/showcase/`** *(4 files)* — the payload the front page shows, byte-for-byte as the public endpoint returned it, with its sha256 and date — and the wagmi twin, captured the same way
+- **`LICENSE`** — MIT, for the code and the site
+- **`LICENSES.md`** — why there are two licences, and the two things neither of them covers
+- **`PRIVACY.md`** — the privacy policy, written by enumerating what the deployed Worker actually writes
+- **`evidence/launch/README.md`** — the registry submission checklist — what is ready, what is blocked, and the two claims that must never appear in listing copy
 
 ## What is deliberately NOT here
 
@@ -87,4 +92,4 @@ not merely old.
 
 `MANIFEST.sha256` carries a hash for every file in this set.
 
-Staged from 126 files.
+Staged from 138 files.

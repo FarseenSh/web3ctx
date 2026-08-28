@@ -1,0 +1,25 @@
+{
+  "case": "wagmi v3 uses useConnection, not useAccount",
+  "trap_id": "T4",
+  "trap_source": "measurements/BENCH-PRE-REGISTRATION-2026-08-20.md — frozen before any arm ran",
+  "captured_at": "2026-08-28",
+  "endpoint": "https://mcp.scarai.xyz/mcp",
+  "route": "authless — no key, no signup",
+  "tool": "web3_grep",
+  "superseded": {
+    "pattern": "useAccount",
+    "version": "2",
+    "selector": "wagmi@2::packages.react.src.hooks.useDisconnect.test::connect",
+    "source_url": "https://github.com/wevm/wagmi/blob/d26063717aaf138e7a6f3d8ed7e606d9c59418b0/packages/react/src/hooks/useDisconnect.test.ts#L1-L32",
+    "pin": "d26063717aaf138e7a6f3d8ed7e606d9c59418b0",
+    "hits": 10
+  },
+  "current": {
+    "pattern": "useConnection",
+    "version": "3",
+    "selector": "wagmi@3::packages.solid.src.primitives.useDisconnect.test::connect",
+    "source_url": "https://github.com/wevm/wagmi/blob/e1994e2eb7eeb461c2c1e5610887e912731d5784/packages/solid/src/primitives/useDisconnect.test.ts#L1-L32",
+    "pin": "e1994e2eb7eeb461c2c1e5610887e912731d5784",
+    "hits": 10
+  }
+}

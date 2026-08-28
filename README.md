@@ -10,6 +10,51 @@ Human-validated, chain-run web3 integration recipes, served version-true over MC
 
 </div>
 
+## Five tools
+
+| tool | what it does |
+|---|---|
+| `web3_search` | ranked, version-scoped units — plus the human-validated recipe when the question earns one |
+| `web3_grep` | exact identifier lookup across the corpus |
+| `web3_fetch` | full bodies by stable selector, cursor paging for long content |
+| `web3_deps` | dependency closure, stepped by depth |
+| `web3_lookup` | typed records — deployment addresses, ABIs, EIPs — or an honest `NOT_FOUND` |
+
+## A real answer
+
+**“how do I bridge USDC with CCTP”** — one call to the authless endpoint, 2026-08-28:
+
+```json
+{
+  "intent": "lookup",
+  "recipe": {
+    "project_id": "cctp",
+    "version": "2",
+    "recipe_type": "usdc-bridge-send",
+    "last_validated": "2026-08-07",
+    "validated_by": "farseen (github: FarseenSh)",
+    "receipts": {
+      "validated_on": "2026-08-07",
+      "validated_by": "farseen (github: FarseenSh)",
+      "checks": [
+        "attest",
+        "test"
+      ],
+      "chains_exercised": [
+        "base-sepolia",
+        "arbitrum-sepolia"
+      ],
+      "on_chain": [
+        {
+          "kind": "txHash",
+          "hash": "0xd4b4e6395f52ad726dd6062e7a7ec47a2d3a7875d36f20fbb154cde756a3d0f5",
+          "role": "approve",
+  // … 207 more lines — the receipts, the
+  // validated recipe body, and ten citations each pinned to a commit or an exact package version.
+```
+
+The whole response is 26,191 bytes (sha256 `bc58a9feba1f6309…`) and it publishes byte-for-byte: [`evidence/showcase/cctp-search.json`](evidence/showcase/cctp-search.json). Diff it against your own call.
+
 ## Why this exists
 
 **It does not get fooled by a wrong premise.** Ten questions built on premises verified false
@@ -30,6 +75,15 @@ reported rather than claimed as an advantage. [Abstention honesty →](evals.htm
 
 **The recipes are the moat.** Each one was run by a human against live chains and ships with the
 transaction receipts, so anyone can check the claim by RPC rather than trusting the stamp.
+
+## Freshness, stated honestly
+
+Every unit carries **`as_of`** — the committer date of the **commit we pinned** — and a citation
+that resolves to an immutable, re-fetchable reference. Rebuilds are **dated events**, stamped
+into `corpus_version` and visible on the coverage page along with when the index was last
+loaded. 🔴 **No refresh cadence is claimed anywhere**, because we could not keep one. A 2020
+date on an archived repository is not staleness — it is the newest thing upstream ever
+published. [Per-project dates and coverage →](coverage.html)
 
 ## Quickstart
 
@@ -62,7 +116,9 @@ that failed, the gates we did not clear, and the corrections to things we publis
 Competitor payload **bytes** are withheld by rule; their protocol, hashes and counts are all
 here, so any count can be re-run against the live tools.
 
-**[Read the evidence →](evidence/README.md)** · [overview](index.html) · [evals](evals.html) · [architecture](architecture.html)
+**[Read the evidence →](evidence/README.md)** · [overview](index.html) · [evals](evals.html) · [coverage — is your stack in there?](coverage.html) · [who runs it, and what it logs](operator.html) · [architecture](architecture.html)
+
+Licensed **MIT** (code and site) and **CC BY 4.0** (the evidence documents) — [why there are two](LICENSES.md). Every unit the server returns is an excerpt of a third-party open-source repository, served under **its own** licence with a commit pin.
 
 ---
 

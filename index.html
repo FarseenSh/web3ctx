@@ -4,6 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>web3ctx — version-true context for web3 coding agents</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="web3ctx">
+<meta property="og:url" content="https://web3ctx.scarai.xyz/index.html">
+<meta property="og:title" content="web3ctx — version-true context for web3 coding agents">
+<meta property="og:description" content="Human-validated, chain-run web3 integration recipes, served version-true over MCP. Free, no key, no signup.">
+<meta property="og:image" content="https://web3ctx.scarai.xyz/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="web3ctx — the last mile before your agent signs.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="web3ctx — version-true context for web3 coding agents">
+<meta name="twitter:description" content="Human-validated, chain-run web3 integration recipes, served version-true over MCP. Free, no key, no signup.">
+<meta name="twitter:image" content="https://web3ctx.scarai.xyz/og.png">
+<meta name="description" content="Human-validated, chain-run web3 integration recipes, served version-true over MCP. Free, no key, no signup.">
 <link rel="stylesheet" href="style.css">
 <script src="site.js" defer></script>
 </head>
@@ -19,9 +33,25 @@
   <nav class="site">
     <a class="on" href="index.html">Overview</a>
     <a href="evals.html">Evals</a>
+    <a href="coverage.html">Coverage</a>
     <a href="architecture.html">Architecture</a>
   </nav>
 </header>
+
+<section class="blk">
+  <div class="chip">One question, two true answers</div>
+  <h2>Both of these are real. <em>Only one is yours.</em></h2>
+  <p class="sub">A developer asks an agent to connect a wallet with wagmi. Two hooks answer to that
+  description, both live in the vendor's own repository, both fetchable at a commit. A retrieval
+  layer that does not carry the version hands over whichever ranked higher — and every citation
+  check passes.</p>
+  <div id="twin"><div class="cards c3">
+<div class="card"><h3>useAccount<span class="dim"> — wagmi@2</span></h3><p style="color:var(--orange)"><b>What an unlabelled layer may hand you</b></p><p style="margin-top:10px"><a href="https://github.com/wevm/wagmi/blob/d26063717aaf138e7a6f3d8ed7e606d9c59418b0/packages/react/src/hooks/useDisconnect.test.ts#L1-L32" style="color:var(--mint)">pinned at <code>d26063717aaf…</code></a> — the vendor's own repository, at a commit that cannot move.</p></div>
+<div class="card"><h3>useConnection<span class="dim"> — wagmi@3</span></h3><p style="color:var(--mint)"><b>What web3ctx returns, labelled</b></p><p style="margin-top:10px"><a href="https://github.com/wevm/wagmi/blob/e1994e2eb7eeb461c2c1e5610887e912731d5784/packages/solid/src/primitives/useDisconnect.test.ts#L1-L32" style="color:var(--mint)">pinned at <code>e1994e2eb7ee…</code></a> — the vendor's own repository, at a commit that cannot move.</p></div>
+<div class="card"><h3>The difference</h3><p>Version identity resolves to a <b>SQL predicate before any search runs</b>, so the off-version hook cannot enter the payload unlabelled. When both are relevant, <b>both are returned and both are named.</b></p></div>
+</div>
+<div class="notebox">Captured live from the authless endpoint on <b>2026-08-28</b>. This is <b>T4</b> of the six verified traps, frozen in the benchmark pre-registration before any tool ran — <a href="evals.html" style="color:var(--mint)">the full matrix, every arm, including our own failing row →</a></div></div>
+</section>
 
 <section class="blk">
   <div class="chip">Install</div>
@@ -51,6 +81,76 @@
 </section>
 
 <section class="blk">
+  <div class="chip">The surface</div>
+  <h2>Five tools, deliberately terse</h2>
+  <div class="figure">
+    <div class="scroll"><table class="data">
+      <tr><th>tool</th><th>what it does</th></tr>
+      <tr><td>web3_search</td><td>ranked, version-scoped units — plus the human-validated recipe when the question earns one</td></tr>
+      <tr><td>web3_grep</td><td>exact identifier lookup across the corpus</td></tr>
+      <tr><td>web3_fetch</td><td>full bodies by stable selector, cursor paging for long content</td></tr>
+      <tr><td>web3_deps</td><td>dependency closure, stepped by depth</td></tr>
+      <tr><td>web3_lookup</td><td>typed records — deployment addresses, ABIs, EIPs — or an honest NOT_FOUND</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="chip">A real answer</div>
+  <h2>Not an example. <em>The bytes it returned.</em></h2>
+  <div id="showcase"><div class="figure">
+<div class="fighead">web3_search · query only · authless — no key, no signup, the route a stranger uses · 2026-08-28</div>
+<p class="sub" style="margin-top:0">“how do I bridge USDC with CCTP”</p>
+<div class="scroll"><pre class="install">{
+  "intent": "lookup",
+  "recipe": {
+    "project_id": "cctp",
+    "version": "2",
+    "recipe_type": "usdc-bridge-send",
+    "last_validated": "2026-08-07",
+    "validated_by": "farseen (github: FarseenSh)",
+    "receipts": {
+      "validated_on": "2026-08-07",
+      "validated_by": "farseen (github: FarseenSh)",
+      "checks": [
+        "attest",
+        "test"
+      ],
+      "chains_exercised": [
+        "base-sepolia",
+        "arbitrum-sepolia"
+      ],
+      "on_chain": [
+        {
+          "kind": "txHash",
+          "hash": "0xd4b4e6395f52ad726dd6062e7a7ec47a2d3a7875d36f20fbb154cde756a3d0f5",
+          "role": "approve",
+  … 57 lines omitted — the rest of the receipts and the validated recipe body
+
+  "hits": [
+    {
+      "selector": "circle-fin-provider-cctp-v2@latest::index.d::ChainDefinitionWithCCTPv2",
+      "source_url": "https://unpkg.com/@circle-fin/provider-cctp-v2@1.11.0/index.d.cts#L318-L355",
+      "snippet": "/**\n* Chain definition with CCTPv2 configuration.\n* @alias ChainDefinitionWithCCTPv2\n* @extends ChainDefinition\n* @category Types\n* @description Represents a chain definition that includes CCTPv2 configuration. This is useful for typescript consumers to narrow down the type of chain definition to…",
+      "project": "circle-fin-provider-cctp-v2",
+      "version": "latest",
+      "version_defaulted": false,
+      "last_validated": "2026-08-22T03:06:37Z",
+      "as_of": "2026-08-20T23:25:41.820Z",
+      "provenance_kind": "artifact",
+      "pin_ref": "@circle-fin/provider-cctp-v2@1.11.0"
+    },
+    {
+      "selector": "circle-fin-provider-cctp-v2@latest::index.d::ActionMap",
+  … 135 lines omitted — nine more citations, each with its own pin
+
+  Full payload, byte-for-byte, as the public endpoint returned it on 2026-08-28:
+  evidence/showcase/cctp-search.json</pre></div>
+</div>
+<div class="notebox">39 of 231 lines, in two verbatim windows — nothing re-ordered, and every skip states its size. The whole response is 26,191 bytes, sha256 <span class="k">bc58a9feba1f6309…</span>, published in the evidence set so you can diff it against your own call.</div></div>
+</section>
+
+<section class="blk">
   <div class="chip">Why this exists</div>
   <h2>Every claim from a real document — <em>about the wrong version.</em></h2>
   <div class="cards c3">
@@ -76,21 +176,6 @@
 </section>
 
 <section class="blk">
-  <div class="chip">The surface</div>
-  <h2>Five tools, deliberately terse</h2>
-  <div class="figure">
-    <div class="scroll"><table class="data">
-      <tr><th>tool</th><th>what it does</th></tr>
-      <tr><td>web3_search</td><td>ranked, version-scoped units — plus the human-validated recipe when the question earns one</td></tr>
-      <tr><td>web3_grep</td><td>exact identifier lookup across the corpus</td></tr>
-      <tr><td>web3_fetch</td><td>full bodies by stable selector, cursor paging for long content</td></tr>
-      <tr><td>web3_deps</td><td>dependency closure, stepped by depth</td></tr>
-      <tr><td>web3_lookup</td><td>typed records — deployment addresses, ABIs, EIPs — or an honest NOT_FOUND</td></tr>
-    </table></div>
-  </div>
-</section>
-
-<section class="blk">
   <div class="chip">What's inside</div>
   <h2>Numbers injected at build time, <em>never typed.</em></h2>
   <div class="cards c3" id="corpus-stats">
@@ -101,27 +186,21 @@
 </section>
 
 <section class="blk">
-  <div class="chip">One number</div>
-  <h2>Immutable citations, from the published payload audit</h2>
-  <div class="figure">
-    <div class="fighead">immutable / total citation URLs · higher is better · frozen audit 2026-08-13</div>
-    <div id="l1-table"><table class="data">
-    <tr><th>arm</th><th>immutable / total citation URLs</th><th></th></tr>
-    <tr class="us"><td>web3ctx</td><td class="n"><b>142</b> / 144</td><td class="n">99%</td></tr>
-    <tr><td>context7</td><td class="n"><b>0</b> / 57</td><td class="n">0%</td></tr>
-    <tr><td>exa (web search)</td><td class="n"><b>7</b> / 213</td><td class="n">3%</td></tr>
-    <tr><td>firecrawl</td><td class="n"><b>25</b> / 338</td><td class="n">7%</td></tr>
-    <tr class="missing"><td>claude web search</td><td class="n">MISSING — never ran</td><td class="n">—</td></tr>
-    <tr><td>ethskills (skill)</td><td class="n"><b>0</b> / 181</td><td class="n">0%</td></tr>
-  </table></div>
-  </div>
-  <div class="notebox">Full protocol, raw payload bytes and limitations are in the
-  <a href="evals.html" style="color:var(--mint)">evidence set</a>. We publish our own failing
-  rows beside everyone else's.</div>
+  <div class="chip">The evidence</div>
+  <h2>Every measurement, <em>including the ones we lost.</em></h2>
+  <p class="sub">Pre-registered benchmarks against five other tools, immutable-citation counts, the
+  precision run, and every experiment that failed its own gate. Our own failing rows publish beside
+  everyone else's, and the competitor comparison lives there rather than here — a landing page is
+  not where a measurement should be read.</p>
+  <div class="notebox"><a href="evals.html" style="color:var(--mint)">Read the evals and the
+  evidence set →</a> · <a href="coverage.html" style="color:var(--mint)">Is your stack in the
+  corpus?</a> · <a href="operator.html" style="color:var(--mint)">Who runs this, and what it
+  logs</a></div>
 </section>
 
 <footer class="site">
   web3ctx — <a class="plain" href="https://scarai.xyz">a ScarAI product</a> · <a href="architecture.html">architecture</a> ·
+  <a href="operator.html">who runs it</a> ·
   <a href="evals.html">evals &amp; evidence</a> · built in public, corrections and dead
   experiments included.
 </footer>

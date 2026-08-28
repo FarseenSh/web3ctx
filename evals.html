@@ -4,6 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>web3ctx — Evals &amp; evidence</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="web3ctx">
+<meta property="og:url" content="https://web3ctx.scarai.xyz/evals.html">
+<meta property="og:title" content="web3ctx evals — the measurements, including the ones we lost">
+<meta property="og:description" content="Pre-registered benchmarks, immutable-citation counts, and every dead experiment. Our own failing rows publish beside everyone else’s.">
+<meta property="og:image" content="https://web3ctx.scarai.xyz/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="web3ctx — the last mile before your agent signs.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="web3ctx evals — the measurements, including the ones we lost">
+<meta name="twitter:description" content="Pre-registered benchmarks, immutable-citation counts, and every dead experiment. Our own failing rows publish beside everyone else’s.">
+<meta name="twitter:image" content="https://web3ctx.scarai.xyz/og.png">
+<meta name="description" content="Pre-registered benchmarks, immutable-citation counts, and every dead experiment. Our own failing rows publish beside everyone else’s.">
 <link rel="stylesheet" href="style.css">
 <script src="site.js" defer></script>
 <style>
@@ -33,6 +47,7 @@
   <nav class="site">
     <a href="index.html">Overview</a>
     <a class="on" href="evals.html">Evals</a>
+    <a href="coverage.html">Coverage</a>
     <a href="architecture.html">Architecture</a>
   </nav>
 </header>
@@ -50,6 +65,15 @@
   <div class="bar-row"><div class="name">exa (web search)</div><div class="track"><div class="fill" style="width:3.3%"></div></div><div class="val">7/213</div></div>
   <div class="bar-row"><div class="name">firecrawl</div><div class="track"><div class="fill" style="width:7.4%"></div></div><div class="val">25/338</div></div>
   <div class="bar-row"><div class="name">ethskills (skill)</div><div class="track"><div class="fill" style="width:0.0%"></div></div><div class="val">0/181</div></div></div>
+    <div id="l1-table" style="margin-top:22px"><table class="data">
+    <tr><th>arm</th><th>immutable / total citation URLs</th><th></th></tr>
+    <tr class="us"><td>web3ctx</td><td class="n"><b>142</b> / 144</td><td class="n">99%</td></tr>
+    <tr><td>context7</td><td class="n"><b>0</b> / 57</td><td class="n">0%</td></tr>
+    <tr><td>exa (web search)</td><td class="n"><b>7</b> / 213</td><td class="n">3%</td></tr>
+    <tr><td>firecrawl</td><td class="n"><b>25</b> / 338</td><td class="n">7%</td></tr>
+    <tr class="missing"><td>claude web search</td><td class="n">MISSING — never ran</td><td class="n">—</td></tr>
+    <tr><td>ethskills (skill)</td><td class="n"><b>0</b> / 181</td><td class="n">0%</td></tr>
+  </table></div>
     <div class="footnote"><p><b>firecrawl publishes only with its sentence:</b> incomplete — our harness overwrote 7 valid payloads; Firecrawl answered every question on the first fetch.</p>
   <p><b>claude web search is MISSING, not passed.</b> No key in that environment. A row silently absent reads as one that passed, so it stays in the table with no number.</p>
   <p><b>exa is labelled “web search”</b> — the only tool its public endpoint exposes. Its code-retrieval product is <b>unmeasured</b>.</p>
@@ -192,7 +216,9 @@
 </section>
 
 <footer class="site">web3ctx — <a class="plain" href="https://scarai.xyz">a ScarAI product</a> · protocols, raw payload bytes, corrections
-and limitations: <span id="evidence-links">the evidence set in this repository</span></footer>
+and limitations: <span id="evidence-links">the evidence set in this repository</span>
+  · <a href="operator.html">who runs it</a>
+</footer>
 
 </div>
 </body>
