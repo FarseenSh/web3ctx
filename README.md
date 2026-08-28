@@ -10,6 +10,27 @@ Human-validated, chain-run web3 integration recipes, served version-true over MC
 
 </div>
 
+## Why this exists
+
+**It does not get fooled by a wrong premise.** Ten questions built on premises verified false
+before the run — an archived repo, a renamed package, a version that does not exist. web3ctx was
+deceived **0 of 10**; every other arm was deceived at least once (1–3 of 10).
+🔴 Our own `intent=integrate` row was deceived **once**, and it publishes here beside the other:
+a stray line in one recipe cited an archived repository.
+[The ten traps and every arm’s answer →](evals.html)
+
+**Citations you can re-fetch.** Every unit carries `project@version` and a URL pinned to a
+40-character commit: **142 of 144** across the audited payloads, against **~0** for every tool
+compared. [The audit protocol →](evals.html)
+
+**When it does not know, it says so.** Asked about eight projects it does not index, it declines
+all eight and names what would resolve each one. Competitors answer most of them.
+⚠ Zero confabulated rows anywhere, **including ours** — that column separates nobody, and it is
+reported rather than claimed as an advantage. [Abstention honesty →](evals.html)
+
+**The recipes are the moat.** Each one was run by a human against live chains and ships with the
+transaction receipts, so anyone can check the claim by RPC rather than trusting the stamp.
+
 ## Quickstart
 
 ```bash
@@ -33,27 +54,6 @@ flowchart LR
 ```
 
 *Deterministic end to end — no model on the serving path.*
-
-## Why this exists
-
-**It does not get fooled by a wrong premise.** Ten questions built on premises verified false
-before the run — an archived repo, a renamed package, a version that does not exist. web3ctx was
-deceived **0 of 10**; every other arm was deceived at least once (1–3 of 10).
-🔴 Our own `intent=integrate` row was deceived **once**, and it publishes here beside the other:
-a stray line in one recipe cited an archived repository.
-[The ten traps and every arm’s answer →](evals.html)
-
-**Citations you can re-fetch.** Every unit carries `project@version` and a URL pinned to a
-40-character commit: **142 of 144** across the audited payloads, against **~0** for every tool
-compared. [The audit protocol →](evals.html)
-
-**When it does not know, it says so.** Asked about eight projects it does not index, it declines
-all eight and names what would resolve each one. Competitors answer most of them.
-⚠ Zero confabulated rows anywhere, **including ours** — that column separates nobody, and it is
-reported rather than claimed as an advantage. [Abstention honesty →](evals.html)
-
-**The recipes are the moat.** Each one was run by a human against live chains and ships with the
-transaction receipts, so anyone can check the claim by RPC rather than trusting the stamp.
 
 ## The evidence
 
