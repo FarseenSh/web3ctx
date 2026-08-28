@@ -15,15 +15,20 @@ today looks identical on disk. Last run: **all green**, `tools/list` answering w
 
 ---
 
-## 🚩 One decision only the owner can make: which namespace
+## ✅ RULED 2026-08-28 (owner): the GitHub namespace. `server.json` is the file to publish.
 
-The registry ties your server's **name** to how you authenticated. Both files are ready; publish
-exactly one.
+> *"GitHub namespace (io.github.farseensh/web3ctx) — ship it, DNS can be added later if ever
+> wanted."*
 
-| file | name | what it needs |
+🔴 **A dated decision, not a shortlist.** `server.dns.json` stays in this directory as the
+**recorded alternative** — removal is from publication, never from the record — and it is
+**not the file to publish**. The registry versions entries rather than replacing identity, so the
+domain form remains addable later without invalidating anything published under the GitHub name.
+
+| file | name | state |
 |---|---|---|
-| **`server.json`** | `io.github.farseensh/web3ctx` | `mcp-publisher login github` — nothing else. **Ready today.** |
-| `server.dns.json` | `xyz.scarai/web3ctx` | a TXT record on the **apex** of `scarai.xyz` |
+| **`server.json`** | `io.github.farseensh/web3ctx` | ✅ **RULED — publish this one.** `mcp-publisher login github`, nothing else |
+| `server.dns.json` | `xyz.scarai/web3ctx` | recorded alternative — needs an apex TXT record on `scarai.xyz`; **do not publish** |
 
 ⚠ **The DNS route has two documented traps**, both from the registry's own warnings:
 the TXT record must sit on the **apex** (`scarai.xyz`), *not* under a selector like
@@ -32,9 +37,8 @@ with a generic signature error. And on macOS the Ed25519 path needs **OpenSSL 3*
 explicitly (`/opt/homebrew/opt/openssl@3/bin/openssl`), because the system `openssl` is LibreSSL
 and answers `Algorithm Ed25519 not found`. The ECDSA P-384 path works on LibreSSL.
 
-**Recommendation: publish `server.json` under the GitHub namespace.** It needs no DNS change, it is
-the namespace the ecosystem sees most, and the domain form can be added later — the registry
-versions entries rather than replacing identity.
+⚠ **The two DNS traps above are kept even though that route is not being taken** — they are what a
+future attempt would otherwise rediscover, and the ruling says *"later if ever wanted"*, not never.
 
 ---
 
@@ -42,7 +46,7 @@ versions entries rather than replacing identity.
 
 | # | where | state | the exact next action |
 |---|---|---|---|
-| 1 | **Official MCP Registry** — canonical; the aggregators sync from it, so it goes first | ☐ | `brew install mcp-publisher` → `mcp-publisher login github` → `mcp-publisher validate` → `mcp-publisher publish` from `launch/` |
+| 1 | **Official MCP Registry** — canonical; the aggregators sync from it, so it goes first | ☐ | `brew install mcp-publisher` → `mcp-publisher login github` → `mcp-publisher validate` → `mcp-publisher publish`, run from `launch/` with **`server.json`** (the ruled file) |
 | 2 | **awesome-mcp-servers** (90k★) | ☐ | one PR adding a line under the remote/hosted section; no build, no account |
 | 3 | **Web3 MCP directories** — `hive-intel/awesome-crypto-mcp-servers`, `rudazy/web3-mcp-hub` | ☐ | one PR each. **Neither has a docs/context category — that is a first-mover slot** |
 | 4 | **Smithery** | ☐ | listing form; OAuth is live at `/mcp/oauth`, so its prerequisite is met |
@@ -61,7 +65,7 @@ versions entries rather than replacing identity.
   ≤600 budget. ⚠ That is *at* the ceiling: any added description needs something else removed.
 - **Privacy policy** `https://web3ctx.scarai.xyz/operator.html` — written by enumerating what the
   Worker actually writes.
-- **Licence** MIT (code and site) + CC BY 4.0 (evidence documents).
+- **Licence** MIT (code and site) + CC BY 4.0 (evidence documents) — ✅ ruled 2026-08-28, no objection.
 - **Output size** — the Directory's binding constraint is `MAX_MCP_OUTPUT_TOKENS = 25,000`; our
   payload budget is ~4,000, so it is not close.
 - **Latency** — the Directory has no latency requirement. **Do not volunteer one.**
