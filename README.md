@@ -20,10 +20,8 @@ claude mcp add --transport http web3ctx https://mcp.scarai.xyz/mcp
 { "mcpServers": { "web3ctx": { "type": "http", "url": "https://mcp.scarai.xyz/mcp" } } }
 ```
 
-```text
-Cursor, Windsurf, Zed and any MCP client: add the same URL as a remote HTTP server.
-No key, no signup, no account. The free tier is the read path and always will be.
-```
+Cursor, Windsurf, Zed and any MCP client: add the same URL — `https://mcp.scarai.xyz/mcp` — as
+a remote HTTP server. No key, no signup — the free tier is the read path and always will be.
 
 ## How a question is answered
 
