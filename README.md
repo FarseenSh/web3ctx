@@ -100,14 +100,14 @@ a remote HTTP server. No key, no signup — the free tier is the read path and a
 
 ## How a question is answered
 
-```mermaid
-flowchart LR
-  A[Resolve<br/>entities from the query] --> B[Bind or ABSTAIN<br/>version from evidence]
-  B --> C[Filter then rank<br/>predicate first, BM25 within]
-  C --> D[Budget-true payload<br/>citations before bodies]
-```
+[![The web3ctx serving path — interactive architecture map](serving-path.png)](https://web3ctx.scarai.xyz/serving-path.html)
 
-*Deterministic end to end — no model on the serving path.*
+**[Open the interactive map →](https://web3ctx.scarai.xyz/serving-path.html)** — hover any
+component, trace routes, play the three guided views.
+
+*Resolve entities → bind or **ABSTAIN** the version from evidence → filter by SQL predicate,
+rank with BM25 within → budget-true payload, citations before bodies. Deterministic end to
+end — no model on the serving path.*
 
 ## The evidence
 
